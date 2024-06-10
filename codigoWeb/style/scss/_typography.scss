@@ -1,0 +1,2723 @@
+@import 'variables';
+
+/* --- MY IMPORTED FONTS --- */
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url(../../fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(../../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url(../../fonts/Poppins-BoldItalic.ttf);
+}
+
+/* -------------- LANDING PAGE TYPOGRAPHYS -------------- */
+
+/* --- HEADER TYPOGRAPHY --- */
+
+.afiliadosGlow {
+    color: $color-azul-electrico;
+
+    &--fire {
+        color: $color-rojo;
+    }
+
+    &--water {
+        color: $color-frozen2;
+    }
+
+    &--air {
+        color: $color-air1;
+    }
+
+    &--earth {
+        color: $color-earth1;
+    }
+
+    &--magic {
+        color: $color-magic1;
+    }
+}
+
+.logIn,
+.logIn--fire,
+.logIn--water,
+.logIn--air,
+.logIn--earth,
+.logIn--magic {
+    color: $color-blanco-roto;
+    font-family: Poppins-Bold;
+}
+
+.navigationText {
+    color: $color-blanco-roto;
+}
+
+.nav {
+
+    &__links {
+        color: #fff;
+        text-decoration: none;
+        font-size: $text-nav-size;
+        font-family: Poppins-Light;
+    }
+
+    &__lists {
+
+        &--list1,
+        &--list2 {
+
+            li {
+                font-size: 1.5rem;
+                font-family: Poppins-ExtraLight;
+            }
+        }
+    }
+
+}
+
+.mainBanner {
+
+    &__title {
+        font-size: 9rem;
+        font-family: Poppins-Bold;
+        color: white;
+    }
+
+    &__title2 {
+        font-size: 8.5rem;
+        font-family: Poppins-BoldItalic;
+        color: white;
+    }
+
+    &__title3 {
+        font-size: 9rem;
+        font-family: Poppins-Bold;
+        color: transparent;
+    }
+
+    &__title4,
+    &__title5 {
+        font-size: 8.2rem;
+        font-family: Poppins-Bold;
+        color: transparent;
+    }
+
+    &__paragraph {
+        font-size: 1.8rem;
+        font-family: Poppins-ExtraLight;
+        color: #fff;
+    }
+
+    &--big,
+    &--small {
+
+        &__content {
+
+            &--smallContainer {
+
+                &--textContainer {
+                    text-align: center;
+
+                    &-title {
+                        line-height: 12rem;
+                        font-size: 7.5rem;
+                        font-family: Poppins-Bold;
+                        color: $color-blanco-roto;
+
+                        h3 {
+                            span {
+                                color: $color-azul-electrico;
+                            }
+                        }
+                    }
+
+                    &-description {
+                        line-height: 3rem;
+                        font-size: 1.5rem;
+                        font-family: Poppins-Regular;
+                        color: $color-blanco-roto;
+
+                        p {
+                            span {
+                                &:nth-child(1) {
+                                    color: $color-azul-electrico;
+                                }
+                            }
+                        }
+                    }
+
+                    &-button {
+                        font-size: 1.5rem;
+                        font-family: Poppins-Medium;
+
+                        a {
+                            color: $color-blanco-roto;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                            font-family: Poppins-Regular;
+                            color: $color-gris-mas-claro;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+/* --- END HEADER TYPOGRAPHY -- */
+
+/* --- (MAIN) NUESTRAS NOVEDADES CONTAINER -- */
+
+.nuestrasUltimasNovedades {
+
+    &__container {
+
+        &--slider {
+
+            &__element {
+
+                &--infoCoursePart {
+
+                    h4 {
+                        font-size: 1.6rem;
+                        font-family: Poppins-Medium;
+                        color: $color-blanco-roto;
+                    }
+
+                    h3 {
+                        font-size: 3.3rem;
+                        font-family: Poppins-SemiBold;
+                        color: $color-blanco-roto;
+                    }
+
+                    &--paragraph {
+                        font-size: 1.5rem;
+                        font-family: Poppins-Light;
+                        color: $color-gris-mas-claro;
+                    }
+
+                    &--icons {
+                        &--paragraphs {
+                            font-size: 1.3rem;
+                            font-family: Poppins-Light;
+                            color: $color-blanco-roto;
+                        }
+                    }
+
+                    &--buttons {
+
+                        a:first-child {
+                            font-size: 1.5rem;
+                            font-family: Poppins-SemiBold;
+                            color: $color-blanco-roto;
+                        }
+
+                        a:nth-child(2) {
+                            font-size: 1.4rem;
+                            font-family: Poppins-SemiBold;
+                            color: $color-blanco-roto;
+                        }
+
+                        p {
+                            color: $color-blanco-roto;
+                        }
+                    }
+                }
+
+            }
+
+            &Buttons {
+
+                p {
+                    font-size: 4.2rem;
+                    font-family: Poppins-ExtraLight;
+                    text-decoration: none;
+                    color: rgb(83, 83, 83);
+                }
+            }
+
+        }
+
+        &--cursosMasVistos {
+
+            h4 {
+                text-align: left;
+                font-size: 1.8rem;
+                font-family: Poppins-SemiBold;
+                color: $color-blanco-roto;
+            }
+        }
+    }
+}
+
+/* --- (MAIN) NUESTRAS NOVEDADES CONTAINER END -- */
+
+/* --- (MAIN) TODOS NUESTROS CURSOS -- */
+
+.todosNuestrosCursos {
+
+    &__container {
+
+        &__messages {
+            text-align: center;
+
+            h3 {
+                font-size: 3.3rem;
+                font-family: Poppins-Bold;
+                color: $color-blanco-roto;
+
+                span {
+                    color: $color-azul-electrico;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-family: Poppins-Light;
+                color: $color-blanco-roto;
+            }
+
+            h3+p {
+                line-height: 2.9rem;
+            }
+
+            &--containers {
+
+                &--container {
+
+                    h4 {
+                        font-size: 1.5rem;
+                        font-family: Poppins-SemiBold;
+                        color: $color-blanco-roto;
+                    }
+
+                    p {
+                        font-size: 1.3rem;
+                        font-family: Poppins-Light;
+                        color: $color-blanco-roto;
+                    }
+                }
+            }
+        }
+
+        &__button {
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-family: Poppins-SemiBold;
+            color: $color-blanco-roto;
+        }
+    }
+}
+
+/* --- (MAIN) TODOS NUESTROS CURSOS END -- */
+
+/* --- (MAIN) RTEA SCHOOL TE OFRECE -- */
+
+.rteaSchoolOfrece {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        &__contents {
+
+            &__info {
+
+                h4 {
+                    font-size: 2.2rem;
+                    font-family: Poppins-SemiBold;
+                    color: $color-blanco-roto;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    font-family: Poppins-Light;
+                    color: $color-blanco-roto;
+                }
+
+                &__button1,
+                &__button2,
+                &__button3,
+                &__button4 {
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    font-family: Poppins-SemiBold;
+                }
+
+                &__button1 {
+                    color: $color-modulo1-c1;
+                }
+
+                &__button2 {
+                    color: $color-modulo5-c1;
+                }
+
+                &__button3 {
+                    color: $color-modulo6-c1;
+                }
+
+                &__button4 {
+                    color: $color-azul-electrico;
+                }
+            }
+        }
+    }
+}
+
+/* --- (MAIN) RTEA SCHOOL TE OFRECE END -- */
+
+/* --- (MAIN) LO QUE OFRECEN NUESTROS CURSOS -- */
+
+.loQueOfrecenNuestrosCursos {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: Poppins-Light;
+            color: $color-blanco-roto;
+        }
+
+        h3+p {
+            line-height: 2.9rem;
+        }
+
+    }
+
+    &--btn {
+        text-align: left;
+
+        span {
+            font-size: 2.3rem;
+            font-family: Poppins-Medium;
+            color: #4b4b4b;
+
+            span {
+                font-size: 1.4rem;
+                font-family: Poppins-Light;
+                color: $color-gris-claro;
+            }
+        }
+
+        &--active {
+
+            span {
+                color: $color-azul-electrico;
+            }
+
+        }
+    }
+}
+
+/* --- (MAIN) LO QUE OFRECEN NUESTROS CURSOS END -- */
+
+/* --- (MAIN) OPINIÓN DE NUESTROS ALUMNOS CURSOS -- */
+
+.opinionesDeNuestrosAlumnos {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: Poppins-Light;
+            color: $color-blanco-roto;
+        }
+    }
+
+    &__slider {
+
+        p {
+            font-size: 1.23rem;
+            font-family: Poppins-Light;
+            color: $color-gris-mas-claro;
+
+            span {
+                font-family: Poppins-Medium;
+                color: $color-azul-electrico;
+            }
+        }
+
+        &--info {
+
+            h4 {
+                font-size: 1.4rem;
+                font-family: Poppins-SemiBold;
+                color: $color-blanco-roto;
+            }
+
+        }
+    }
+}
+
+/* --- (MAIN) OPINIÓN DE NUESTROS ALUMNOS CURSOS END -- */
+
+/* --- (MAIN) NO POSTERGUES MAS TU EDUCACION CURSOS -- */
+
+.noPosterguesMasTuEducacion {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.9rem;
+            font-family: Poppins-Regular;
+            color: $color-azul-electrico-claro;
+        }
+
+        h3+p {
+            line-height: 2.9rem;
+        }
+
+        &-button {
+            font-size: 1.5rem;
+            font-family: Poppins-Medium;
+
+            a {
+                color: $color-blanco-roto;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-family: Poppins-Regular;
+                color: $color-azul-electrico-claro;
+            }
+        }
+
+    }
+}
+
+/* --- (MAIN) NO POSTERGUES MAS TU EDUCACION CURSOS END -- */
+
+
+/* --- (MAIN) MÉTODOS DE PAGO --- */
+
+.metodosPago {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 4rem;
+            font-family: Poppins-ExtraBold;
+            font-weight: 900;
+            color: $color-negro-intermedio;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 2.9rem;
+            font-family: Poppins-Medium;
+            color: $color-negro-intermedio;
+        }
+
+        h3+p {
+            line-height: 2.9rem;
+        }
+
+        u {
+            color: $color-azul-electrico;
+        }
+
+        .metodos {
+
+            &Fire {
+                color: $color-rojo;
+            }
+
+            &Water {
+                color: $color-frozen2;
+            }
+
+            &Air {
+                color: $color-air1;
+            }
+
+            &Earth {
+                color: $color-earth1;
+            }
+
+            &Magic {
+                color: $color-magic1;
+            }
+
+        }
+
+    }
+
+}
+
+/* --- (MAIN) MÉTODOS DE PAGO END --- */
+
+/* --- FOOTER --- */
+
+
+.footer {
+
+    &__container {
+
+        &__bigInfo {
+
+            &__leftInfo {
+
+                p {
+                    font-size: 1.5rem;
+                    font-family: Poppins-Light;
+                    color: $color-blanco-roto;
+                }
+            }
+
+            &__rightInfo {
+
+                &--list {
+
+                    p {
+                        font-size: 1.5rem;
+                        font-family: Poppins-Regular;
+                        color: $color-blanco-roto;
+                    }
+
+                    ul {
+                        line-height: 3.1rem;
+                    }
+
+
+                    li {
+                        font-size: 1.5rem;
+                        font-family: Poppins-Light;
+                        color: $color-gris-normal;
+                    }
+
+                    a {
+                        color: $color-gris-normal;
+
+                        &:hover {
+                            color: $color-azul-electrico;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &__smallTermsAndMedia {
+
+            p {
+                font-size: 1.5rem;
+                font-family: Poppins-Light;
+                color: $color-gris-normal;
+            }
+        }
+    }
+
+}
+
+
+/* --- FOOTER END --- */
+
+/* -------------- LANDING PAGE TYPOGRAPHYS END -------------- */
+
+/* -------------- QUIENES SOMOS PAGE TYPOGRAPHYS -------------- */
+
+/* --- (MAIN) NUESTRA HISTORIA CONTAINER --- */
+
+.nuestraHistoria {
+
+    &__Content {
+
+        h3 {
+            font-size: 3.2rem;
+            font-family: Poppins-Medium;
+            color: $color-negro;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: Poppins-Regular;
+            color: $color-negro;
+        }
+
+    }
+}
+
+/* --- (MAIN) NUESTRA HISTORIA CONTAINER END --- */
+
+/* --- (MAIN) PROFESORES --- */
+
+.profesores {
+
+    &__Info {
+
+        &--Text {
+            text-align: justify;
+        }
+
+        &--Text2 {
+            text-align: justify;
+        }
+
+        &--Name {
+            font-size: 2.8rem;
+            font-family: Poppins-Medium;
+            color: $color-negro;
+        }
+
+        &--Experience1 {
+            font-size: 2rem;
+            font-family: Poppins-Bold;
+            color: $color-negro;
+
+            ul li {
+                font-size: 1.55rem;
+                font-family: Poppins-Regular;
+                color: $color-gris-oscuro;
+            }
+        }
+
+        &--Experience2 {
+            font-size: 2rem;
+            font-family: Poppins-Bold;
+            color: $color-negro;
+
+            ul li {
+                font-size: 1.55rem;
+                font-family: Poppins-Medium;
+                color: $color-gris-oscuro;
+            }
+
+            ul li span {
+                font-family: Poppins-Regular;
+                color: $color-gris-claro;
+            }
+        }
+
+        &--Experience3 {
+            font-size: 2rem;
+            font-family: Poppins-Bold;
+            color: $color-negro;
+
+            ul li {
+                font-size: 1.55rem;
+                font-family: Poppins-Regular;
+                color: $color-gris-oscuro;
+            }
+        }
+
+    }
+
+}
+
+/* --- (MAIN) PROFESORES END --- */
+
+/* -------------- QUIENES SOMOS PAGE TYPOGRAPHYS END -------------- */
+
+/* -------------------- CURSOS PAGE  -------------------- */
+
+/* --- (MAIN) CURSOS CONTAINER --- */
+
+.cursosBigContainer {
+
+    &__section {
+
+        &__rightContainer {
+
+            h4 {
+                font-size: 1.8rem;
+                font-family: Poppins-SemiBold;
+                color: #ebebeb;
+            }
+        }
+
+    }
+}
+
+.categorias {
+    font-size: 1.5rem;
+    font-family: Poppins-Light;
+    color: $color-blanco-roto;
+}
+
+.etiquetas {
+    font-size: 1.5rem;
+    font-family: Poppins-Light;
+    color: $color-blanco-roto;
+}
+
+.softwares {
+    font-size: 1.5rem;
+    font-family: Poppins-Light;
+    color: $color-blanco-roto;
+}
+
+.curso {
+
+    &--info {
+
+        h4 {
+            font-size: 1.8rem;
+            font-family: Poppins-Regular;
+            color: $color-blanco-roto;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-family: Poppins-Light;
+            color: $color-gris-normal;
+        }
+
+        &Price {
+
+            p {
+                font-size: 1.8rem;
+                font-family: Poppins-SemiBold;
+                color: $color-blanco-roto;
+                transition: 0.3s;
+            }
+
+            &:hover {
+                transition: 0.3s;
+
+                p {
+                    color: $color-azul-electrico;
+                }
+            }
+        }
+
+        &--extraInfo {
+
+            p {
+                font-family: Poppins-Regular;
+                color: $color-blanco-roto;
+            }
+        }
+    }
+
+}
+
+/* --- (MAIN) CURSOS CONTAINER END --- */
+
+/* -------------------- CURSOS PAGE END -------------------- */
+
+/* -------------------- MYSTIC MATERIALS PAGE -------------------- */
+
+/* --- MAIN BANNER --- */
+
+.shaderMainBanner {
+
+    &__title {
+        font-size: 12rem;
+        font-family: Poppins-Bold;
+        color: white;
+        justify-self: start;
+    }
+
+    &__title2 {
+        font-size: 10rem;
+        font-family: Poppins-BoldItalic;
+        color: white;
+    }
+
+    &__title3 {
+        font-size: 12rem;
+        font-family: Poppins-Bold;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #fff;
+        color: transparent;
+    }
+
+    &__paragraph {
+        text-align: center;
+        font-size: 2.5rem;
+        font-family: Poppins-ExtraLight;
+        color: #fff;
+    }
+
+    &__info {
+        text-decoration: none;
+        color: #fff;
+        font-size: 2.5rem;
+        font-family: Poppins-Light;
+    }
+
+    &__water,
+    &__fire,
+    &__air,
+    &__earth,
+    &__magic {
+
+        &__title2 {
+            font-size: 10rem;
+            font-family: Poppins-BoldItalic;
+            color: white;
+        }
+    }
+
+}
+
+/* --- MAIN BANNER END --- */
+
+/* --- MYSTIC MATERIALS INTRODUCTION SECTION --- */
+
+.shadersMain {
+
+    &__article {
+
+        &__title {
+            text-align: center;
+        }
+
+        &__info {
+
+            &__h4 {
+                font-size: 2.2rem;
+                font-family: Poppins-Regular;
+                color: #fff;
+            }
+
+            &__p {
+                font-size: 1.6rem;
+                font-family: Poppins-Light;
+                color: #fff;
+            }
+
+            &__details {
+
+                &__hours {
+
+                    &__letters {
+
+                        p {
+                            font-size: 1.6rem;
+                            font-family: Poppins-Bold;
+                            color: $color-blanco-roto;
+                        }
+
+                        &__water,
+                        &__fire,
+                        &__air,
+                        &__earth,
+                        &__magic {
+
+                            p {
+                                color: $color-blanco-roto;
+                                font-size: 1.6rem;
+                                font-family: Poppins-Bold;
+                            }
+                        }
+                    }
+                }
+
+
+                &__numShaders {
+
+                    &__letters {
+
+                        p {
+                            font-size: 1.6rem;
+                            font-family: Poppins-Regular;
+                            color: $color-blanco;
+                        }
+
+                        p span {
+                            font-size: 1.6rem;
+                            font-family: Poppins-Bold;
+                            color: $color-azul-electrico;
+                        }
+
+                        &__water,
+                        &__fire,
+                        &__air,
+                        &__earth,
+                        &__magic {
+
+                            p {
+                                font-size: 1.6rem;
+                                font-family: Poppins-Regular;
+                                color: $color-blanco;
+                            }
+
+                            p span {
+                                font-size: 1.6rem;
+                                font-family: Poppins-Bold;
+                            }
+                        }
+
+                        /* WATER */
+
+                        &__water {
+
+                            p span {
+                                color: $color-frozen2;
+                            }
+                        }
+
+                        /* FIRE */
+
+                        &__fire {
+
+                            p span {
+                                color: $color-rojo;
+                            }
+                        }
+
+                        /* AIR */
+
+                        &__air {
+
+                            p span {
+                                color: $color-air2;
+                            }
+                        }
+
+                        /* EARTH */
+
+                        &__earth {
+
+                            p span {
+                                color: $color-earth2;
+                            }
+                        }
+
+                        /* MAGIC */
+
+                        &__magic {
+
+                            p span {
+                                color: $color-magic2;
+                            }
+                        }
+                    }
+
+                }
+
+                &__price {
+
+                    &__number {
+                        font-size: 4rem;
+                        font-family: Poppins-Bold;
+                        color: $color-blanco;
+                    }
+
+                    &__box {
+
+                        p {
+                            font-size: 1.8rem;
+                            font-family: Poppins-Regular;
+                            color: $color-blanco;
+                        }
+
+                        &__water,
+                        &__fire,
+                        &__air,
+                        &__earth,
+                        &__magic {
+
+                            p {
+                                font-size: 1.8rem;
+                                font-family: Poppins-Regular;
+                                color: $color-blanco;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    &__midContainer {
+
+        &_section {
+
+            &_info {
+
+                h3 {
+                    font-size: 3.8rem;
+                    font-family: Poppins-Bold;
+                    color: $color-blanco;
+                }
+
+                &_detail {
+
+                    h5 {
+                        font-size: 1.65rem;
+                        font-family: Poppins-Light;
+                        letter-spacing: 0.02rem;
+                        color: $color-azul-electrico;
+                    }
+
+                    h5 span {
+                        font-family: Poppins-ExtraLight;
+                        color: $color-blanco;
+                    }
+
+                    &__water,
+                    &__fire,
+                    &__air,
+                    &__earth,
+                    &__magic {
+
+                        h5 {
+                            font-size: 1.65rem;
+                            font-family: Poppins-Light;
+                            letter-spacing: 0.02rem;
+                        }
+
+                        h5 span {
+                            font-family: Poppins-ExtraLight;
+                            color: $color-blanco;
+                        }
+                    }
+
+                    /* WATER */
+
+                    &__water {
+
+                        h5 {
+                            color: $color-frozen2;
+                        }
+                    }
+
+                    /* FIRE */
+
+                    &__fire {
+
+                        h5 {
+                            color: $color-rojo;
+                        }
+                    }
+
+                    /* AIR */
+
+                    &__air {
+
+                        h5 {
+                            color: $color-air2;
+                        }
+                    }
+
+                    /* EARTH */
+
+                    &__earth {
+
+                        h5 {
+                            color: $color-earth2;
+                        }
+                    }
+
+                    /* MAGIC */
+
+                    &__magic {
+
+                        h5 {
+                            color: $color-magic2;
+                        }
+                    }
+
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: Poppins-Light;
+                    color: $color-blanco;
+                }
+
+                p span {
+                    font-family: Poppins-Regular;
+                    color: $color-azul-electrico;
+                }
+
+                &__water,
+                &__fire,
+                &__air,
+                &__earth,
+                &__magic {
+
+                    h3 {
+                        font-size: 3.8rem;
+                        font-family: Poppins-Bold;
+                        color: $color-blanco;
+                    }
+
+                    &_detail {
+
+                        h5 {
+                            font-size: 1.65rem;
+                            font-family: Poppins-Light;
+                            letter-spacing: 0.02rem;
+                        }
+
+                        h5 span {
+                            font-family: Poppins-ExtraLight;
+                            color: $color-blanco;
+                        }
+
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                        font-family: Poppins-Light;
+                        color: $color-blanco;
+                    }
+
+                    p span {
+                        font-family: Poppins-Regular;
+                    }
+                }
+
+                /* WATER */
+
+                &__water {
+
+                    &_detail {
+
+                        h5 {
+                            color: $color-frozen2;
+                        }
+                    }
+
+                    p span {
+                        color: $color-frozen2;
+                    }
+
+                }
+
+                /* FIRE */
+
+                &__fire {
+
+                    &_detail {
+
+                        h5 {
+                            color: $color-naranja;
+                        }
+                    }
+
+                    p span {
+                        color: $color-naranja;
+                    }
+
+                }
+
+                /* AIR */
+
+                &__air {
+
+                    &_detail {
+
+                        h5 {
+                            color: $color-air2;
+                        }
+                    }
+
+                    p span {
+                        color: $color-air2;
+                    }
+
+                }
+
+                /* EARTH */
+
+                &__earth {
+
+                    &_detail {
+
+                        h5 {
+                            color: $color-earth2;
+                        }
+                    }
+
+                    p span {
+                        color: $color-earth2;
+                    }
+
+                }
+
+                /* MAGIC */
+
+                &__magic {
+
+                    &_detail {
+
+                        h5 {
+                            color: $color-magic2;
+                        }
+                    }
+
+                    p span {
+                        color: $color-magic2;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+    /* SHADERS BUTTON CONTAINER */
+
+    &__buttonContainer {
+
+        &_section {
+
+            &_shader {
+
+                /* INDIVIDUALS SHADER CIRCLE */
+
+                &_title1,
+                &_title2,
+                &_title3,
+                &_title4,
+                &_title5 {
+
+                    h4 {
+                        font-size: 1.8rem;
+                        font-family: Poppins-Regular;
+                        letter-spacing: 0.08rem;
+                        color: $color-blanco;
+                    }
+
+                    h5 {
+                        font-size: 1.5rem;
+                        font-family: Poppins-Light;
+                        letter-spacing: 0.02rem;
+                    }
+                }
+
+                &_title1 {
+
+                    h5 {
+                        color: $color-rojo;
+                    }
+                }
+
+                &_title2 {
+
+                    h5 {
+                        color: $color-frozen1;
+                    }
+                }
+
+                &_title3 {
+
+                    h5 {
+                        color: $color-air1;
+                    }
+                }
+
+                &_title4 {
+
+                    h5 {
+                        color: $color-earth1;
+                    }
+                }
+
+                &_title5 {
+
+                    h5 {
+                        color: $color-magic1;
+                    }
+                }
+
+                &__water,
+                &__fire,
+                &__air,
+                &__earth,
+                &__magic,
+                &__modulo1,
+                &__modulo2,
+                &__modulo3,
+                &__modulo4,
+                &__modulo5,
+                &__modulo6,
+                &__modulo7 {
+
+                    &_title {
+
+                        h4 {
+                            font-size: 1.8rem;
+                            font-family: Poppins-Regular;
+                            letter-spacing: 0.08rem;
+                            color: $color-blanco;
+                        }
+
+                        h5 {
+                            margin-top: 0.4rem;
+                            font-size: 1.6rem;
+                            font-family: Poppins-Light;
+                            letter-spacing: 0.02rem;
+                        }
+                    }
+                }
+
+                &__modulo1,
+                &__modulo2,
+                &__modulo3 {
+
+                    &_title {
+
+                        h4 {
+                            margin-top: -3rem;
+                        }
+                    }
+                }
+
+                &__modulo4,
+                &__modulo5 {
+
+                    &_title {
+
+                        h4 {
+                            margin-top: 0rem;
+                        }
+                    }
+                }
+
+                /* WATER */
+
+                &__water {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-frozen2;
+                        }
+                    }
+
+                }
+
+                /* FIRE */
+
+                &__fire {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-naranja;
+                        }
+                    }
+
+                }
+
+                /* AIR */
+
+                &__air {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-air2;
+                        }
+                    }
+
+                }
+
+                /* EARTH */
+
+                &__earth {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-earth2;
+                        }
+                    }
+
+                }
+
+                /* MAGIC */
+
+                &__magic {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-magic2;
+                        }
+                    }
+
+                }
+
+                /* MÓDULO I */
+
+                &__modulo1 {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-modulo1-c2;
+                        }
+                    }
+
+                }
+
+                /* MÓDULO II */
+
+                &__modulo2 {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-modulo2-c1;
+                        }
+                    }
+
+                }
+
+                /* MÓDULO III */
+
+                &__modulo3 {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-modulo3-c1;
+                        }
+                    }
+
+                }
+
+                /* MÓDULO IV */
+
+                &__modulo4 {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-modulo4-c1;
+                        }
+                    }
+
+                }
+
+                /* MÓDULO V */
+
+                &__modulo5 {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-modulo5-c1;
+                        }
+                    }
+
+                }
+
+                /* MÓDULO VI */
+
+                &__modulo6 {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-modulo6-c2;
+                        }
+                    }
+
+                }
+
+                /* MÓDULO VII */
+
+                &__modulo7 {
+
+                    &_title {
+
+                        h5 {
+                            color: $color-modulo7-c2;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.sectionTitle {
+
+    &__font {
+        font-size: 7.5rem;
+        font-family: Poppins-Bold;
+    }
+
+    &__font2 {
+        font-size: 7.5rem;
+        font-family: Poppins-Bold;
+    }
+
+}
+
+/* SHADER IZQUIERDA CONTAINER */
+
+.shaderIzq {
+
+    &_section {
+
+        &_info {
+
+            &_detail {
+
+                &_text {
+
+                    &__fire,
+                    &__water,
+                    &__air,
+                    &__earth,
+                    &__magic {
+
+                        h5 {
+                            font-size: 1.6rem;
+                            font-family: Poppins-Light;
+                            letter-spacing: 0.02rem;
+                        }
+                    }
+
+                    /* FIRE */
+
+                    &__fire {
+
+                        h5 {
+                            color: $color-rojo;
+                        }
+                    }
+
+                    /* WATER */
+
+                    &__water {
+
+                        h5 {
+                            color: $color-frozen1;
+                        }
+                    }
+
+                    /* AIR */
+
+                    &__air {
+
+                        h5 {
+                            color: $color-air1;
+                        }
+                    }
+
+                    /* EARTH */
+
+                    &__earth {
+
+                        h5 {
+                            color: $color-earth1;
+                        }
+                    }
+
+                    /* MAGIC */
+
+                    &__magic {
+
+                        h5 {
+                            color: $color-magic1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_section1 {
+
+        &_div1 {
+
+            h3 {
+                font-size: 3.8rem;
+                font-family: Poppins-Bold;
+                color: $color-blanco;
+            }
+
+        }
+
+        &_div5 {
+
+            &_div2,
+            &_div4 {
+                font-size: 1.6rem;
+                font-family: Poppins-ExtraLight;
+                letter-spacing: 0.02rem;
+                color: $color-blanco;
+            }
+
+            &_div2 {
+
+                &_p {
+                    font-family: Poppins-Light;
+                }
+            }
+
+        }
+    }
+
+    &_section3 {
+
+        &_div2 {
+
+            &_1,
+            &_2,
+            &_3 {
+
+                p {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: Poppins-Light;
+                    color: $color-blanco;
+                }
+            }
+
+            &_1 {
+
+                p span {
+                    color: $color-rojo;
+                }
+            }
+
+            &_2 {
+
+                p span {
+                    color: $color-air1;
+                }
+            }
+
+            &_3 {
+
+                p span {
+                    color: $color-magic1;
+                }
+            }
+        }
+
+        &_divButton,
+        &_divButton2,
+        &_divButton3 {
+
+            &_1 {
+
+                a {
+                    font-size: 1.8rem;
+                    font-family: Poppins-Regular;
+                    color: $color-blanco;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.shadersIzq_section_info_detail {
+
+    &_1,
+    &_2,
+    &_3,
+    &_text__water {
+        font-size: 2rem;
+        font-family: Poppins-Light;
+        letter-spacing: 0.02rem;
+    }
+
+    &_1 {
+
+        h5 {
+            color: $color-rojo;
+        }
+    }
+
+    &_2 {
+
+        h5 {
+            color: $color-air1;
+        }
+    }
+
+    &_3 {
+
+        h5 {
+            color: $color-magic1;
+        }
+    }
+
+    &_text {
+
+        /* WATER */
+
+        &__water {
+
+            h5 {
+                color: $color-frozen2;
+            }
+        }
+
+        /* FIRE */
+
+        &__fire {
+
+            h5 {
+                font-size: 1.6rem;
+                font-family: Poppins-Light;
+                letter-spacing: 0.02rem;
+                color: $color-rojo;
+            }
+        }
+
+        /* AIR */
+
+        &__air {
+
+            h5 {
+                color: $color-air2;
+            }
+        }
+
+        /* EARTH */
+
+        &__earth {
+
+            h5 {
+                color: $color-earth2;
+            }
+        }
+
+        /* MAGIC */
+
+        &__magic {
+
+            h5 {
+                color: $color-magic2;
+            }
+        }
+    }
+}
+
+.shaderIzq {
+
+    &_section {
+
+        &_info {
+
+            &_detail {
+
+                &_text {
+
+                    &__water,
+                    &__fire,
+                    &__air,
+                    &__earth,
+                    &__magic {
+                        font-size: 2rem;
+                        font-family: Poppins-Light;
+                        letter-spacing: 0.02rem;
+                    }
+
+                    /* WATER */
+
+                    &__water {
+
+                        h5 {
+                            color: $color-frozen2;
+                        }
+                    }
+
+                    /* FIRE */
+
+                    &__fire {
+
+                        h5 {
+                            color: $color-rojo;
+                        }
+                    }
+
+                    /* AIR */
+
+                    &__air {
+
+                        h5 {
+                            color: $color-air2;
+                        }
+                    }
+
+                    /* EARTH */
+
+                    &__earth {
+
+                        h5 {
+                            color: $color-earth2;
+                        }
+                    }
+
+                    /* MAGIC */
+
+                    &__magic {
+
+                        h5 {
+                            color: $color-magic2;
+                        }
+                    }
+                }
+            }
+        }
+
+        &3 {
+
+            &_div2 {
+
+                p {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: Poppins-Light;
+                    color: $color-blanco;
+                }
+            }
+        }
+    }
+}
+
+
+/* SHADERS DERECHA CONTAINER */
+
+.shaderDerch {
+
+    &_section {
+
+        &_info {
+
+            &_detail {
+
+                &_1,
+                &_2 {
+
+                    h5 {
+                        font-size: 1rem;
+                        font-family: Poppins-Light;
+                        letter-spacing: 0.02rem;
+                    }
+                }
+
+                &_1 {
+
+                    h5 {
+                        color: $color-frozen1;
+                    }
+                }
+
+                &_2 {
+
+                    h5 {
+                        color: $color-earth1;
+                    }
+                }
+
+                &_bonus {
+
+                    p {
+                        font-size: 1.3rem;
+                        text-align: justify;
+                        font-family: Poppins-Bold;
+                        color: $color-blanco;
+                    }
+
+                    &_text {
+
+                        h5 {
+                            font-size: 1rem;
+                            font-family: Poppins-Light;
+                            letter-spacing: 0.02rem;
+                            color: $color-magic1;
+                        }
+
+                        &__water,
+                        &__fire,
+                        &__air,
+                        &__earth,
+                        &__magic {
+
+                            h5 {
+                                font-size: 1.8rem;
+                                font-family: Poppins-Light;
+                                letter-spacing: 0.02rem;
+                            }
+                        }
+
+                        /* WATER */
+
+                        &__water {
+
+                            h5 {
+                                color: $color-frozen2;
+                            }
+                        }
+
+                        /* FIRE */
+
+                        &__fire {
+
+                            h5 {
+                                color: $color-rojo;
+                            }
+                        }
+
+                        /* AIR */
+
+                        &__air {
+
+                            h5 {
+                                color: $color-air2;
+                            }
+                        }
+
+                        /* EARTH */
+
+                        &__earth {
+
+                            h5 {
+                                color: $color-earth2;
+                            }
+                        }
+
+                        /* MAGIC */
+
+                        &__magic {
+
+                            h5 {
+                                color: $color-magic2;
+                            }
+                        }
+                    }
+
+                }
+
+                &_text {
+
+                    &__fire,
+                    &__water,
+                    &__air,
+                    &__earth,
+                    &__magic {
+
+                        h5 {
+                            font-size: 1.6rem;
+                            font-family: Poppins-Light;
+                            letter-spacing: 0.02rem;
+                        }
+                    }
+
+
+                    /* WATER */
+
+                    &__water {
+
+                        h5 {
+                            color: $color-frozen2;
+                        }
+                    }
+
+                    /* FIRE */
+
+                    &__fire {
+
+                        h5 {
+                            color: $color-rojo;
+                        }
+                    }
+
+                    /* AIR */
+
+                    &__air {
+
+                        h5 {
+                            color: $color-air2;
+                        }
+                    }
+
+                    /* EARTH */
+
+                    &__earth {
+
+                        h5 {
+                            color: $color-earth2;
+                        }
+                    }
+
+                    /* MAGIC */
+
+                    &__magic {
+
+                        h5 {
+                            color: $color-magic2;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        &1 {
+
+            &_div1 {
+
+                h3 {
+                    font-size: 3.8rem;
+                    font-family: Poppins-Bold;
+                    color: $color-blanco;
+                }
+
+            }
+
+            &_div5 {
+
+                &_div2,
+                &_div4 {
+                    font-size: 1.6rem;
+                    font-family: Poppins-ExtraLight;
+                    letter-spacing: 0.02rem;
+                    color: $color-blanco;
+                }
+
+                &_div2 {
+
+                    &_p {
+                        font-family: Poppins-Light;
+                    }
+                }
+
+            }
+
+        }
+
+        &3 {
+
+            &_div2 {
+
+                p {
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    font-family: Poppins-Light;
+                    color: $color-blanco;
+                }
+
+                &_1,
+                &_2 {
+
+                    p {
+                        font-size: 1.6rem;
+                        text-align: justify;
+                        font-family: Poppins-Light;
+                        color: $color-blanco;
+                    }
+                }
+
+                &_1 {
+
+                    p span {
+                        color: $color-frozen1;
+                    }
+
+                }
+
+                &_2 {
+
+                    p span {
+                        color: $color-earth1;
+                    }
+                }
+            }
+
+            &_divButton,
+            &_divButton2 {
+
+                &_1 {
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1.8rem;
+                        font-family: Poppins-Regular;
+                        color: $color-blanco;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    &_container {
+
+        &_details {
+
+            &_bonus {
+
+                &__fire,
+                &__water,
+                &__air,
+                &__earth,
+                &__magic {
+
+                    p {
+                        font-size: 2rem;
+                        text-align: justify;
+                        font-family: Poppins-Bold;
+                        color: $color-blanco;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.shadersDerch_section_info_detail {
+
+    &_1,
+    &_2 {
+
+        h5 {
+            font-size: 1.6rem;
+            font-family: Poppins-Light;
+            letter-spacing: 0.02rem;
+        }
+    }
+
+    &_1 {
+
+        h5 {
+            color: $color-frozen1;
+        }
+    }
+
+    &_2 {
+
+        display: grid;
+        grid-template-columns: 0.8fr 2fr;
+        align-items: center;
+        margin-top: 5px;
+
+        h5 {
+            color: $color-earth1;
+        }
+
+    }
+}
+
+
+/* --- MYSTIC MATERIALS INTRODUCTION SECTION END --- */
+
+/* -------------------- MYSTIC MATERIALS PAGE END -------------------- */
+
+
+/* -------------------- TEACHERS PAGE -------------------- */
+
+.nuestroEquipoTecnico {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: Poppins-Light;
+            color: $color-blanco-roto;
+        }
+
+        h3+p {
+            line-height: 2.9rem;
+        }
+
+        &__technicians {
+
+            &__technician {
+
+                &--info {
+                    text-align: center;
+
+                    h4 {
+                        font-size: 2rem;
+                        font-family: Poppins-Regular;
+                        color: $color-blanco-roto;
+                    }
+
+                    h5 {
+                        font-size: 1.45rem;
+                        font-family: Poppins-ExtraLight;
+                        color: $color-gris-mas-claro;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* -------------------- TEACHERS PAGE END -------------------- */
+
+.teacherPersonalInfo {
+
+    &__container {
+
+        &__directions {
+
+            a {
+                color: $color-blanco-roto;
+            }
+
+            h4 {
+                font-size: 1.8rem;
+                font-family: Poppins-Light;
+                color: $color-blanco-roto;
+            }
+        }
+
+        &__namePhoto {
+
+            h3 {
+                font-size: 9rem;
+                font-family: Poppins-Regular;
+                color: $color-blanco-roto;
+            }
+        }
+
+        &__info {
+
+            h4 {
+                font-size: 1.8rem;
+                font-family: Poppins-Medium;
+                color: $color-azul-electrico;
+            }
+
+            p {
+                font-size: 1.8rem;
+                font-family: Poppins-Light;
+                color: $color-blanco-roto;
+            }
+
+            li {
+                font-size: 1.8rem;
+                font-family: Poppins-Light;
+                color: $color-blanco-roto;
+            }
+        }
+    }
+}
+
+/* -------------------- AFILIADOS PAGE -------------------- */
+
+.afiliados {
+
+    &__container {
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: Poppins-Light;
+            color: $color-blanco-roto;
+        }
+
+        &__info {
+
+            &__step {
+                text-align: center;
+
+                &--number {
+
+                    h5 {
+                        font-size: 2rem;
+                        font-family: Poppins-SemiBold;
+                        color: $color-blanco-roto;
+                    }
+                }
+
+                h4 {
+                    font-size: 2.4rem;
+                    font-family: Poppins-SemiBold;
+                    color: $color-blanco-roto;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-family: Poppins-Light;
+                    color: $color-gris-normal;
+
+                    span {
+                        color: $color-azul-electrico;
+                    }
+
+                    a {
+                        color: $color-azul-electrico;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.beneficiosParaAfiliados {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        &__contents {
+
+            &__info {
+
+                h4 {
+                    font-size: 2.2rem;
+                    font-family: Poppins-SemiBold;
+                    color: $color-blanco-roto;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    font-family: Poppins-Light;
+                    color: $color-blanco-roto;
+                }
+
+            }
+        }
+    }
+}
+
+.quienPuedeSerAfiliado {
+
+    &__container {
+
+        &__messages {
+            text-align: center;
+
+            h3 {
+                font-size: 3.3rem;
+                font-family: Poppins-Bold;
+                color: $color-blanco-roto;
+
+                span {
+                    color: $color-azul-electrico;
+                }
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-family: Poppins-Light;
+                color: $color-blanco-roto;
+            }
+
+            h3+p {
+                line-height: 2.9rem;
+            }
+
+            &--containers {
+
+                &--container {
+
+                    h4 {
+                        font-size: 1.8rem;
+                        font-family: Poppins-SemiBold;
+                        color: $color-blanco-roto;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                        font-family: Poppins-Light;
+                        color: $color-blanco-roto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.porqueElegirnos {
+
+    &__container {
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: Poppins-Light;
+            color: $color-blanco-roto;
+        }
+
+        &__bigContainer {
+            text-align: center;
+
+            &--smallContainer {
+
+                h3 {
+                    font-size: 2.4rem;
+                    font-family: Poppins-Bold;
+                    color: $color-blanco-roto;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-family: Poppins-Light;
+                    color: $color-gris-normal;
+                }
+            }
+        }
+    }
+}
+
+.formularioRegistroAfiliados {
+
+    &__container {
+
+        h3 {
+            font-size: 3.3rem;
+            font-family: Poppins-Bold;
+            color: $color-blanco-roto;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-family: Poppins-Light;
+            color: $color-blanco-roto;
+        }
+
+        form {
+            
+
+            h3 {
+                text-align: center;
+                font-size: 3.8rem;
+            }
+
+            ::placeholder {
+                text-align: left;
+                font-size: 1.6rem;
+                font-family: Poppins-Light;
+                color: $color-blanco;
+            }
+
+            .bigLabels {
+                font-size: 1.6rem;
+                font-family: Poppins-Light;
+                color: $color-blanco;
+            }
+
+            select {
+                text-align: left;
+                font-size: 1.5rem;
+                font-family: Poppins-Regular;
+                color: $color-negro-entre-intermedio-y-claro;
+            }
+
+            .inputsCheckerSocialMedia, .inputsCheckerWorks {
+
+                label {
+                    font-size: 1.5rem;
+                    font-family: Poppins-Light;
+                    color: $color-blanco-roto;
+                }
+            }
+
+            input[type="text"], input[type="email"], input[type="number"] {
+                font-size: 1.6rem;
+                font-family: Poppins-Light;
+                color: $color-blanco;
+
+                &:focus {
+                    font-size: 1.6rem;
+                    font-family: Poppins-Light;
+                    color: $color-blanco;
+                }
+            }
+
+            input[type="submit"] {
+                font-size: 1.6rem;
+                font-family: Poppins-Bold;
+                color: $color-negro-entre-intermedio-y-claro;
+            }
+            
+            .compulsoryData {
+                font-size: 1.4rem;
+                font-family: Poppins-Light;
+                color: $color-gris-normal;
+            }
+        }
+    }
+}
+
+.preguntasFrecuentesAfiliados {
+
+    &__container {
+        text-align: center;
+
+        h3 {
+            font-size: 3.8rem;
+            font-family: Poppins-ExtraBold;
+            color: $color-azul-electrico;
+
+            span {
+                color: $color-azul-electrico;
+            }
+        }
+    }
+}
+
+.tab {
+
+    &__label {
+        font-size: 1.6rem;
+        font-family: Poppins-Regular;
+        color: $color-blanco;
+    }
+
+    &__content {
+        font-size: 1.5rem;
+        font-family: Poppins-Light;
+        color: $color-negro-intermedio;
+        text-align: left;
+    }
+}
+
+
+/* -------------------- AFILIADOS PAGE END -------------------- */
+
+/* -------------------- OBRAS PAGE -------------------- */
+
+.obras {
+    
+    button {
+        font-size: 1.5rem;
+        font-family: Poppins-Regular;
+        color: $color-blanco-roto;
+    }
+}
+
+/* -------------------- OBRAS PAGE END -------------------- */
+

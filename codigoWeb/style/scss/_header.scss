@@ -1,0 +1,839 @@
+@import 'variables';
+@import 'mixins';
+
+/* LANDING PAGE HEADER */
+
+.mainBannerWithoutBannerOnlyNav.stickyWithoutBannerOnlyNav {
+  transition: 0.3s;
+  border: none;
+  background-color: rgba(1, 1, 1, 0.98);
+}
+
+.nav.stickyWithBackgroundImage {
+  width: 188rem;
+  padding: 0 33.3rem;
+  transition: 0.3s;
+  border: none;
+  background-color: rgba(1, 1, 1, 0.98);
+}
+
+.mainBanner__video1 {
+  opacity: 1;
+}
+
+.mainBanner__video2 {
+  opacity: 0;
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  max-width: 175rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: $padding-container;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.banner-description_underline__myjqH {
+  stroke: $color-azul-electrico;
+}
+
+.mainBanner {
+  width: 100%;
+  height: 100vh;
+  min-height: 60rem;
+  max-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+
+  &--big {
+    min-height: 80rem;
+    max-height: 80vh;
+    padding-top: 8rem;
+  }
+
+  &--small {
+    max-height: 70vh;
+    padding-top: 10rem;
+
+    p {
+      &:nth-child(1) {
+        margin-top: 2rem;
+        padding: 0 8rem;
+      }
+    }
+  }
+
+  &--big, &--small {
+    display: grid;
+    grid-template-rows: 3rem 1fr;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 7rem;
+      width: 100%;
+      height: 92%;
+
+      &--smallContainer {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 80%;
+
+        &--textContainer {
+          display: grid;
+          grid-template-rows: 2.2fr 1.1fr 0.8fr;
+          width: 65%;
+          height: 100%;
+          z-index: 100;
+
+          &-description {
+            margin-top: 3rem;
+            padding: 0 2rem;
+          }
+
+          &-button {
+            margin-top: 5rem;
+
+            a {
+              padding: 1.2rem 1.6rem;
+              border-radius: 4px;
+              text-decoration: none;
+              background-color: $color-azul-electrico;
+              transition: 0.5s;
+
+              &:hover {
+                transition: 0.5s;
+                cursor: pointer;
+                background-color: rgba(42, 67, 193, 0.7);
+              }
+            }
+
+            p {
+              margin-top: 1.8rem;
+            }
+          }
+
+        }
+
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(180deg,
+          rgba(14, 14, 14, 1) 0%,
+          rgba(14, 14, 14, 0) 100%);
+      background-size: cover;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-negro;
+      opacity: 40%;
+      background-size: cover;
+      z-index: -2;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,
+        rgba(14, 14, 14, 1) 0%,
+        rgba(14, 14, 14, 0) 100%);
+    backdrop-filter: blur(0.1rem);
+    background-size: cover;
+    z-index: 2;
+  }
+
+  &__water,
+  &__fire,
+  &__air,
+  &__earth,
+  &__magic {
+    width: 100%;
+    height: 100vh;
+    min-height: 60rem;
+    max-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: $gradiente-linear-arriba-y-abajo-mas-negro;
+      background-size: cover;
+      z-index: 3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $color-negro;
+      opacity: 30%;
+      z-index: 2;
+    }
+  }
+
+  /* AIR */
+
+  &__air {
+    background-image: url(../../media/courses/mystic_pack/air/magicvolumetricclouds1.jpg);
+    background-size: cover;
+  }
+
+}
+
+.mainBannerWithBackgroundImage {
+  position: relative;
+  transform: 0.3s;
+  
+  &--image {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    opacity: 30%;
+    background-size: cover;
+    z-index: 10;
+}
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-image: linear-gradient(180deg, rgb(14, 14, 14) 0%, rgba(14, 14, 14, 0) 100%);
+//     background-size: cover;
+//     opacity: 0.8;
+//     z-index: 10;
+// }
+}
+
+.mainBannerWithoutBannerOnlyNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: $color-negro;
+  border-bottom: 2px solid $color-azul-electrico;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+.letterHeaderShadow {
+  text-shadow: 4px 4px 16px rgba(0,0,0,0.33);
+}
+
+.logIn { 
+  background-color: $color-azul-electrico;
+
+  &:hover {
+    background-color: rgba(42, 67, 193, 0.7);
+  }
+
+  &--fire {
+    background-color: $color-rojo;
+  }
+
+  &--water {
+    background-color: $color-frozen2;
+  }
+
+  &--air {
+    background-color: $color-air1;
+  }
+
+  &--earth {
+    background-color: $color-earth1;
+  }
+
+  &--magic {
+    background-color: $color-magic1;
+  }
+}
+
+.logIn, .logIn--fire, .logIn--water, .logIn--air, .logIn--earth, .logIn--magic {
+  padding: 0.8rem 1.8rem;
+  border-radius: 4px;
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10rem;
+  width: 188rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 33.3rem;
+  gap: 3rem;
+  transition: 0.3s;
+  z-index: 1000;
+
+  &__logo img {
+    width: 7rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45%;
+
+    &--list1 {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+    }
+
+    &--list2 {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      list-style: none;
+    }
+
+    &--list1,
+    &--list2 {
+
+      a {
+        text-decoration: none;
+      }
+
+      &--item {
+
+        svg {
+          margin-left: 0.2rem;
+        }
+      }
+
+    }
+
+    &--list1 {
+      height: 100%;
+
+      &--item {
+        transition: 0.5s;
+        margin-top: 2.3rem;
+        padding-bottom: 2.3rem;
+      }
+
+      a {
+        display: inline-flex;
+        flex-direction: column;
+        color: $color-blanco;
+      }
+
+    }
+
+    &--list2 {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      list-style: none;
+      color: $color-blanco-roto;
+    }
+  }
+
+  &__closed1 {
+
+    &__list1 {
+      margin-top: 18rem;
+    }
+  }
+
+  &__closed2 {
+
+    &__list1 {
+      margin-top: 13rem;
+    }
+  }
+
+  &__closed3 {
+
+    &__list1 {
+      margin-top: 13rem;
+    }
+  }
+
+  &__closed1,
+  &__closed2,
+  &__closed3 {
+
+    &__list1, &__list1--fire {
+      position: absolute;
+      width: 25rem;
+      padding: 2rem;
+      border-radius: 6px;
+      background-color: $color-negro-mas-claro;
+      border: 1px solid $color-gris-mas-oscuro;
+      gap: 1rem;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s;
+
+      a {
+        color: $color-blanco-roto;
+        width: 100%;
+        padding: 1rem;
+        transition: 0.3s;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &:hover {
+          background-color: $color-azul-electrico;
+          border-radius: 5px;
+          transition: 0.3s;
+
+          &::after {
+            content: ">";
+          }
+        }
+      }
+     
+    }
+  }
+
+
+}
+
+.h-3 {
+  height: 0.9rem;
+  color: $color-blanco-roto;
+  transition: 0.3s;
+}
+
+.h-4 {
+  padding-top: 0.2rem;
+  height: 1.7rem;
+  color: $color-azul-electrico;
+}
+
+.l-1 {
+  color: $color-blanco-roto;
+}
+
+.afiliadosGlow {
+  margin-left: 1.5rem;
+}
+
+.glow {
+  padding: 0.8rem 2.5rem;
+  background-size: 250%;
+  background-position: 0% 50%;
+  border-radius: 30px;
+  margin-left: 0.1rem;
+  background: transparent;
+  transition: 0.5s;
+
+  &__water,
+  &__fire,
+  &__air,
+  &__earth,
+  &__magic {
+    padding: 0.8rem 2.5rem;
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 30px;
+    margin-left: 0.1rem;
+    background: transparent;
+    transition: 0.5s;
+
+    &:hover {
+      padding: 0.8rem 2.5rem;
+      background-size: 250%;
+      background-position: 0% 50%;
+      border-radius: 3rem;
+      transition: 0.5s;
+    }
+
+    &__item1 {
+      padding: 0.8rem 2.5rem;
+      background-size: 250%;
+      background-position: 0% 50%;
+      border-radius: 3rem;
+      margin-left: 0rem;
+      transition: background-position 0.5s;
+
+      &:hover {
+        background-position: -15rem 0;
+        transition: background-position 0.5s;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  /* WATER */
+
+  &__water {
+
+    &:hover {
+      background: $color-frozen1;
+    }
+
+    &__item1 {
+      background: $gradiente-tres-azules;
+    }
+  }
+
+  /* FIRE */
+
+  &__fire {
+
+    &:hover {
+      background: $color-rojo;
+    }
+
+    &__item1 {
+      background: $gradiente-tres-colores-rojizos;
+    }
+  }
+
+  /* AIR */
+
+  &__air {
+
+    &:hover {
+      background: $color-air1;
+    }
+
+    &__item1 {
+      background: $gradiente-dos-air;
+    }
+  }
+
+  /* EARTH */
+
+  &__earth {
+
+    &:hover {
+      background: $color-earth1;
+    }
+
+    &__item1 {
+      background: $gradiente-tres-earth;
+    }
+  }
+
+  /* MAGIC */
+
+  &__magic {
+
+    &:hover {
+      background: $color-magic1;
+    }
+
+    &__item1 {
+      background: $gradiente-tres-magic;
+    }
+  }
+
+  &:hover {
+    padding: 0.8rem 2.5rem;
+    background: $color-azul-electrico;
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 3rem;
+    transition: 0.5s;
+  }
+
+  &__item1 {
+    padding: 0.8rem 2.5rem;
+    background: $gradient-dos-azules;
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 3rem;
+    margin-left: 0rem;
+    transition: background-position 0.5s;
+
+    &:hover {
+      background-position: -15rem 0;
+      transition: background-position 0.5s;
+      cursor: pointer;
+    }
+
+  }
+
+  &__item2 {
+    padding: 0.8rem 2.5rem;
+    border: 2px solid $color-azul-electrico;
+    border-radius: 3rem;
+    margin-left: -1rem;
+    transition: 0.5s;
+
+    &:hover {
+      transition: 0.5s;
+      background-color: $color-azul-electrico;
+    }
+  }
+}
+
+/* HERO CONTAINER */
+
+.mainBanner {
+  &__container {
+    position: relative;
+    max-width: 100rem;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    align-items: center;
+    padding-top: 9rem;
+    padding-bottom: 10rem;
+    z-index: 10;
+  }
+
+  &__gridLetters {
+    max-width: 100rem;
+    display: grid;
+    grid-auto-rows: max-content;
+  }
+
+  &__title {
+    justify-self: start;
+  }
+
+  &__title2 {
+    margin-top: -4.2rem;
+    padding: 0 2rem;
+    background-image: linear-gradient(90deg,
+        rgba(42, 67, 193, 0.8) 0%,
+        rgba(80, 149, 194, 0.8) 62%,
+        rgba(91, 202, 171, 0.8) 100%);
+    background-size: 500% 500%;
+    justify-self: start;
+    margin-left: 1.3vw;
+    z-index: 2;
+    animation: AnimatedGradient 5s infinite linear;
+  }
+
+  &__title3 {
+    margin-top: -4rem;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #fff;
+    justify-self: start;
+  }
+
+  &__title4,
+  &__title5 {
+    display: none;
+    margin-top: -4rem;
+    -webkit-text-stroke-width: 0.2rem;
+    -webkit-text-stroke-color: #fff;
+    justify-self: start;
+  }
+
+  &__signature {
+    width: 20rem;
+    height: 8.5rem;
+    margin-top: -4rem;
+    justify-self: end;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__paragraph {
+    width: 95%;
+    text-align: center;
+    margin-top: 2.8rem;
+  }
+}
+
+.buttonMore__info {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  font-family: Poppins-Light;
+  margin-top: 6rem;
+  padding: 1rem 3.8rem;
+  background: radial-gradient(circle,
+      rgba(42, 67, 193, 0.8) 22%,
+      rgba(80, 149, 194, 0.8) 71%,
+      rgba(91, 202, 171, 0.8) 100%);
+  background-size: 250%;
+  background-position: 0% 50%;
+  border-radius: 30px;
+  transition: 0.5s;
+
+  &:hover {
+    background-position: -18rem 0;
+    transition: background-position 0.5s,
+      radial-gradient(circle,
+        rgba(42, 67, 193, 0.95) 22%,
+        rgba(80, 149, 194, 0.95) 71%,
+        rgba(91, 202, 171, 0.95) 100%) 0.5s;
+    cursor: pointer;
+  }
+}
+
+
+/* --- END LANDING PAGE HEADER --- */
+
+/* --- QUIENES SOMOS HEADER --- */
+
+.mainBannerQuienesSomos {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%);
+    background-size: cover;
+    z-index: 2;
+  }
+
+}
+
+
+/* --- QUIENES SOMOS HEADER END --- */
+
+/* --- CURSOS HEADER --- */
+
+
+.mainBannerCursos {
+  width: 100%;
+  height: 68rem;
+  position: relative;
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+  background-image: url(../../media/courses/mystic_pack/earth/plannetBanner.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}
+
+#cursosLink:hover .h-3,
+#profesoresLink:hover .h-3,
+#quienSomosLink:hover .h-3 {
+  rotate: 180deg;
+  transition: 0.3s;
+}
+
+/* --- CURSOS HEADER END --- */
+
+/* --- MYSTIC WATER PACKAGE --- */
+
+/* NAV */
+
+/* --- MYSTIC WATER PACKAGE END --- */

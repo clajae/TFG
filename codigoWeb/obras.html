@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="stylesheet" href="./style/css/mainIndex.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FAVICON END -->
+
+    <title>RTEA</title>
+
+    <style>
+        body::-webkit-scrollbar-thumb {
+            background-color: #2A43C1;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MAIN BANNER SECTION -->
+    <header class="mainBannerWithoutBannerOnlyNav">
+
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="./media/icons/rteaLogo.png" alt="principal logo RTEA at header" />
+                </a>
+            </div>
+
+            <div class="nav__lists">
+                <ul class="nav__lists--list1">
+                    <a href="cursos.html">
+                        <li class="nav__lists--list1--item navigationText" id="cursosLink"><a
+                                href="cursos.html">Cursos</a> <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed1__list1">
+                                <li class="nav__closed1__list1--item"><a href="cursos.html">Todos nuestros cursos</a>
+                                </li>
+                                <li class="nav__closed1__list1--item"><a href="cursos.html">Masters</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="nuestroEquipo.html">
+                        <li class="nav__lists--list1--item navigationText" id="profesoresLink"><a
+                                href="nuestroEquipo.html">Profesores</a> <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed2__list1">
+                                <li class="nav__closed2__list1--item"><a href="nuestroEquipo.html">Nuestros
+                                        profesores</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="quienesSomos.html">
+                        <li class="nav__lists--list1--item navigationText" id="quienSomosLink"><a
+                                href="quienesSomos.html">Quienes
+                                Somos</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed3__list1">
+                                <li class="nav__closed3__list1--item"><a href="quienesSomos.html">Conocenos</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="afiliados.html">
+                        <li class="nav__lists--list1--item afiliadosGlow"><b>¡Programa de Afiliados!</b> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4">
+                                <path fill-rule="evenodd"
+                                    d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM21.5 12C21.5 17.2467 17.2467 21.5 12 21.5C6.75329 21.5 2.5 17.2467 2.5 12C2.5 6.75329 6.75329 2.5 12 2.5C17.2467 2.5 21.5 6.75329 21.5 12ZM14.24 9.40745L16.918 9.40755C18.3564 9.4076 18.9545 11.2483 17.7908 12.0939L15.6244 13.668L16.4518 16.2149C16.8963 17.583 15.3305 18.7206 14.1667 17.8752L12.0001 16.3012L9.83355 17.8752C8.66976 18.7206 7.10396 17.583 7.54842 16.2149L8.37585 13.668L6.20942 12.0939C5.04569 11.2483 5.64378 9.4076 7.08226 9.40755L9.76019 9.40745L10.5878 6.86061C11.0324 5.49255 12.9678 5.49255 13.4124 6.86061L14.24 9.40745Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></li>
+                    </a>
+                </ul>
+
+                <ul class="nav__lists--list2">
+                    <li class="nav__lists--list2--item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" height="20" width="20" aria-hidden="true"
+                                class="l-1">
+                                <path fill-rule="evenodd"
+                                    d="M9.35292 2.9388C9.6362 3.22207 9.72307 3.64707 9.57369 4.01879C9.20396 4.93882 9 5.94441 9 7.00009C9 11.4184 12.5817 15.0001 17 15.0001C18.0557 15.0001 19.0613 14.7961 19.9813 14.4264C20.353 14.277 20.778 14.3639 21.0613 14.6472C21.3446 14.9304 21.4314 15.3554 21.2821 15.7272C19.8051 19.4024 16.2071 22.0001 12 22.0001C6.47715 22.0001 2 17.5229 2 12.0001C2 7.79297 4.59771 4.19499 8.27293 2.71803C8.64465 2.56864 9.06964 2.65552 9.35292 2.9388ZM7.08558 5.68681C5.20699 7.15133 4 9.43546 4 12.0001C4 16.4184 7.58172 20.0001 12 20.0001C14.5646 20.0001 16.8488 18.7931 18.3133 16.9145C17.8833 16.971 17.4449 17.0001 17 17.0001C11.4772 17.0001 7 12.5229 7 7.00009C7 6.55519 7.02911 6.1168 7.08558 5.68681Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a></li>
+                    <li class="nav__lists--list2--item">|</li>
+                    <a href="backend/login.php" target="_blank">
+                        <li class="nav__lists--list2--item logIn"><b>Iniciar sesión</b></li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- FIN MAIN BANNER SECTION -->
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- OBRAS SECTION -->
+        <section class="obras">
+            <div class="obrasPage__grid">
+                <svg class="obrasPage__grid-svg" width="982" height="786" viewBox="0 0 982 786" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M490 401V537H348.5V401H490ZM490 785.5V676H348.5V785.5H347.5V676H206V785.5H205V676H63.5V785.5H62.5V676H0V675H62.5V538H0V537H62.5V401H0V400H62.5V258H0V257H62.5V116H0V115H62.5V0H63.5V115L205 115V0H206V115L347.5 115V0H348.5V115H490V0H491V115L627.5 115V0H628.5V115H765V0H766V115L902.5 115V0H903.5V115H982V116H903.5V257H982V258H903.5V400H982V401H903.5V537H982V538H903.5V675H982V676H903.5V785.5H902.5V676H766V785.5H765V676H628.5V785.5H627.5V676H491V785.5H490ZM902.5 675V538H766V675H902.5ZM902.5 537V401H766V537H902.5ZM902.5 400V258H766V400H902.5ZM902.5 257V116L766 116V257H902.5ZM627.5 675H491V538H627.5V675ZM765 675H628.5V538H765V675ZM348.5 675H490V538H348.5V675ZM347.5 538V675H206V538H347.5ZM205 538V675H63.5V538H205ZM765 537V401H628.5V537H765ZM765 400V258H628.5V400H765ZM765 257V116H628.5V257H765ZM347.5 401V537H206V401H347.5ZM205 401V537H63.5V401H205ZM627.5 401V537H491V401H627.5ZM627.5 116L491 116V257H627.5V116ZM627.5 258H491V400H627.5V258ZM63.5 257V116L205 116V257H63.5ZM63.5 400V258H205V400H63.5ZM206 116V257H347.5V116L206 116ZM348.5 116V257H490V116H348.5ZM206 400V258H347.5V400H206ZM348.5 258V400H490V258H348.5Z" fill="url(#paint0_radial_1_8)" />
+                  <defs>
+                    <radialGradient id="paint0_radial_1_8" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(491 392.75) rotate(90) scale(513.25 679.989)">
+                      <stop stop-color="white" stop-opacity="0.2" />
+                      <stop offset="1" stop-color="#000" stop-opacity="0" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+                <div class="blurObras"></div>
+              </div>
+              
+              <div class="obrasPage__title">
+                <p>Ups, estamos </p>
+                <p>Haciendo obras,</p>
+                <p>Lo sentimos</p>
+              </div>
+              
+              <a href="cursos.html" class="button first"><button>Cursos</button><span></span></a>
+              <a href="index.html" class="button sec"><button>Inicio</button><span></span></a>
+              <a href="nuestroEquipo.html" class="button third"><button>Nuestro equipo</button><span></span></a>
+              
+              <svg class="top-right" width="219" height="147" viewBox="0 0 219 147" fill="none">
+                <rect opacity="0.18" x="10.4252" y="75.8326" width="7.50168" height="7.50168" transform="rotate(110.283 10.4252 75.8326)" fill="#686868" stroke="white" stroke-width="1.22683" />
+                <rect opacity="0.18" x="180.869" y="138.825" width="7.50168" height="7.50168" transform="rotate(110.283 180.869 138.825)" fill="#686868" stroke="white" stroke-width="1.22683" />
+                <rect x="69.4713" y="-91.84" width="180.485" height="180.485" transform="rotate(20.2832 69.4713 -91.84)" stroke="white" stroke-opacity="0.1" stroke-width="1.22683" />
+              </svg>
+              
+              <svg class="bottom-left" width="232" height="191" viewBox="0 0 232 191" fill="none">
+                <circle cx="50.5685" cy="172.432" r="112.068" stroke="white" stroke-opacity="0.09" />
+                <g opacity="0.1">
+                  <path d="M26.4932 5.20547L228.856 172.432" stroke="#D9D9D9" />
+                  <rect x="22.4384" y="0.5" width="6.15753" height="6.15753" fill="#686868" stroke="white" />
+                  <rect x="224.801" y="169.027" width="6.15753" height="6.15753" fill="#686868" stroke="white" />
+                  <circle cx="121.819" cy="83.613" r="1.7774" fill="#323232" stroke="white" />
+                </g>
+              </svg>
+        </section>
+        <!-- FIN OBRAS SECTION -->
+
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="footer__container">
+            <section class="footer__container__bigInfo">
+                <div class="footer__container__bigInfo__leftInfo">
+                    <img src="./media/icons/rteaLogo.png" alt="RTEA School logo footer">
+                    <p>Europa <b>·</b> Latinoamérica</p>
+                </div>
+                <div class="footer__container__bigInfo__rightInfo">
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Acerca de la empresa</p>
+                        <ul>
+                            <li><a href="quienesSomos.html">¿Qué es RTEA?</a></li>
+                            <li><a href="nuestroEquipo.html">Nuestro equipo</a></li>
+                            <li><a href="nuestroEquipo.html">Nuestros profesores</a></li>
+                            <li><a href="quienesSomos.html">Nuestros proyectos RTEA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Nuestros productos</p>
+                        <ul>
+                            <li><a href="cursos.html">Nuestros cursos</a></li>
+                            <li><a href="cursos.html">Nuestros masters</a></li>
+                            <li><a href="afiliados.html">Servicio de afiliados</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Conecta con RTEA</p>
+                        <ul>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Acceso a las clases</a></li>
+                            <li><a href="login.html">Portal del estudiante</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Áreas de estudio</p>
+                        <ul>
+                            <li><a href="cursos.html">Unreal</a></li>
+                            <li><a href="cursos.html">3D Generalist</a></li>
+                            <li><a href="cursos.html">Modelado y texturizado</a></li>
+                            <li><a href="cursos.html">VFX Animation</a></li>
+                            <li><a href="cursos.html">Infoarquitectura</a></li>
+                            <li><a href="cursos.html">Animación</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <aside class="footer__container__smallTermsAndMedia">
+                <div class="footer__container__smallTermsAndMedia--copy">
+                    <p>&copy; VertexBrothers, 2017 - 2024</p>
+                </div>
+                <div class="footer__container__smallTermsAndMedia__socialLinks">
+                    <a href="https://www.instagram.com/vertexbrothers/">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/instagram_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alberto-garcia-gonzalez-498a46201/">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/linkedin_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/vertexbrothers">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/twitter_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.twitch.tv/roadtoenviromentartist">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/twitch_w.PNG" class="twitchIcon" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/@roadtoenviromentartist">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/youtube_w.PNG" class="youtubeIcon" alt="">
+                        </div>
+                    </a>
+                </div>
+            </aside>
+        </section>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./script.js"></script>
+    <script src="./scriptIndex.js"></script>
+</body>
+
+</html>

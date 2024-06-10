@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="50px" viewBox="0 0 84 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon-students</title>
+    <desc>Created with Sketch.</desc>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="afiliados-instituciones" transform="translate(-228.000000, -4546.000000)">
+            <g id="por-qué" transform="translate(100.000000, 4450.000000)">
+                <g id="1" transform="translate(0.000000, 96.000000)">
+                    <g id="icon-students">
+                        <g transform="translate(128.000000, 0.000000)">
+                            <g id="Group">
+                                <circle id="Oval" fill="#FFEFAB" fill-rule="nonzero" cx="25" cy="25" r="25"></circle>
+                                <circle id="Oval" fill="#031B4E" fill-rule="nonzero" cx="18.87" cy="14.22" r="1.98"></circle>
+                                <circle id="Oval" fill="#031B4E" fill-rule="nonzero" cx="31.13" cy="14.22" r="1.98"></circle>
+                                <path d="M22.92,15.95 C23.24,16.88 24.12,17.51 25.1,17.48 C26.03,17.46 26.87,16.84 27.17,15.95" id="Path" stroke="#031B4E" stroke-width="1.22" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M29.02,49.68 C27.71,49.89 26.37,50 25,50 C11.19,50 0,38.81 0,25 C0,18.55 2.44,12.67 6.45,8.24 C6.39,8.39 2.59,14.4 2.93,22.57 C3.4,33.99 10.01,48.72 29.02,49.68 Z" id="Path" fill="#EFDA84" fill-rule="nonzero"></path>
+                            </g>
+                            <g id="Group-2" transform="translate(33.100000, 0.000000)">
+                                <circle id="Oval" fill="#B7D9FF" fill-rule="nonzero" cx="25.01" cy="25" r="25"></circle>
+                                <circle id="Oval" fill="#031B4E" fill-rule="nonzero" cx="18.88" cy="14.22" r="1.98"></circle>
+                                <circle id="Oval" fill="#031B4E" fill-rule="nonzero" cx="31.13" cy="14.22" r="1.98"></circle>
+                                <path d="M22.93,15.95 C23.25,16.88 24.13,17.51 25.11,17.48 C26.04,17.46 26.88,16.84 27.18,15.95" id="Path" stroke="#031B4E" stroke-width="1.22" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M29.02,49.68 C27.71,49.89 26.37,50 25,50 C11.19,50 2.18491891e-13,38.81 2.18491891e-13,25 C2.18491891e-13,18.55 2.44,12.67 6.45,8.24 C6.39,8.39 2.59,14.4 2.93,22.57 C3.4,33.99 10.01,48.72 29.02,49.68 L29.02,49.68 Z" id="Path" fill="#8FBEEF" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

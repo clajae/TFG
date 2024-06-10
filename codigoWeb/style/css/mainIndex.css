@@ -1,0 +1,9 @@
+:root {
+    --slideNovedades-transform: 0;
+    --transitionNovedades: transform 0.5s ease;
+}
+
+.nuestrasUltimasNovedades__container--sliderMain {
+    transform: translateX(var(--slideNovedades-transform));
+    transition: var(--transitionNovedades);
+}

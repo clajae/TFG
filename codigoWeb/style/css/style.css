@@ -1,0 +1,1954 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: auto;
+    scrollbar-color: #2A43C1 #292929;
+    box-sizing: border-box;
+}
+
+/* SCROLLBAR CUSTOM */
+
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #292929;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #2A43C1;
+    border-radius: 2px;
+  }
+  
+  *::-moz-scrollbar {
+    width: 10px;
+  }
+  
+  *::-moz-scrollbar-track {
+    background: #292929;
+  }
+  
+  *::-moz-scrollbar-thumb {
+    background-color: #2A43C1;
+    border-radius: 2px;
+  }
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* VARIABLES CUSTOM */
+
+:root {
+    --color-azul-electrico: #2A43C1;
+    --color-azul-intermedio: #5095C2;
+    --color-azul-verdoso: #5BCAAB;
+    --color-negro: #0E0E0E;
+    --color-gris-claro: #a1a1a1;
+    --color-gris-mas-claro: #cbcbcb;
+    --color-gris-oscuro: #6a6a6a;
+    --color-blanco-roto: #ebebeb;
+    --color-blanco: #fff;
+    --gradient-tres-azules: linear-gradient(90deg, rgba(42,67,193,1) 0%, rgba(80,149,194,1) 62%, rgba(91,202,171,1) 100%);
+    --gradient-dos-azules: linear-gradient(90deg, rgba(42,67,193,1) 41%, rgba(80,149,194,1) 100%);
+    --gradient-radial-tres-azules: radial-gradient(circle, rgba(42,67,193,1) 22%, rgba(80,149,194,1) 71%, rgba(91,202,171,1) 100%);
+    --padding-container: 100px 0;
+    --text-nav-size: 16px;
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url(../fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-BoldItalic;
+    src: url(../fonts/Poppins-BoldItalic.ttf);
+}
+
+/* ANIMATIONS */
+
+/* SOCIAL MEDIA LATERAL DIV ANIMATION */
+
+@keyframes aparecerSocialMedia {
+    0% {
+        margin-left: 100vw;
+    }
+    100% {
+        margin-left: 96.7vw;
+    }
+}
+
+@keyframes desaparecerSocialMedia {
+    0% {
+        margin-left: 96.7vw;
+        opacity: 100%;
+    }
+    100% {
+        margin-left: 96.7vw;
+        opacity: 0%;
+    }
+}
+
+/* GRADIENT ANIMATION DETAIL MAIN BANNER */
+
+@keyframes AnimatedGradient {
+    0% {
+        background-position: 0 85%;
+    }
+
+    50% {
+        background-position: 100% 20%;
+    }
+
+    100% {
+        background-position: 0% 85%;
+    }
+}
+
+/* ------------------ */
+
+video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1.2s linear;
+    z-index: -10;
+}
+
+.mainBanner__video1 {
+    opacity: 1;
+}
+
+.mainBanner__video2 {
+    opacity: 0;
+}
+
+
+.container {
+    position: relative;
+    width: 95%;
+    max-width: 1750px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.mainBanner {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.mainBanner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(14,14,14,0) 100%);
+    backdrop-filter: blur(0.1rem);
+    background-size: cover;
+    z-index: 2;
+}
+
+/* NAV */
+
+.nav {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav__logo img{
+    width: 79px;
+    padding-top: 23px;
+}
+
+.nav__logo img:hover {
+    cursor: pointer;
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    gap: 2rem;
+}
+
+.glow {
+    padding: 8px 25px;
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 30px;
+    margin-left: -20px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.glow:hover {
+    padding: 8px 25px;
+    background: var(--color-azul-electrico);
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.glow__item1 {
+    padding: 8px 25px;
+    background: var(--gradient-dos-azules);
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 30px;
+    margin-left: 0px;
+    transition: background-position 0.5s;
+}
+
+.glow__item1:hover {
+    background-position: -150px 0;
+    transition: background-position 0.5s;
+    cursor: pointer;
+}
+
+.glow__item2 {
+    padding: 8px 25px;
+    border: 2px solid var(--color-azul-electrico);
+    border-radius: 30px;
+    margin-left: -10px;
+    transition: .5s;
+}
+
+.glow__item2:hover {
+    transition: .5s;
+    background-color: var(--color-azul-electrico);
+}
+
+.nav__links {
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--text-nav-size);
+    font-family: Poppins-Light;
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__items:hover {
+    cursor: pointer;
+}
+
+/* HERO CONTAINER */
+
+.mainBanner__container {
+    position: relative;
+    max-width: 1000px;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    z-index: 10;
+}
+
+.mainBanner__gridLetters {
+    max-width: 1000px;
+    display: grid;
+    grid-auto-rows: max-content;
+}
+
+.mainBanner__title {
+    font-size: 75px;
+    font-family: Poppins-Bold;
+    color: white;
+    justify-self: start;
+}
+
+.mainBanner__title2 {
+    margin-top: -42px;
+    padding: 0 20px;
+    font-size: 68px;
+    font-family: Poppins-BoldItalic;
+    color: white;
+    background-image: linear-gradient(90deg, rgba(42,67,193,0.8) 0%, rgba(80,149,194,0.8) 62%, rgba(91,202,171,0.8) 100%);
+    background-size: 500% 500%;
+    justify-self: start;
+    margin-left: 1.3vw;
+    z-index: 2;
+    animation: AnimatedGradient 5s infinite linear;
+}
+
+.mainBanner__title3 {
+    font-size: 75px;
+    font-family: Poppins-Bold;
+    margin-top: -40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    justify-self: start;
+}
+
+.mainBanner__title4 {
+    display: none;
+    font-size: 75px;
+    font-family: Poppins-Bold;
+    margin-top: -40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    justify-self: start;
+}
+
+.mainBanner__title5 {
+    display: none;
+    font-size: 75px;
+    font-family: Poppins-Bold;
+    margin-top: -40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    justify-self: start;
+}
+
+.mainBanner__signature {
+    width: 200px;
+    height: 85px;
+    margin-top: -40px;
+    justify-self: end;
+}
+
+.mainBanner__signature img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mainBanner__paragraph {
+    width: 95%;
+    text-align: center;
+    font-size: 17px;
+    font-family: Poppins-ExtraLight;
+    color: #fff;
+    margin-top: 28px;
+}
+
+.buttonMore__info {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: Poppins-Light;
+    margin-top: 60px;
+    padding: 10px 38px;
+    background: radial-gradient(circle, rgba(42,67,193,0.8) 22%, rgba(80,149,194,0.8) 71%, rgba(91,202,171,0.8) 100%);
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.buttonMore__info:hover {
+    background-position: -180px 0;
+    transition: background-position 0.5s,
+    radial-gradient(circle, rgba(42,67,193,0.95) 22%, rgba(80,149,194,0.95) 71%, rgba(91,202,171,0.95) 100%) 0.5s;
+    cursor: pointer;
+}
+
+s
+/* RIGHT SOCIAL MEDIA MINI BANNER */
+
+.right__socialMedia {
+    position: fixed;
+    right: 1px;
+    margin-top: -620px;
+    z-index: 500;
+    animation: aparecerSocialMedia 1s;
+    animation-fill-mode: forwards;
+}
+
+.right__socialMedia.oculto {
+    animation: desaparecerSocialMedia .5s;
+    animation-fill-mode: forwards;
+}
+
+.rectangle__socialMedia {
+    height: 376px;
+    width: 53px;
+    background-color: var(--color-blanco);
+    z-index: 101;
+}
+
+.rectangle__socialMedia::before {
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 30px;
+    background-image: url(../media/vectors/vector_3.PNG);
+    opacity: 1;
+    margin-top: -29.4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rectangle__socialMedia::after {
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 30px;
+    background-image: url(../media/vectors/vector_4.PNG);
+    opacity: 1;
+    margin-top: -1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iconsMedia {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.socialMedia_img:hover {
+    cursor: pointer;
+}
+
+.socialTwitter {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/twitter.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialTwitter:hover {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/twitter_b.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialTwitch {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/twitch.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialTwitch:hover {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/twitch_b.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialYoutube {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/youtube.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialYoutube:hover {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/youtube_b.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialInstagram {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/instagram.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialInstagram:hover {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/instagram_b.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialLinkedin {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/likedin.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.socialLinkedin:hover {
+    width: 23px;
+    height: 23px;
+    background-image: url(../media/icons/linkedin_b.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+/* NUESTROS CURSOS SECTION */
+
+.nuestrosCursos_container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding: 100px 0 50px 0;
+    background-color: rgb(8, 8, 8);
+}
+
+.gradientBannerLine__detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient-tres-azules);
+    z-index: 100;
+}
+
+.nuestrosCursos_section {
+    position: relative;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    align-items: center;
+    z-index: 10;
+    width: 95%;
+    max-width: 1750px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nuestrosCursos__article {
+    position: relative;
+    max-width: 1200px;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+}
+
+.sectionTitle__font {
+    font-size: 75px;
+    font-family: Poppins-Bold;
+}
+
+.color__white {
+    color: #fff;
+}
+
+.color__black {
+    color: var(--color-negro)
+}
+
+.color__blue {
+    margin-top: -30px;
+    color: var(--color-azul-electrico);
+}
+
+.mainBanner__signature2 {
+    width: 368px;
+    height: 64px;
+    margin-top: -48px;
+}
+
+.mainBanner__signature2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nuestrosCursos__article p {
+    width: 95%;
+    text-align: center;
+    font-size: 17px;
+    font-family: Poppins-ExtraLight;
+    color: #fff;
+    margin-top: 28px;
+}  
+
+.nuestrosCursos__bigContainer {
+    position: relative;
+    max-width: 1380px;
+    margin-top: 30px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nuestrosCursos__bigContainer a {
+    text-decoration: none;
+}
+
+/* CONTENEDORES INDIVIDUALES DE NUESTROS CURSOS */
+
+.nuestrosCursos__container {
+    margin-top: 50px;
+    width: 400px;
+    height: 740px;
+    background-color: var(--color-blanco-roto);
+    display: grid;
+    grid-auto-rows: max-content;
+    transition: box-shadow 0.3s;
+}
+
+.nuestrosCursos__container:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 19px -6px rgba(0,0,0,0.75);
+}
+
+.cursosContainer__img {
+    height: 300px;
+}
+
+.cursosContainer__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CURSOS CONTAINER INFO */
+
+.cursosContainer__info__mainGrid {
+    height: 420px;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 83px 43px 166px 84px;
+    padding: 0 38px;
+    margin-top: 20px;
+}
+
+/*  CURSOS CONTAINER 1 INFO */
+
+.cursosContainer__info__container1 { 
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: space-around;
+    grid-template-columns: 85% 15%;
+}
+
+.cursosContainer__info__tittle {
+    width: 220px;
+    font-size: 1.3rem;
+    font-family: Poppins-Bold;
+    color: var(--color-negro);
+}
+
+.cursosContainer__info__logo {
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 35px;
+    background-color: var(--color-gris-mas-claro);
+}
+
+.cursosContainer__info__logo img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    padding: 7px 0 0 5px;
+}
+
+/*  CURSOS CONTAINER 2 INFO */
+
+.cursosContainer__info__container2 {
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-content: space-between;
+    grid-template-columns: 32% 67%;
+}
+
+.cursosContainer__info__container2__bigPrice {
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-content: space-between;
+    grid-template-columns: 32% 65%;
+}
+
+.cursosContainer__info__price {
+    font-size: 0.95rem;
+    font-family: Poppins-Bold;
+    color: var(--color-azul-electrico);
+}
+
+.cursosContainer__info__priceDetail {
+    margin-top: 10px;
+    height: 2px;
+    background: var(--gradient-tres-azules);
+}
+
+/*  CURSOS CONTAINER 3 INFO */
+
+.cursosContainer__info__container3 {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 80% 10%;
+    align-content: space-between;
+}
+
+.cursosContainer__info__paragraph {
+    font-size: 0.85rem;
+    font-family: Poppins-Regular;
+    text-align: justify;
+    line-height: 24px;
+    color: var(--color-gris-oscuro);
+}
+
+.cursosContainer__info__platform {
+    font-size: 0.85rem;
+    font-family: Poppins-Bold;
+    color: var(--color-gris-oscuro);
+}
+
+/*  CURSOS CONTAINER 4 INFO */
+
+.cursosContainer__info__container4 {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 85%;
+    align-content: end;
+}
+
+.cursosContainer__info__developerPlatform img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* NUESTROS PROYECTOS */
+
+.nuestrosProyectos_container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    padding: var(--padding-container);
+    background-color: #fff;
+}
+
+.gradientBannerLine__detail1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient-tres-azules);
+    z-index: 100;
+}
+
+.nuestrosProyectos_section {
+    position: relative;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    align-items: center;
+    z-index: 10;
+    width: 95%;
+    max-width: 1750px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nuestrosProyectos__article {
+    position: relative;
+    max-width: 1200px;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+}
+
+.nuestrosProyectos__signature {
+    width: 391px;
+    height: 44px;
+    margin-top: -38px;
+}
+
+.nuestrosProyectos__article p {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-family: Poppins-Regular;
+    color: var(--color-negro);
+    margin-top: 28px;
+}  
+
+.sectionTitle__font {
+    font-size: 75px;
+    font-family: Poppins-Bold;
+}
+
+.nuestrosProyectos__bigContainer {
+    position: relative;
+    max-width: 1380px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* CONTENEDORES INDIVIDUALES DE NUESTROS PROYECTOS */
+
+.nuestrosProyectos__container__mainTittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 165px;
+    height: 45px;
+    top: -32px;
+    left: -30px;
+    background-color: var(--color-azul-electrico);
+    z-index: 101;
+}
+
+.nuestrosProyectos__container__mainTittle__tittle {
+    font-size: 1rem;
+    font-family: Poppins-Light;
+    color: #fff;
+}
+
+.nuestrosProyectos__container {
+    position: relative;
+    margin-top: 50px;
+    width: 535px;
+    height: 605px;
+    display: grid;
+    grid-auto-rows: max-content;
+}
+
+.nuestrosProyectos__topContainer {
+    position: relative;
+    height: 330px;
+}
+
+/* CONTENEDOR INDIVIDUAL 1 */
+
+.nuestrosProyectos__container__mainPart {
+    position: relative;
+}
+
+.nuestrosProyectos__container__mainPart__texture {
+    width: 92%;
+    height: 87%;
+    background-color: var(--color-gris-mas-claro);
+    background-image: url(../media/banners/texture-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nuestrosProyectos__container__mainPart__image {
+    position: absolute;
+    bottom: 15px;
+    left: 32px;
+    width: 94%;
+    height: 87%;
+    z-index: 100;
+}
+
+.nuestrosProyectos__container__mainPart__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* PARTE INFERIOR CONTENEDOR INDIVIDUAL */
+
+.nuestrosProyectos__bottomContainer {
+    display: grid;
+    grid-template-rows: 30px 224px;
+    padding-left: 32px;
+    margin-top: 20px;
+}
+
+.nuestrosProyectos__bottomContainer__info1 {
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-content: space-between;
+    grid-template-columns: 32% 67%;
+}
+
+.nuestrosProyectos__bottomContainer__info1__big {
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-content: space-between;
+    grid-template-columns: 38% 62%;
+}
+
+.nuestrosProyectos__bottomContainer__tittle {
+    font-size: 0.80rem;
+    font-family: Poppins-Light;
+    color: var(--color-azul-electrico);
+}
+
+.nuestrosProyectos__bottomContainer__tittle b {
+    color: var(--color-gris-claro);
+    font-weight: normal;
+}
+
+.nuestrosProyectos__bottomContainer__tittleDetail {
+    margin-top: 8px;
+    height: 2px;
+    background: var(--gradient-tres-azules);
+}
+
+.nuestrosProyectos__bottomContainer__info2 {
+    display: grid;
+    grid-auto-columns: 100%;
+    justify-content: space-between;
+    grid-template-rows: 22% 67%;
+}
+
+.nuestrosProyectos__bottomContainer__info__tittle {
+    font-size: 1.2rem;
+    font-family: Poppins-Bold;
+    color: var(--color-negro);
+} 
+
+.nuestrosProyectos__bottomContainer__info__paragraph {
+    font-size: 0.9rem;
+    text-align: justify;
+    font-family: Poppins-Regular;
+    color: var(--color-negro);
+}
+
+/* CONTENEDOR DE BOTÓN MÁS INFO INFERIOR */
+
+.nuestrosProyectos__buttonContainer {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    z-index: 10;
+    width: 95%;
+    height: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nuestrosProyectos__buttonMore__info {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: Poppins-Light;
+    padding: 10px 38px;
+    background: radial-gradient(circle, rgba(42,67,193,0.8) 22%, rgba(80,149,194,0.8) 71%, rgba(91,202,171,0.8) 100%);
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.nuestrosProyectos__buttonMore__info:hover {
+    background-position: -180px 0;
+    transition: background-position 0.5s,
+    radial-gradient(circle, rgba(42,67,193,0.95) 22%, rgba(80,149,194,0.95) 71%, rgba(91,202,171,0.95) 100%) 0.5s;
+    cursor: pointer;
+}
+
+/* MENTORIAS CONTENEDOR */
+
+.mentorias_container__link {
+    text-decoration: none;
+}
+
+.mentorias_container {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 118px 0 100px 0;
+    padding: var(--padding-container);
+    background-image: url(../media/banners/group2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mentorias_section {
+    position: relative;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-items: center;
+    justify-content: start;
+    z-index: 10;
+    width: 95%;
+    max-width: 1100px;
+    overflow: hidden;
+    margin: -38px auto 0 auto;
+}
+
+.mentorias_section__title {
+    font-size: 75px;
+    font-family: Poppins-Bold;
+    color: var(--color-azul-electrico);
+    justify-self: start;
+}
+
+.mentorias_section__title b {
+    position: absolute;
+    height: 85px;
+    padding: 0 20px 96px 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 68px;
+    font-family: Poppins-Bold;
+    color: white;
+    background-image: linear-gradient(90deg, rgba(42,67,193,0.8) 0%, rgba(80,149,194,0.8) 62%, rgba(91,202,171,0.8) 100%);
+    background-size: 500% 500%;
+    justify-self: start;
+    z-index: 2;
+    animation: AnimatedGradient 5s infinite linear;
+}
+
+.mentorias_section__title3 {
+    font-size: 75px;
+    font-family: Poppins-Bold;
+    margin-top: -40px;
+    color: var(--color-azul-electrico);
+    justify-self: start;
+}
+
+.mentorias_section__title4 {
+    font-size: 75px;
+    font-family: Poppins-Bold;
+    margin-top: -40px;
+    color: var(--color-azul-electrico);
+    justify-self: start;
+}
+
+.mentorias_section__signature {
+    width: 200px;
+    height: 85px;
+    margin-top: -30px;
+    margin-left: 11vw;
+}
+
+/* CONTENEDOR RESULTADOS DE ESTUDIANTES */
+
+.comentariosEstudiantes_container {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: rgb(8, 8, 8);
+}
+
+.containerTestimonials {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    min-width: 1000px;
+    max-width: 1600px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials-title {
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    height: 100%;
+}
+
+.testimonials__article {
+    position: relative;
+    max-width: 1200px;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+    margin-top: 83px; 
+}
+
+.testimonials__font {
+    font-size: 2.6vw;
+    font-family: Poppins-Bold;
+}
+
+.testimonials__font2 {
+    padding-top: 12px;
+    font-size: 2.6vw;
+    font-family: Poppins-Bold;
+}
+
+.testimonials__signature {
+    width: 8vw;
+    height: 64px;
+    margin-top: -45px;
+    margin-left: 11px;
+}
+
+.testimonials__signature img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.testimonials__article p {
+    padding: 20px 40px 0 50px;
+    font-size: 1rem;
+    font-family: Poppins-Light;
+    color: var(--color-blanco);
+}
+
+.testimonials-content {
+    padding-left: 50px;
+    height: 100%;
+}
+
+.testimonials-item {
+    user-select: none;
+    position: relative;
+    background-color: var(--color-blanco);
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.testimonials-miniLogoBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 20;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #2A43C1;
+}
+
+.testimonials-miniLogoBox img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.testimonials-item .name1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: Poppins-Bold;
+    margin-top: 174px;
+    color: var(--color-azul-electrico);
+    line-height: 1.2;
+}
+
+.testimonials-item .name2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: Poppins-Bold;
+    margin-top: 165px;
+    color: var(--color-azul-electrico);
+    line-height: 1.2;
+}
+
+.testimonials-item .name3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: Poppins-Bold;
+    margin-top: 95px;
+    color: var(--color-azul-electrico);
+    line-height: 1.2;
+}
+
+.testimonials-item .name4 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: Poppins-Bold;
+    margin-top: 120px;
+    color: var(--color-azul-electrico);
+    line-height: 1.2;
+}
+
+.testimonials-item .name5 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: Poppins-Bold;
+    margin-top: 120px;
+    color: var(--color-azul-electrico);
+    line-height: 1.2;
+}
+
+.testimonials-item .name6 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: Poppins-Bold;
+    margin-top: 120px;
+    color: var(--color-azul-electrico);
+    line-height: 1.2;
+}
+
+.testimonials-item .job {
+    font-size: 0.95rem;
+    font-family: Poppins-Regular;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--color-negro);
+}
+
+.testimonials-item p {
+    font-size: 1.1rem;
+    font-family: Poppins-Regular;
+    margin-top: 30px;
+    color: grey;
+}
+
+.testimonials .swiper-pagination {
+    position: relative;
+    margin-top: 25px;
+    width: 100px;
+    padding: 20px 0;
+    bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    background-color: var(--color-blanco);
+}
+
+
+/* CONTENEDOR MÉTODOS DE PAGO */
+
+.metodosPago_container {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 118px 0 100px 0;
+    padding: var(--padding-container);
+    background-color: var(--color-blanco);
+}
+
+.metodosPago_section {
+    position: relative;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-items: center;
+    justify-items: center;
+    z-index: 10;
+    width: 95%;
+    max-width: 1400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.metodosPago__signature3 {
+    width: 265px;
+    height: 64px;
+    margin-top: -54px
+}
+
+.metodosPago__signature3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.metodosPago__article {
+    position: relative;
+    max-width: 1300px;
+    display: grid;
+    grid-auto-rows: max-content;
+    justify-items: center;
+}
+
+.metodosPago__article p {
+    width: 100%;
+    text-align: justify;
+    font-size: 17px;
+    font-family: Poppins-Regular;
+    color: var(--color-negro);
+    margin-top: 28px;
+}
+
+.metodosPago__article p a {
+    text-decoration: underline;
+    color: var(--color-azul-electrico);
+}
+
+.metodosPago__icons {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-auto-rows: max-content;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    width: 25%;
+}
+
+.metodosPago__icon {
+    height: 110px;
+}
+
+.metodosPago__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.metodosPago__icon2 {
+    height: 80px;
+    margin-top: 5px;
+}
+
+.metodosPago__icon2 img {
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
+}
+
+/* FOOTER */
+
+/* CONTENEDOR SOCIAL MEDIA INFERIOR */
+
+.socialMedia_container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: var(--color-azul-electrico);
+}
+
+.socialMedia__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+}
+
+.socialMedia__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--color-negro);
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.socialMedia__icon:hover {
+    transition: .5s;
+    background-color: var(--color-azul-electrico);
+}
+
+.socialMedia__icon img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+/* INFO FOOTER CONTENEDOR */
+
+.footer_container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: var(--color-negro);
+}
+
+.footer_section {
+    position: relative;
+    height: 130px;
+    width: 95%;
+    max-width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.footer_section__big {
+    position: relative;
+    display: grid;
+    grid-template-columns: 52% 0.2% 22% 0.2% 25%;
+    height: 100%;
+    max-width: 1600px;
+    overflow: hidden;
+}
+
+.footer__section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__section1__big {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 100%;
+}
+
+.footer__section1__img {
+    margin-top: 10px;
+    width: 330px;
+    height: 110px;
+    background-image: url(../media/icons/rteaLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer__section1__info {
+    padding-left: 50px;
+}
+
+.footer__section1__info p {
+    text-align: justify;
+    font-size: 0.85rem;
+    font-family: Poppins-Regular;
+    color: var(--color-blanco);
+}
+
+.footer__section2 {
+    background-color: var(--color-azul-electrico);
+}
+
+.footer__section3 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__section3 a {
+    text-decoration: none;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    list-style: none;
+}
+
+.footer__menu li {
+    text-align: justify;
+    font-size: 1rem;
+    font-family: Poppins-Regular;
+    color: var(--color-blanco);
+    transition: .5s;
+}
+
+.footer__menu li:hover {
+    transition: .5s;
+    color: var(--color-azul-electrico);
+}
+
+.footer__section4 {
+    background-color: var(--color-azul-electrico);
+}
+
+.footer__section5 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__section5__buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 80%;
+}
+
+.glow__item3 {
+    padding: 8px 25px;
+    background: var(--gradient-dos-azules);
+    background-size: 250%;
+    background-position: 0% 50%;
+    border-radius: 30px;
+    margin-left: 0px;
+    transition: background-position 0.5s;
+}
+
+.glow__item3:hover {
+    background-position: -150px 0;
+    transition: background-position 0.5s;
+    cursor: pointer;
+}
+
+.glow__item4 {
+    padding: 8px 25px;
+    border: 2px solid var(--color-azul-electrico);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.glow__item4:hover {
+    transition: .5s;
+    background-color: var(--color-azul-electrico);
+}
+
+
+/* MEDIA-QUERY */
+
+/* PRIMER MEDIA QUERY -> 1248px HACIA - ANCHO */
+
+@media (max-width: 1248px) {
+
+    /* NUESTROS CURSOS */
+
+    .nuestrosCursos__article {
+        max-width: 1045px;
+    }
+
+    .nuestrosCursos__bigContainer {
+        max-width: 1045px;
+    }
+
+    /* ACCEDE A TODOS NUESTROS CURSOS  */
+
+    .mentorias_container {
+        background-position: top;
+    }
+
+    /* TESTIMONIOS DE ALUMNOS */
+
+    .containerTestimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 1000px;
+        max-width: 1045px;
+        height: 500px;
+        margin: 0 auto;
+        margin-bottom: 460px;
+    }
+
+    .testimonials__font {
+        font-size: 4rem;
+        font-family: Poppins-Bold;
+    }
+
+    .testimonials__font2 {
+        font-size: 4rem;
+        font-family: Poppins-Bold;
+    }
+
+    .testimonials__signature {
+        margin-top: -45px;
+    }
+
+    .testimonials__signature {
+        width: 35vw;
+        height: 65px;
+        margin-top: -45px;
+        margin-left: 11px;
+    }
+
+    .testimonials__article p {
+        padding: 20px 40px 0 50px;
+        font-size: 1.1rem;
+        font-family: Poppins-Light;
+        text-align: center;
+        color: var(--color-blanco);
+    }
+
+    .testimonials-content {
+        display: flex;
+        margin-top: 68px;
+        padding-left: 0px;
+        height: 100%;
+        width: 90%;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .mentorias_section {
+        margin-top: -38px;
+        margin-left: 100px;
+    }
+
+    /* MÉTODOS DE PAGO */
+
+    .metodosPago_section {
+        max-width: 1045px;
+    }
+
+}
+
+
+/* SEGUNDO MEDIA-QUERY -> 954px */
+
+@media (max-width: 954px) {
+
+    /* BANNER PRINCIPAL  */
+
+    .mainBanner__container {
+        max-width: 750px;
+    }
+
+    .mainBanner__title3 {
+        display: none;
+    }
+
+    .mainBanner__title4, .mainBanner__title5 {
+        display: block;
+    }
+
+    .nuestrosCursos__article {
+        max-width: 750px
+    }
+
+    .sectionTitle__font {
+        font-size: 4rem;
+        font-family: Poppins-Bold;
+    }
+
+    .nuestrosCursos__bigContainer {
+        max-width: 750px;
+    }
+
+    .mainBanner__signature2 {
+        margin-top: -41px;
+    }
+
+    .mainBanner__signature {
+        width: 200px;
+        height: 85px;
+        margin-top: -40px;
+        justify-self: center;
+        margin-left: 10vw;
+    }
+
+    .mainBanner__container {
+        padding-top: 62px;
+    }
+
+    /* ASIDE REDES SOCIALES  */
+
+    .right__socialMedia {
+        display: none;
+    }
+
+    /* TESTIMONIOS ALUMNOS */
+
+    .testimonials {
+        display: flex;
+        align-items: center;
+    }
+
+    .containerTestimonials {
+        min-width: 750px;
+        height: 500px;
+        margin-bottom: 480px;
+    }
+
+    .testimonials__font {
+        font-size: 4rem;
+        font-family: Poppins-Bold;
+    }
+
+    .testimonials__font2 {
+        font-size: 4rem;
+        font-family: Poppins-Bold;
+    }
+
+    .testimonials__signature {
+        margin-top: -45px;
+    }
+
+    .testimonials__signature {
+        width: 35vw;
+        height: 65px;
+        margin-top: -45px;
+        margin-left: 11px;
+    }
+
+    .testimonials-content {
+        margin-top: 68px;
+        height: 100%;
+        width: 80%;
+    }
+
+    /* MÉTODOS DE PAGO */
+
+    .metodosPago_section {
+        max-width: 750px;
+    }
+
+    .metodosPago__signature3 {
+        margin-top: -47px;
+    }
+
+    /* FOOTER  */
+
+    .footer_section__big {
+        grid-template-columns: 37% 0.2% 26% 0.2% 37%;
+    }
+
+    .footer__section1__big {
+        width: 41%;
+        height: 100%;
+    }
+
+    .footer__section1__info {
+        display: none;
+    }
+    
+
+}
+
+
+/* TERCER MEDIA-QUERY -> 780px */
+
+@media (max-width: 780px) {
+
+    /* MÉTODOS DE PAGO */
+
+    .metodosPago_section {
+        max-width: 580px;
+    }
+
+}
+
+
+/* CUARTO MEDIA-QUERY -> 660px */
+
+@media (max-width: 660px) {
+
+    /* ACCEDE A TODOS NUESTROS CURSOS  */
+
+    .mentorias_container {
+        background-image: none;
+    }
+
+    .mentorias_section {
+        margin-top: -20px;
+        margin-left: 80px;
+        padding-top: 30px;
+        margin-bottom: -51px;
+    }
+
+    .mentorias_section__title {
+        font-size: 55px;
+        margin-top: -28px
+    }
+
+    .mentorias_section__title3 {
+        font-size: 55px;
+        margin-top: -28px
+    }
+
+    .mentorias_section__title4 {
+        font-size: 55px;
+        margin-top: -28px
+    }
+
+    .mentorias_section__title b {
+        padding: 0 20px 25px 19px;
+        margin-top: -2px;
+        font-size: 55px;
+    }
+
+    .mentorias_section__signature {
+        width: 200px;
+        height: 85px;
+        margin-top: -14px;
+        margin-left: 11vw;
+    }
+    
+    /* TESTIMONIOS ALUMNOS */
+
+    .containerTestimonials {
+        min-width: 650px;
+    }
+
+    /* MÉTODOS DE PAGO */
+
+    .metodosPago_section {
+        max-width: 580px;
+    }
+
+
+}
+
+/* QUINTO MEDIA-QUERY -> 600px */
+
+@media (max-width: 600px) {
+
+    /* BANNER PRINCIPAL */
+
+    .mainBanner__paragraph {
+        width: 90%;
+    }
+
+    .mainBanner__title, .mainBanner__title2, .mainBanner__title3, .mainBanner__title4, .mainBanner__title5 {
+        font-size: 55px;
+        margin-top: -32px;
+    }
+
+    .nav__link {
+        display: none;
+    }
+
+    .mainBanner__container {
+        padding-top: 118px;
+    }
+
+    /* ULTIMAS NOVEDADES */
+
+    .nuestrosCursos__article {
+        max-width: 420px;
+    }
+
+    .sectionTitle__font {
+        font-size: 3.4rem;
+    }
+
+    .mainBanner__signature2 {
+        margin-top: -45px;
+        width: 234px;
+        height: 64px;
+    }
+
+    /* ACCEDE A NUESTROS CURSOS */
+
+    .mentorias_section {
+        margin-left: 58px;
+    }
+
+    /* TESTIMONONIOS ALUMNOS */
+
+    .containerTestimonials {
+        min-width: 580px;
+    }
+
+    .testimonials__font, .testimonials__font2 {
+        font-size: 3.4rem;
+    }
+
+    .testimonials__article {
+        max-width: 422px;
+    }
+
+    /* METODOS DE PAGO */
+
+    .metodosPago__signature3 {
+        width: 186px;
+    }
+
+    .metodosPago__article {
+        max-width: 420px;
+    }
+    
+    .metodosPago__icons {
+        margin-left: -40px;
+    }
+
+    /* FOOTER */
+
+    .socialMedia__icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 500px;
+        height: 60px;
+    }
+
+    .footer_section__big {
+        grid-template-columns: 40% 0.2% 40%;
+        justify-content: space-around;
+    }
+
+    .footer__section5, .footer__section4 {
+        display: none;
+    }
+
+}

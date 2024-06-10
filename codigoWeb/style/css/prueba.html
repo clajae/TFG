@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./prueba.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-slider">
+        <div class="slider" id="slider">
+
+            <!-- SLIDER #1 -->
+            <div class="slider__section">
+                <div class="trailerProyectDiv">
+                    <iframe width="73vw" height="35vh" src="https://youtube.com/embed/KMtGovKnkEk?si=h0ly172eAfSUg45M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>             
+                </div>
+                <div class="imagenesProyectoContenedor">
+                
+                    <div class="sliderImg">
+                        <div class="slide">
+                            <input type="radio" name="radio-btn1" id="radio1">
+                            <input type="radio" name="radio-btn1" id="radio2">
+                            <input type="radio" name="radio-btn1" id="radio3">
+                
+                            <div class="st first">
+                                <div class="stImg1"></div>
+                                <div class="stImg2"></div>
+                                <div class="stImg3"></div>
+                                <div class="stImg4"></div>
+                                <div class="stImg5"></div>
+                            </div>
+            
+                            <div class="nav-auto">
+                                <div class="a-b1"></div>
+                                <div class="a-b2"></div>
+                                <div class="a-b3"></div>
+                            </div>
+                
+                            <!-- <div class="nav-m">
+                                <label for="radio1" class="m-btn"></label>
+                                <label for="radio2" class="m-btn"></label>
+                                <label for="radio3" class="m-btn"></label>
+                            </div> -->
+                
+                        </div>
+                    </div>
+
+                </div>
+
+                <img src="../media/maquetacionQuienesSomos/duneBackground.PNG" alt="">
+            </div>
+
+            <!-- SLIDER #2 -->
+            <div class="slider__section">
+                <div class="trailerProyectDiv">
+                    <iframe width="73vw" height="35vh" src="https://youtube.com/embed/KMtGovKnkEk?si=h0ly172eAfSUg45M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>             
+                </div>
+                <div class="imagenesProyectoContenedor">
+                
+                    <div class="sliderImg">
+                        <div class="slide">
+                            <input type="radio" name="radio-btn2" id="rad1">
+                            <input type="radio" name="radio-btn2" id="rad2">
+                            <input type="radio" name="radio-btn2" id="rad3">
+                
+                            <div class="st2 sec">
+                                <div class="stImg1"></div>
+                                <div class="stImg2"></div>
+                                <div class="stImg3"></div>
+                                <div class="stImg4"></div>
+                                <div class="stImg5"></div>
+                            </div>
+            
+                            <div class="nav-auto">
+                                <div class="a-b4"></div>
+                                <div class="a-b5"></div>
+                                <div class="a-b6"></div>
+                            </div>
+                
+                            <!-- <div class="nav-m">
+                                <label for="radio1" class="m-btn"></label>
+                                <label for="radio2" class="m-btn"></label>
+                                <label for="radio3" class="m-btn"></label>
+                            </div> -->
+                
+                        </div>
+                    </div>
+
+                </div>
+
+                <img src="../media/maquetacionQuienesSomos/dune2.PNG" alt="">
+            </div>
+
+        </div>
+
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        
+    </div>
+
+</body>
+
+<script>
+
+    const slider = document.querySelector("#slider");
+    let sliderSection = document.querySelectorAll(".slider__section");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];  //OBTENGO EL ÚLTIMO ELEMENTO DE ESTA CADENA
+
+    const btnLeft = document.querySelector("#btn-left");
+    const btnRight = document.querySelector("#btn-right");
+
+    slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+
+    // FUNCIONES PARA QUE SE MUEVAN LOS CONTENEDORES A LA IZQUIERDA O A LA DERECHA
+
+    function Next() {
+        let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
+        slider.style.marginLeft = "-200%";
+        slider.style.transition = "all 0.5s";
+        setTimeout(function() {
+            slider.style.transition = "none";
+            slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+            slider.style.marginLeft = "-100%";
+        }, 500);
+    } 
+
+    function Previous() {
+        let sliderSection = document.querySelectorAll(".slider__section");
+        let sliderSectionLast = sliderSection[sliderSection.length - 1];  
+        slider.style.marginLeft = "0";
+        slider.style.transition = "all 0.5s";
+        setTimeout(function() {
+            slider.style.transition = "none";
+            slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+            slider.style.marginLeft = "-100%";
+        }, 500);
+    } 
+
+    btnRight.addEventListener('click', function() {
+        Next();
+    })
+
+    btnLeft.addEventListener('click', function() {
+        Previous();
+    })
+
+
+    // SLIDER AUTOMATICO DE 3 IMÁGENES
+
+    var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            document.getElementById('rad' + counter).checked=true;
+            counter++;
+            if(counter > 3) {
+                counter = 1;
+            }
+        },5000);
+
+
+</script>
+
+</html>

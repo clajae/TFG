@@ -1,0 +1,154 @@
+$color-negro: rgb(13, 13, 13);
+$color-negro2: rgb(8, 8, 8);
+$color-negro-intermedio: #0E0E0E;
+$color-negro-intermedio2: #292929;
+$color-negro-entre-intermedio-y-claro: #181818;
+$color-negro-mas-claro: rgb(32, 32, 32);
+$color-gris-claro: #a1a1a1;
+$color-gris-mas-claro: #cbcbcb;
+$color-gris-normal: #A5A5A5;
+$color-gris-oscuro: #616161;
+$color-gris-mas-oscuro: #383838;
+$color-blanco-roto: #ebebeb;
+$color-blanco-roto: #ebebeb;
+$color-blanco: #fff;
+$color-amarillo-navigationBar: rgb(223, 223, 126);
+
+/* COURSES VARIABLE COLORS */
+$color-azul-electrico-oscuro: #16225e;
+$color-azul-electrico: #2a43c1;
+$color-azul-electrico-claro: rgb(130, 151, 255);
+$color-azul-intermedio: #5095C2;
+$color-azul-verdoso: #5BCAAB;
+$color-rojo: #bd3924;
+$color-naranja: #e26b2b;
+$color-amarillo: #faf0cc;
+$color-frozen1: #2e6a7a;
+$color-frozen2: #4895ae;
+$color-frozen3: #c3eaff;
+$color-air1: #26746e;
+$color-air2: #6ca796;
+$color-air3: #bfccc7;
+$color-earth1: #3c7a2d;
+$color-earth2: #49a74d;
+$color-earth3: #7bc77d;
+$color-magic1: #a2129a;
+$color-magic2: #c660bf;
+$color-magic3: #ffa4f9;
+
+$color-modulo1-c1: #8964A3;
+$color-modulo1-c2: #356390;
+$color-modulo2-c1: #A00A52;
+$color-modulo2-c2: #59032A;
+$color-modulo3-c1: #6C0E8D;
+$color-modulo3-c2: #210666;
+$color-modulo4-c1: #CD0A0D;
+$color-modulo4-c2: #9A0500;
+$color-modulo5-c1: #D54D6E;
+$color-modulo5-c2: #834C60;
+$color-modulo6-c1: #7DA734;
+$color-modulo6-c2: #3E882C;
+$color-modulo7-c1: #AE36DA;
+$color-modulo7-c2: #0041D4;
+
+
+// $color-azul-electrico: rgba(42, 67, 193, 1);
+// $color-modulo1-c1: rgba(137, 100, 163, 1);
+// $color-modulo1-c2: rgba(53, 99, 144, 1);
+// $color-modulo2-c1: rgba(160, 10, 82, 1);
+// $color-modulo2-c2: rgba(89, 3, 42, 1);
+// $color-modulo3-c1: rgba(108, 14, 141, 1);
+// $color-modulo3-c2: rgba(33, 6, 102, 1);
+// $color-modulo4-c1: rgba(205, 10, 13, 1);
+// $color-modulo4-c2: rgba(154, 5, 0, 1);
+// $color-modulo5-c1: rgba(213, 77, 110, 1);
+// $color-modulo5-c2: rgba(131, 76, 96, 1);
+// $color-modulo6-c1: rgba(125, 167, 52, 1);
+// $color-modulo6-c2: rgba(62, 136, 44, 1);
+// $color-modulo7-c1: rgba(174, 54, 218, 1);
+// $color-modulo7-c2: rgba(0, 65, 212, 1);
+
+$gradiente-negroIntemedio-negroMasClaro: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 72%, rgba(32,32,32,1) 100%);
+
+/* CURSO AVANZADO GRADIENTS */
+$gradiente-lilaClaro-azulClaro: linear-gradient(90deg, rgba(137,100,163,1) 16%, rgba(53,99,144,1) 52%);
+$gradiente-magenta-rojoVino: linear-gradient(90deg, rgba(160,10,82,1) 22%, rgba(89,3,42,1) 52%);
+$gradiente-lila-lilaOscuro: linear-gradient(90deg, rgba(108,14,141,1) 22%, rgba(33,6,102,1) 52%);
+$gradiente-rojoClaro-rojoOscuro: linear-gradient(90deg, rgba(205,10,13,1) 22%, rgba(154,5,0,1) 52%);
+$gradiente-rosaFuerte-rosaPalo: linear-gradient(90deg, rgba(213,77,110,1) 22%, rgba(131,76,96,1) 52%);
+$gradiente-verdeLima-verde: linear-gradient(90deg, rgba(125,167,52,1) 22%, rgba(62,136,44,1) 52%);
+$gradiente-violeta-azulOscuro: linear-gradient(90deg, rgba(174,54,218,1) 22%, rgba(0,65,212,1) 52%);
+
+
+/* SHADERS UNREAL PACKAGE GRADIENTS */
+$gradiente-dos-air: linear-gradient(90deg, rgba(38, 116, 110, 1) 34%, rgba(108, 167, 150, 1) 69%);
+$gradiente-dos-air-al-reves: linear-gradient(90deg, rgba(108, 167, 150, 1) 34%, rgba(38, 116, 110, 1) 69%);
+$gradiente-oscuro-arriba-y-oscuro-abajo: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 1) 100%);
+$gradiente-tres-magic: linear-gradient(90deg, rgba(162, 18, 154, 1) 32%, rgba(198, 96, 191, 1) 70%, rgba(255, 164, 249, 1) 100%);
+$gradiente-tres-magic-al-reves: linear-gradient(90deg, rgba(255, 164, 249, 1) 0%, rgba(198, 96, 191, 1) 30%, rgba(162, 18, 154, 1) 70%);
+$gradiente-tres-earth: linear-gradient(90deg, rgba(60, 122, 45, 1) 32%, rgba(73, 167, 77, 1) 64%, rgba(123, 199, 125, 1) 100%);
+$gradiente-tres-earth-al-reves: linear-gradient(90deg, rgba(123, 199, 125, 1) 0%, rgba(73, 167, 77, 1) 36%, rgba(60, 122, 45, 1) 68%);
+$gradient-dos-azules: linear-gradient(90deg, rgba(42, 67, 193, 1) 41%, rgba(80, 149, 194, 1) 100%);
+$gradient-dos-azules1: linear-gradient(90deg, rgba(42, 67, 193, 1) 41%, rgba(80, 149, 194, 1) 100%);
+$gradient-dos-azules1-al-reves: linear-gradient(90deg, rgba(80, 149, 194, 1) 41%, rgba(42, 67, 193, 1) 100%);
+$gradiente-tres-azules: linear-gradient(90deg, rgba(46, 106, 122, 1) 0%, rgba(72, 149, 174, 1) 47%, rgba(195, 234, 255, 1) 100%);
+$gradiente-tres-azules-empezando-al-reves: linear-gradient(90deg, rgba(195, 234, 255, 1) 0%, rgba(72, 149, 174, 1) 47%, rgba(46, 106, 122, 1) 100%);
+$gradient-radial-tres-azules: radial-gradient(circle, rgba(42, 67, 193, 1) 22%, rgba(80, 149, 194, 1) 71%, rgba(91, 202, 171, 1) 100%);
+$gradiente-tres-colores-rojizos: linear-gradient(90deg, rgba(189, 57, 36, 1) 34%, rgba(226, 107, 43, 1) 69%, rgba(250, 240, 204, 1) 100%);
+$gradiente-dos-colores-rojizos: linear-gradient(90deg, rgba(189, 57, 36, 1) 0%, rgba(226, 107, 43, 1) 100%);
+$gradiente-tres-colores-rojizos-empezando-amarillo: linear-gradient(90deg, rgba(250, 240, 204, 1) 0%, rgba(226, 107, 43, 1) 31%, rgba(189, 57, 36, 1) 66%);
+
+/* BLACK GRADIENTS */
+$gradiente-radial-arriba-y-abajo-negro: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3897934173669467) 19%, rgba(0, 0, 0, 0.3085609243697479) 58%, rgba(0, 0, 0, 1) 100%);
+$gradiente-linear-arriba-y-abajo-mas-negro: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8323704481792717) 20%, rgba(0, 0, 0, 0.711922268907563) 25%, rgba(0, 0, 0, 0.4374124649859944) 31%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0) 77%, rgba(0, 0, 0, 0.7063200280112045) 91%, rgba(0, 0, 0, 0.9472163865546218) 100%);
+$gradiente-lineal-arriba-mas-negro-que-abajo: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 3%, rgba(0, 0, 0, 0.3897934173669467) 29%, rgba(0, 0, 0, 0.5270483193277311) 47%, rgba(0, 0, 0, 0.6306897759103641) 53%, rgba(0, 0, 0, 0.8687850140056023) 62%, rgba(0, 0, 0, 0.9500175070028011) 68%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 1) 100%);
+$gradiente-lineal-arriba-mas-negro-y-abajo-mas-negro: linear-gradient(0deg, rgba(0, 0, 0, 1) 4%, rgba(0, 0, 0, 0.9640231092436975) 15%, rgba(0, 0, 0, 0.8575805322128851) 20%, rgba(0, 0, 0, 0.711922268907563) 27%, rgba(0, 0, 0, 0.4374124649859944) 34%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 56%, rgba(0, 0, 0, 0.44) 64%, rgba(0, 0, 0, 0.6867121848739496) 71%, rgba(0, 0, 0, 0.8575805322128851) 78%, rgba(0, 0, 0, 0.9472163865546218) 83%, rgba(0, 0, 0, 1) 95%);
+
+$padding-container: 10rem 0;
+$padding-containerIndex: 12rem 0;
+$padding-container2: 11.8rem 0 10rem 0;
+$text-nav-size: 1.6rem;
+
+.letter_margin {
+    margin-top: 26px;
+}
+
+/* COLOR VARIABLES CLASSES */
+
+.color__white {
+    color: #fff;
+}
+
+.color__black {
+    color: $color-negro;
+}
+
+.color__blue {
+    margin-top: -3rem;
+    color: $color-azul-electrico;
+}
+
+.color__earth {
+    color: $color-earth1;
+}
+
+.color__air {
+    color: $color-air1;
+}
+
+.color__magic {
+    color: $color-magic1;
+}
+
+.color__red {
+    color: $color-rojo;
+}
+
+.color__water, .color__frozen {
+    color: $color-frozen2;
+
+    &__metodosPago {
+        margin-top: -3rem;
+        color: $color-frozen2;
+    }
+}

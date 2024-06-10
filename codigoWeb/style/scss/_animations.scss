@@ -1,0 +1,155 @@
+@keyframes AnimatedGradient {
+  0% {
+    background-position: 0 85%;
+  }
+
+  50% {
+    background-position: 100% 20%;
+  }
+
+  100% {
+    background-position: 0% 85%;
+  }
+}
+
+/* --- ASIDE LANDING PAGE (RIGHT SIDE) --- */
+
+@keyframes aparecerSocialMedia {
+  0% {
+      margin-left: 100vw;
+      opacity: 0;
+  }
+  100% {
+      margin-left: 96.7vw;
+      opacity: 1;
+  }
+}
+
+@keyframes desaparecerSocialMedia {
+  0% {
+      margin-left: 96.7vw;
+      opacity: 1;
+  }
+  100% {
+      margin-left: 96.7vw;
+      opacity: 0;
+  }
+}
+
+/* --- ASIDE LANDING PAGE (RIGHT SIDE) END --- */
+
+/* --- PULSE ANIMATIONS --- */
+
+@keyframes pulseAnimation {
+  0% {
+    background-color: rgba(42, 67, 193, 1);
+  }
+  50% {
+    background-color: rgba(42, 67, 193, 0.5);
+  }
+  100% {
+    background-color: rgba(42, 67, 193, 1);
+  }
+}
+
+  @keyframes pulseAnimationFire {
+  0% {
+      background-color: rgba(189, 57, 36, 1);
+  }
+  50% {
+      background-color: rgba(189, 57, 36, 0.5);
+  }
+  100% {
+      background-color: rgba(189, 57, 36, 1);
+  }
+}
+
+@keyframes pulseAnimationWater {
+  0% {
+      background-color: rgba(72, 149, 174, 1);
+    }
+    50% {
+      background-color: rgba(72, 149, 174, 0.5);
+    }
+    100% {
+      background-color: rgba(72, 149, 174, 1);
+    }
+}
+
+@keyframes pulseAnimationAir {
+  0% {
+    background-color: rgba(38, 116, 110, 1);
+  }
+  50% {
+    background-color: rgba(38, 116, 110, 0.5);
+  }
+  100% {
+    background-color: rgba(38, 116, 110, 1);
+  }
+}
+
+@keyframes pulseAnimationEarth {
+  0% {
+    background-color: rgba(60, 122, 45, 1);
+  }
+  50% {
+    background-color: rgba(60, 122, 45, 0.5);
+  }
+  100% {
+    background-color: rgba(60, 122, 45, 1);
+  }
+}
+
+@keyframes pulseAnimationMagic {
+  0% {
+    background-color: rgba(162, 18, 154, 1);
+  }
+  50% {
+    background-color: rgba(162, 18, 154, 0.5);
+  }
+  100% {
+    background-color: rgba(162, 18, 154, 1);
+  }
+}
+
+/* --- PULSE ANIMATIONS END --- */
+
+
+/* --- SLIDER INFINITE COURSES SMALL LANDING PAGE --- */
+
+@keyframes deslizarSliderCourses {
+  0% {
+    -webkit-transform: translateX(0);
+      transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-32rem * 7));
+      transform: translateX(calc(-32rem * 7));
+  }
+}
+
+/* --- SLIDER INFINITE COURSES SMALL LANDING PAGE (END) --- */
+
+/* --- ARROW FREQUENT QUESTIONS AFILIADOS PAGE --- */
+
+@-webkit-keyframes bounceArrow {
+  25% {
+      transform: rotate(90deg) translate(.25rem);
+  }
+
+  75% {
+      transform: rotate(90deg) translate(-.25rem);
+  }
+}
+
+@keyframes bounceArrow {
+  25% {
+      transform: rotate(90deg) translate(.25rem);
+  }
+
+  75% {
+      transform: rotate(90deg) translate(-.25rem);
+  }
+}
+
+/* --- ARROW FREQUENT QUESTIONS AFILIADOS PAGE (END) --- */

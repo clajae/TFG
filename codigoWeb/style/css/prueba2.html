@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./prueba.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="sliderAutomatico">
+        <div class="sliderImg">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+    
+                <div class="st first">
+                    <div class="stImg1"></div>
+                    <div class="stImg2"></div>
+                    <div class="stImg3"></div>
+                    <div class="stImg4"></div>
+                    <div class="stImg5"></div>
+                </div>
+
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                </div>
+    
+                <!-- <div class="nav-m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio2" class="m-btn"></label>
+                    <label for="radio3" class="m-btn"></label>
+                </div> -->
+    
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked=true;
+            counter++;
+            if(counter > 3) {
+                counter = 1;
+            }
+        },5000);
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FAVICON END -->
+
+    <title>RTEA</title>
+
+    <style>
+        body::-webkit-scrollbar-thumb {
+        background-color: #3c7a2d;
+        border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MAIN BANNER SECTION -->
+    <header class="mainBanner__earth">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="./media/icons/rteaLogo.png" alt="principal logo RTEA at header" />
+                </a>
+            </div>
+
+            <div class="nav__lists">
+                <ul class="nav__lists--list1">
+                    <a href="cursos.html">
+                        <li class="nav__lists--list1--item navigationText" id="cursosLink"><a
+                                href="cursos.html">Cursos</a> <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed1__list1">
+                                <li class="nav__closed1__list1--item"><a href="cursos.html">Todos nuestros cursos</a>
+                                </li>
+                                <li class="nav__closed1__list1--item"><a href="cursos.html">Masters</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="nuestroEquipo.html">
+                        <li class="nav__lists--list1--item navigationText" id="profesoresLink"><a
+                                href="nuestroEquipo.html">Profesores</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed2__list1">
+                                <li class="nav__closed2__list1--item"><a href="nuestroEquipo.html">Nuestros profesores</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="quienesSomos.html">
+                        <li class="nav__lists--list1--item navigationText" id="quienSomosLink"><a href="quienesSomos.html">Quienes
+                                Somos</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed3__list1">
+                                <li class="nav__closed3__list1--item"><a href="quienesSomos.html">Conocenos</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="afiliados.html">
+                        <li class="nav__lists--list1--item afiliadosGlow--earth"><b>¡Programa de Afiliados!</b> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#3c7a2d" class="h-4">
+                                <path fill-rule="evenodd"
+                                    d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM21.5 12C21.5 17.2467 17.2467 21.5 12 21.5C6.75329 21.5 2.5 17.2467 2.5 12C2.5 6.75329 6.75329 2.5 12 2.5C17.2467 2.5 21.5 6.75329 21.5 12ZM14.24 9.40745L16.918 9.40755C18.3564 9.4076 18.9545 11.2483 17.7908 12.0939L15.6244 13.668L16.4518 16.2149C16.8963 17.583 15.3305 18.7206 14.1667 17.8752L12.0001 16.3012L9.83355 17.8752C8.66976 18.7206 7.10396 17.583 7.54842 16.2149L8.37585 13.668L6.20942 12.0939C5.04569 11.2483 5.64378 9.4076 7.08226 9.40755L9.76019 9.40745L10.5878 6.86061C11.0324 5.49255 12.9678 5.49255 13.4124 6.86061L14.24 9.40745Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></li>
+                    </a>
+                </ul>
+
+                <ul class="nav__lists--list2">
+                    <li class="nav__lists--list2--item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" height="20" width="20" aria-hidden="true"
+                                class="l-1">
+                                <path fill-rule="evenodd"
+                                    d="M9.35292 2.9388C9.6362 3.22207 9.72307 3.64707 9.57369 4.01879C9.20396 4.93882 9 5.94441 9 7.00009C9 11.4184 12.5817 15.0001 17 15.0001C18.0557 15.0001 19.0613 14.7961 19.9813 14.4264C20.353 14.277 20.778 14.3639 21.0613 14.6472C21.3446 14.9304 21.4314 15.3554 21.2821 15.7272C19.8051 19.4024 16.2071 22.0001 12 22.0001C6.47715 22.0001 2 17.5229 2 12.0001C2 7.79297 4.59771 4.19499 8.27293 2.71803C8.64465 2.56864 9.06964 2.65552 9.35292 2.9388ZM7.08558 5.68681C5.20699 7.15133 4 9.43546 4 12.0001C4 16.4184 7.58172 20.0001 12 20.0001C14.5646 20.0001 16.8488 18.7931 18.3133 16.9145C17.8833 16.971 17.4449 17.0001 17 17.0001C11.4772 17.0001 7 12.5229 7 7.00009C7 6.55519 7.02911 6.1168 7.08558 5.68681Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a></li>
+                    <li class="nav__lists--list2--item">|</li>
+                    <a href="backend/login.php" target="_blank">
+                        <li class="nav__lists--list2--item logIn--earth"><b>Iniciar sesión</b></li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="separationBanner"></div>
+        <section class="shaderMainBanner__container container">
+            <div class="shaderMainBanner__gridLetters">
+                <h1 class="shaderMainBanner__title">EARTH</h1>
+                <h2 class="shaderMainBanner__earth__title2">SHADERS</h2>
+                <h2 class="shaderMainBanner__title3">PACKAGE</h2>
+            </div>
+            <div class="shaderMainBanner__signature">
+                <img src="./media/vectors/earthVectorMenorOpacity.PNG" alt="signature detail earth main banner">
+            </div>
+            <div class="shadersMain__article__info__details1">
+                <div class="shadersMain__article__info__details__hours">
+                    <div class="shadersMain__article__info__details__hours__img">
+                        <img src="./media/icons/white_clock.PNG" alt="shader main article details clock image">
+                    </div>
+                    <div class="shadersMain__article__info__details__hours__letters__earth">
+                        <p>10h 45'</p>
+                    </div>
+                </div>
+                <div class="shadersMain__article__info__details__numShaders">
+                    <div class="shadersMain__article__info__details__numShaders__img">
+                        <img src="./media/icons/glifos/earth_white.webp" alt="shader main article details earth glifo image">
+                    </div>
+                    <div class="shadersMain__article__info__details__numShaders__letters__earth">
+                        <p>5 shaders + <span>Bonus</span></p>
+                    </div>
+                </div>
+                <div class="shadersMain__article__info__details__price">
+                    <p class="shadersMain__article__info__details__price__number">64,99€</p>
+                <a href="#">
+                        <div class="shadersMain__article__info__details__price__box__earth">
+                            <div class="shadersMain__article__info__details__price__box__shoppingCar"></div>
+                            <div class="shadersMain__article__info__details__price__box__p">
+                                <p>Añadir al carrito</p>
+                            </div>
+                        </div>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <video muted autoplay id="mainBanner__video1" class="mainBanner__video1">
+            <source src="./media/videos/planet_banner.mp4" type="video/mp4">
+        </video>
+
+        <video muted id="mainBanner__video2" class="mainBanner__video2">
+            <source src="./media/videos/planet_banner.mp4" type="video/mp4">
+        </video>
+
+    </header>
+    <!-- FIN MAIN BANNER SECTION -->
+
+
+    <!-- DETAILS END MAIN BANNER -->
+    <section class="details_endMainBanner"> 
+        <div class="shaderLogo__detail__earth"></div>
+        <div class="gradientBannerLine__detail__earth"></div>
+    </section>
+    <!-- FIN DETAILS END MAIN BANNER -->
+
+
+    <!-- BURNING SHADER MAIN SECTION -->
+    <section class="shadersMain_container__earth">
+
+        <div class="shadersMain_container_bigContainer">
+            <section class="shadersMain_section">
+            <article class="shadersMain__article">
+                    <div class="shadersMain__article__title">
+                        <h2 class="color__white sectionTitle__font">EARTH</h2>
+                        <h2 class="color__earth sectionTitle__font2">SHADER</h2>
+                        <div class="shadersMain__signature2">
+                            <img src="./media/vectors/earthVector.PNG" alt="signature vector earth shader">
+                        </div>
+                    </div>
+                    <div class="shadersMain__article__info">
+                        <h4 class="shadersMain__article__info__h4">Karlunix (ANTIGUO ALUMNO CURSO AVANZADO)</h4>
+                        <p class="shadersMain__article__info__p">“¡El contenido del curso es grande e interesante, abarca desde
+                            lo sencillo a lo complicado y la atención de los profesores es excelente!”</p>
+                        <div class="shadersMain__article__info__details">
+                            <div class="shadersMain__article__info__details__hours">
+                                <div class="shadersMain__article__info__details__hours__img">
+                                    <img src="./media/icons/white_clock.PNG" alt="shader main article details clock image">
+                                </div>
+                                <div class="shadersMain__article__info__details__hours__letters__earth">
+                                    <p>10h 45'</p>
+                                </div>
+                            </div>
+                            <div class="shadersMain__article__info__details__numShaders">
+                                <div class="shadersMain__article__info__details__numShaders__img">
+                                    <img src="./media/icons/glifos/earth_white.webp" alt="shader main article details earth glifo image">
+                                </div>
+                                <div class="shadersMain__article__info__details__numShaders__letters__earth">
+                                    <p>5 shaders + <span>Bonus</span></p>
+                                </div>
+                            </div>
+                            <div class="shadersMain__article__info__details__price">
+                                <p class="shadersMain__article__info__details__price__number">64,99€</p>
+                                <a href="#">
+                                    <div class="shadersMain__article__info__details__price__box__earth">
+                                        <div class="shadersMain__article__info__details__price__box__shoppingCar"></div>
+                                        <div class="shadersMain__article__info__details__price__box__p">
+                                            <p>Añadir al carrito</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="shadersMain__midContainer_container">
+                <div class="shadersMain__midContainer_section">
+                    <section class="shadersMain__midContainer_section_info__earth">
+                        <h3>SHADERS UNREAL 4&5</h3>
+                        <h3>EARTH PACKAGE</h3>
+                        <div class="shadersMain__midContainer_section_info_detail__earth">
+                            <div class="shadersMain__midContainer_section_info_detail_text">
+                                <h5>EARTH PACKAGE / <span>RTEA</span> </h5>
+                            </div>
+                            <div class="shadersMain__midContainer_section_info_detail_text_dectoration__earth"></div>
+                        </div>
+                        <p>Earth Package es un paquete con una duración aproximada de <span>10h</span> y <span>45 min</span>, configurado para aprender a desarrollar desde
+                            cero los siguientes shaders: planet, oleo, procedurals labs, displacement mesh, grid y <span>blend road</span>. Descubre y añade a tus conocimientos,
+                            estos nuevos e impresionantes shaders los cuales forman parte de nuestro nuevo curso <span>Mystic Materials Package</span>, el cual está constituido por un total
+                            de <span>30 shaders</span>.
+                        </p>
+                    </section>
+                    <div class="shadersMain__midContainer_section_image">
+                        <video muted autoplay loop>
+                            <source src="./media/videos/planet_banner.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <section class="shadersMain__buttonContainer_container">
+                <section class="shadersMain__buttonContainer_section">
+
+                    <a href="#shader1_container">
+                        <div class="shadersMain__buttonContainer_section_shader">
+                            <div class="shadersMain__buttonContainer_section_shader_circle1__earth">
+                                <div class="shadersMain__buttonContainer_section_shader_circle1_logo">
+                                    <img src="./media/icons/glifos/earthBig.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="shadersMain__buttonContainer_section_shader__earth_title">
+                                <h4>PLANET SHADER</h4>
+                                <h5>1º SHADER</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#shader2_container">
+                        <div class="shadersMain__buttonContainer_section_shader">
+                            <div class="shadersMain__buttonContainer_section_shader_circle2__earth">
+                                <div class="shadersMain__buttonContainer_section_shader_circle2_logo">
+                                    <img src="./media/icons/glifos/earthBig.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="shadersMain__buttonContainer_section_shader__earth_title">
+                                <h4>OLEO SHADER</h4>
+                                <h5>2º SHADER</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#shader3_container">
+                        <div class="shadersMain__buttonContainer_section_shader">
+                            <div class="shadersMain__buttonContainer_section_shader_circle3__earth">
+                                <div class="shadersMain__buttonContainer_section_shader_circle3_logo">
+                                    <img src="./media/icons/glifos/earthBig.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="shadersMain__buttonContainer_section_shader__earth_title">
+                                <h4 class="letter_margin">PROCEDURALS</h4>
+                                <h4>LABS SHADER</h4>
+                                <h5>3º SHADER</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#shader4_container">
+                        <div class="shadersMain__buttonContainer_section_shader">
+                            <div class="shadersMain__buttonContainer_section_shader_circle4__earth">
+                                <div class="shadersMain__buttonContainer_section_shader_circle4_logo">
+                                    <img src="./media/icons/glifos/earthBig.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="shadersMain__buttonContainer_section_shader__earth_title">
+                                <h4 class="letter_margin">DISPLACEMENT</h4>
+                                <h4>MESH SHADER</h4>
+                                <h5>4º SHADER</h5>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#shader5_container">
+                        <div class="shadersMain__buttonContainer_section_shader">
+                            <div class="shadersMain__buttonContainer_section_shader_circle5__earth">
+                                <div class="shadersMain__buttonContainer_section_shader_circle5_logo">
+                                    <img src="./media/icons/glifos/earthBig.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="shadersMain__buttonContainer_section_shader__earth_title">
+                                <h4>GRID SHADER</h4>
+                                <h5>5º SHADER</h5>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </section>
+            </section>
+        </div>
+
+    </section>
+    <!-- FIN BURNING SHADER MAIN SECTION -->
+
+    <!-- SHADER 1º SECTION -->  <!-- LADO IZQUIERDO  -->
+    <section class="shaderIzq_container__earth" id="shader1_container">
+        <div class="shaderIzq_container_details">
+            <div class="shaderIzq_container_details_earthGlifos">
+                <div class="shaderIzq_container_details_earthGlifos_image">
+                    <img src="./media/icons/glifos/earthGlifos.webp" alt="earth glifos icons">
+                </div>
+            </div>
+            <div class="shaderIzq_container_details_detail__earth"></div>
+        </div>
+
+        <section class="shaderIzq_section">
+            <div class="shaderIzq_section1">
+                <div class="shaderIzq_section1_div1">
+                    <h3>PLANET</h3>
+                    <h3>SHADER</h3>
+                    <div class="shaderIzq_section_info_detail">
+                        <div class="shaderIzq_section_info_detail_text__earth">
+                            <h5>1º SHADER</h5>
+                        </div>
+                        <div class="shaderIzq_section_info_detail_text_decoration__earth"></div>
+                    </div>
+                </div>
+                <div class="shaderIzq_section1_div2">
+                    <img src="./media/courses/mystic_pack/earth/planet2.gif" class="small-image" onclick="changeImage(this)" alt="first shader first water image">
+                </div>
+                <div class="shaderIzq_section1_div3"></div> <!-- ESTE ES UN DIV PARA DEJAR ESPACIO ENTRE GRIDS -->
+                <div class="shaderIzq_section1_div4">
+                    <img src="./media/courses/mystic_pack/earth/planet3.gif" class="small-image" onclick="changeImage(this)" alt="first shader second water image">
+                </div>
+                <div class="shaderIzq_section1_div5">
+                    <div class="shaderIzq_section1_div5_div1"></div>
+                    <div class="shaderIzq_section1_div5_div2">
+                        <p>Duración</p>
+                        <p class="shaderIzq_section1_div5_div2_p">5h 15' 43"</p>
+                    </div>
+                    <div class="shaderIzq_section1_div5_div3"></div>
+                    <div class="shaderIzq_section1_div5_div4">
+                        <p>Software</p>
+                        <div class="shaderIzq_section1_div5_div4_logo">
+                            <img src="./media/icons/unreal_white.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="shaderIzq_section1_div5_div5"></div>
+                </div>
+            </div>
+            <div class="shaderIzq_section2"></div>
+            <div class="shaderIzq_section3">
+                <div class="shaderIzq_section3_div1">
+                    <img src="./media/courses/mystic_pack/earth/planet1.jpg" class="big-image" id="bigImage" alt="first shader main water image">
+                </div>
+                <div class="shaderIzq_section3_div2">
+                    <p>¿Cuántas veces has soñado con recrear una batalla intergaláctica en el espacio con la tierra de fondo como marco y no has sabido por
+                        dónde empezar?. No te preocupes, ya que a partir de ahora aprenderás a lo largo de esta jornada dos shaders que recrearán el planeta
+                        tierra con zonas día/noche, así como satélites como la luna vistas desde el espacio y desde el interior del planeta. ¿Dispuesto a montar
+                        tu propia cinemática al más puro estilo STAR WARS?. Ánimo y que la fuerza te acompañe.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- FIN SHADER 1º SECTION -->
+
+    <!-- SHADER 2º SECTION -->  <!-- LADO DERECHO  -->
+    <section class="shaderDerch_container__earth" id="shader2_container">
+        <div class="shaderDerch_container_details">
+            <div class="shaderDerch_container_details_detail__earth"></div>
+            <div class="shaderDerch_container_details_earthGlifos">
+                <div class="shaderDerch_container_details_earthGlifos_image">
+                    <img src="./media/icons/glifos/earthGlifos.webp" alt="earth glifos icons">
+                </div>
+            </div>
+        </div>
+
+        <section class="shaderDerch_section">
+            <div class="shaderDerch_section3">
+                <div class="shaderDerch_section3_div1">
+                    <img src="./media/courses/mystic_pack/earth/oleo1.jpg" class="big-image" id="bigImage2" alt="second shader main water image">
+                </div>
+                <div class="shaderDerch_section3_div2">
+                    <p>Deformar la realidad ahora está al alcance de tu destreza como artista y técnico en el campo de los VFX en Unreal haciendo uso de los
+                        materiales de postprocesado. En juegos como Far Cry o Hellblade, usan estos efectos en muchos momentos del juego. Con este shader seréis
+                        capaces de convertir vuestras escenarios realista o estilizado en pintura al Óleo.
+                    </p>
+                </div>
+            </div>
+            <div class="shaderDerch_section2"></div>
+            <div class="shaderDerch_section1">
+                <div class="shaderDerch_section1_div1">
+                    <h3>OLEO</h3>
+                    <h3>SHADER</h3>
+                    <div class="shaderDerch_section_info_detail">
+                        <div class="shaderDerch_section_info_detail_text__earth">
+                            <h5>2º SHADER</h5>
+                        </div>
+                        <div class="shaderDerch_section_info_detail_text_decoration__earth"></div>
+                    </div>
+                </div>
+                <div class="shaderDerch_section1_div2">
+                    <img src="./media/courses/mystic_pack/earth/oleo2.jpg" class="small-image" onclick="changeImage2(this)" alt="second shader first water image">
+                </div>
+                <div class="shaderDerch_section1_div3"></div> <!-- ESTE ES UN DIV PARA DEJAR ESPACIO ENTRE GRIDS -->
+                <div class="shaderDerch_section1_div4">
+                    <img src="./media/courses/mystic_pack/earth/oleo3.jpg" class="small-image" onclick="changeImage2(this)" alt="second shader second water image">
+                </div>
+                <div class="shaderDerch_section1_div5">
+                    <div class="shaderDerch_section1_div5_div1"></div>
+                    <div class="shaderDerch_section1_div5_div2">
+                        <p>Duración</p>
+                        <p class="shaderDerch_section1_div5_div2_p">1h 28' 17"</p>
+                    </div>
+                    <div class="shaderDerch_section1_div5_div3"></div>
+                    <div class="shaderDerch_section1_div5_div4">
+                        <p>Software</p>
+                        <div class="shaderDerch_section1_div5_div4_logo">
+                            <img src="./media/icons/unreal_white.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="shaderDerch_section1_div5_div5"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- FIN SHADER 2º SECTION -->
+
+    <!-- SHADER 3º SECTION -->  <!-- LADO IZQUIERDO  -->
+    <section class="shaderIzq_container__earth" id="shader3_container">
+        <div class="shaderIzq_container_details">
+            <div class="shaderIzq_container_details_earthGlifos">
+                <div class="shaderIzq_container_details_earthGlifos_image">
+                    <img src="./media/icons/glifos/earthGlifos.webp" alt="earth glifos icons">
+                </div>
+            </div>
+            <div class="shaderIzq_container_details_detail__earth"></div>
+        </div>
+
+        <section class="shaderIzq_section">
+            <div class="shaderIzq_section1">
+                <div class="shaderIzq_section1_div1">
+                    <h3>PROCEDURAL</h3>
+                    <h3>LABS SHADER</h3>
+                    <div class="shaderIzq_section_info_detail">
+                        <div class="shaderIzq_section_info_detail_text__earth">
+                            <h5>3º SHADER</h5>
+                        </div>
+                        <div class="shaderIzq_section_info_detail_text_decoration__earth"></div>
+                    </div>
+                </div>
+                <div class="shaderIzq_section1_div2">
+                    <img src="./media/courses/mystic_pack/earth/procedural2.gif" class="small-image" onclick="changeImage3(this)" alt="third shader first water image">
+                </div>
+                <div class="shaderIzq_section1_div3"></div> <!-- ESTE ES UN DIV PARA DEJAR ESPACIO ENTRE GRIDS -->
+                <div class="shaderIzq_section1_div4">
+                    <img src="./media/courses/mystic_pack/earth/procedural3.jpg" class="small-image" onclick="changeImage3(this)" alt="third shader second water image">
+                </div>
+                <div class="shaderIzq_section1_div5">
+                    <div class="shaderIzq_section1_div5_div1"></div>
+                    <div class="shaderIzq_section1_div5_div2">
+                        <p>Duración</p>
+                        <p class="shaderIzq_section1_div5_div2_p">1h 21' 16"</p>
+                    </div>
+                    <div class="shaderIzq_section1_div5_div3"></div>
+                    <div class="shaderIzq_section1_div5_div4">
+                        <p>Software</p>
+                        <div class="shaderIzq_section1_div5_div4_logo">
+                            <img src="./media/icons/unreal_white.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="shaderIzq_section1_div5_div5"></div>
+                </div>
+            </div>
+            <div class="shaderIzq_section2"></div>
+            <div class="shaderIzq_section3">
+                <div class="shaderIzq_section3_div1">
+                    <img src="./media/courses/mystic_pack/earth/procedural1.jpg" class="big-image" id="bigImage3" alt="third shader main water image">
+                </div>
+                <div class="shaderIzq_section3_div2">
+                    <p>En muchas ocasiones buscamos distribuir elementos a lo largo de nuestro escenario 3D de forma aleatoria y no sabemos como, ¿verdad?.
+                        En esta ocasión crearemos un shader con el que usando varias técnicas combinadas con nodos, aprenderéis a generar modelos con patrones aleatorios,
+                        lo cuales se podrán aplicar a todo tipo de assets. En esta jornada pondremos a prueba lotes de botes de conservas y portadas de cine sci-fi, los
+                        cuales cambiarán sus materiales en función de su posición en el espacio o patrón de ruido empleado.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- FIN SHADER 3º SECTION -->
+
+    <!-- SHADER 4º SECTION -->  <!-- LADO DERECHO  -->
+    <section class="shaderDerch_container__earth" id="shader4_container">
+        <div class="shaderDerch_container_details">
+            <div class="shaderDerch_container_details_detail__earth"></div>
+            <div class="shaderDerch_container_details_earthGlifos">
+                <div class="shaderDerch_container_details_earthGlifos_image">
+                    <img src="./media/icons/glifos/earthGlifos.webp" alt="earth glifos icons">
+                </div>
+            </div>
+        </div>
+
+        <section class="shaderDerch_section">
+            <div class="shaderDerch_section3">
+                <div class="shaderDerch_section3_div1">
+                    <img src="./media/courses/mystic_pack/earth/displacement1.jpg" class="big-image" id="bigImage4" alt="fourth shader main water image">
+                </div>
+                <div class="shaderDerch_section3_div2">
+                    <p>Cuando se habla de un shader, los árticas neófitos no suelen pensar en que estos puedan ser los responsables de introducir cambios en las transformaciones
+                        de un objeto, como cuando la hierba se aplasta tras el paso de nuestro personaje o como cuando brotan flores del suelo a medida que nos acercamos a estas.
+                        En esta ocasión, os mostraré precisamente cómo dominar esta técnica, a través de la creación de unas plataformas Sci-Fi al más puro estilo Tron, haciendo
+                        que estas plataformas se desplacen y cambien su forma en función de la proximidad de nuestro personaje.
+                    </p>
+                </div>
+            </div>
+            <div class="shaderDerch_section2"></div>
+            <div class="shaderDerch_section1">
+                <div class="shaderDerch_section1_div1">
+                    <h3>DISPLACEMENT</h3>
+                    <h3>MESH SHADER</h3>
+                    <div class="shaderDerch_section_info_detail">
+                        <div class="shaderDerch_section_info_detail_text__earth">
+                            <h5>4º SHADER</h5>
+                        </div>
+                        <div class="shaderDerch_section_info_detail_text_decoration__earth"></div>
+                    </div>
+                </div>
+                <div class="shaderDerch_section1_div2">
+                    <img src="./media/courses/mystic_pack/earth/displacement2.gif" class="small-image" onclick="changeImage4(this)" alt="fourth shader first earth image">
+                </div>
+                <div class="shaderDerch_section1_div3"></div> <!-- ESTE ES UN DIV PARA DEJAR ESPACIO ENTRE GRIDS -->
+                <div class="shaderDerch_section1_div4">
+                    <img src="./media/courses/mystic_pack/earth/displacement3.jpg" class="small-image" onclick="changeImage4(this)" alt="fourth shader second earth image">
+                </div>
+                <div class="shaderDerch_section1_div5">
+                    <div class="shaderDerch_section1_div5_div1"></div>
+                    <div class="shaderDerch_section1_div5_div2">
+                        <p>Duración</p>
+                        <p class="shaderDerch_section1_div5_div2_p">1h 29' 01"</p>
+                    </div>
+                    <div class="shaderDerch_section1_div5_div3"></div>
+                    <div class="shaderDerch_section1_div5_div4">
+                        <p>Software</p>
+                        <div class="shaderDerch_section1_div5_div4_logo">
+                            <img src="./media/icons/unreal_white.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="shaderDerch_section1_div5_div5"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- FIN SHADER 4º SECTION -->
+
+    <!-- SHADER 5º SECTION -->  <!-- LADO IZQUIERDO  -->
+    <section class="shaderIzq_container__earth" id="shader5_container">
+        <div class="shaderIzq_container_details">
+            <div class="shaderIzq_container_details_earthGlifos">
+                <div class="shaderIzq_container_details_earthGlifos_image">
+                    <img src="./media/icons/glifos/earthGlifos.webp" alt="earth glifos icons">
+                </div>
+            </div>
+            <div class="shaderIzq_container_details_detail__earth"></div>
+        </div>
+
+        <section class="shaderIzq_section">
+            <div class="shaderIzq_section1">
+                <div class="shaderIzq_section1_div1">
+                    <h3>GRID</h3>
+                    <h3>SHADER</h3>
+                    <div class="shaderIzq_section_info_detail">
+                        <div class="shaderIzq_section_info_detail_text__earth">
+                            <h5>5º SHADER</h5>
+                        </div>
+                        <div class="shaderIzq_section_info_detail_text_decoration__earth"></div>
+                    </div>
+                </div>
+                <div class="shaderIzq_section1_div2">
+                    <img src="./media/courses/mystic_pack/earth/grid2.jpg" class="small-image" onclick="changeImage5(this)" alt="fifth shader first earth image">
+                </div>
+                <div class="shaderIzq_section1_div3"></div> <!-- ESTE ES UN DIV PARA DEJAR ESPACIO ENTRE GRIDS -->
+                <div class="shaderIzq_section1_div4">
+                    <img src="./media/courses/mystic_pack/earth/grid3.jpg" class="small-image" onclick="changeImage5(this)" alt="fifth shader second earth image">
+                </div>
+                <div class="shaderIzq_section1_div5">
+                    <div class="shaderIzq_section1_div5_div1"></div>
+                    <div class="shaderIzq_section1_div5_div2">
+                        <p>Duración</p>
+                        <p class="shaderIzq_section1_div5_div2_p">32' 27"</p>
+                    </div>
+                    <div class="shaderIzq_section1_div5_div3"></div>
+                    <div class="shaderIzq_section1_div5_div4">
+                        <p>Software</p>
+                        <div class="shaderIzq_section1_div5_div4_logo">
+                            <img src="./media/icons/unreal_white.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="shaderIzq_section1_div5_div5"></div>
+                </div>
+            </div>
+            <div class="shaderIzq_section2"></div>
+            <div class="shaderIzq_section3">
+                <div class="shaderIzq_section3_div1">
+                    <img src="./media/courses/mystic_pack/earth/grid1.gif" class="big-image" id="bigImage5" alt="fifth shader main earth image">
+                </div>
+                <div class="shaderIzq_section3_div2">
+                    <p>Como su nombre índica, a través de la creación de un shader convertiremos nuestros assets en estructuras alámbricas,
+                        usando nuestros propios patrones personalizados.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- FIN SHADER 5º SECTION -->
+
+    <!-- SHADER BONUS SECTION -->  <!-- LADO DERECHO  -->
+    <section class="shaderDerch_container__earth" id="shader6_container">
+        <div class="shaderDerch_container_details_b">
+            <div class="shaderDerch_container_details_detail__earth"></div>
+            <div class="shaderDerch_container_details_bonus__earth">
+                <div class="shaderDerch_container_details_bonus_img">
+                    <img src="./media/icons/glifos/earthGlifos.webp" alt="earth glifo detail bonus shader">
+                </div>
+                <p>BONUS</p>
+            </div>
+        </div>
+
+        <section class="shaderDerch_section">
+            <div class="shaderDerch_section3">
+                <div class="shaderDerch_section3_div1">
+                    <img src="./media/courses/mystic_pack/earth/blendroad1.jpg" class="big-image" id="bigImage6" alt="sixth shader main earth image">
+                </div>
+                <div class="shaderDerch_section3_div2">
+                    <p>Si habéis visto la película “Origen”, la ciudad se curva por completo ante los atónitos ojos de Don Coob (Leornardo Dicaprio). Diseñaremos un shader,
+                        consiguiendo ese mismo efecto a través de una escena mucho más simplificada generada en Blender, llevando a la práctica varias técnicas para curvar a
+                        vuestro antojo la realidad en vuestros proyectos. ¿No os parece Increíble?.
+                    </p>
+                </div>
+            </div>
+            <div class="shaderDerch_section2"></div>
+            <div class="shaderDerch_section1">
+                <div class="shaderDerch_section1_div1">
+                    <h3>BLEND ROAD</h3>
+                    <h3>SHADER</h3>
+                    <div class="shaderDerch_section_info_detail_bonus">
+                        <div class="shaderDerch_section_info_detail_bonus_text__earth">
+                            <h5>BONUS SHADER</h5>
+                        </div>
+                        <div class="shaderDerch_section_info_detail_bonus_decoration__earth"></div>
+                    </div>
+                </div>
+                <div class="shaderDerch_section1_div2">
+                    <img src="./media/courses/mystic_pack/earth/blendroad2.jpg" class="small-image" onclick="changeImage6(this)" alt="sixth shader first earth image">
+                </div>
+                <div class="shaderDerch_section1_div3"></div> <!-- ESTE ES UN DIV PARA DEJAR ESPACIO ENTRE GRIDS -->
+                <div class="shaderDerch_section1_div4">
+                    <img src="./media/courses/mystic_pack/earth/blendroad3.jpg" class="small-image" onclick="changeImage6(this)" alt="sixth shader second earth image">
+                </div>
+                <div class="shaderDerch_section1_div5">
+                    <div class="shaderDerch_section1_div5_div1"></div>
+                    <div class="shaderDerch_section1_div5_div2">
+                        <p>Duración</p>
+                        <p class="shaderDerch_section1_div5_div2_p">36' 47"</p>
+                    </div>
+                    <div class="shaderDerch_section1_div5_div3"></div>
+                    <div class="shaderDerch_section1_div5_div4">
+                        <p>Software</p>
+                        <div class="shaderDerch_section1_div5_div4_logo">
+                            <img src="./media/icons/unreal_white.PNG" alt="">
+                        </div>
+                    </div>
+                    <div class="shaderDerch_section1_div5_div5"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- FIN SHADER BONUS SECTION -->
+
+    <!-- MÉTODOS DE PAGO SECTION -->
+    <section class="metodosPago">
+        <div class="metodosPago__container">
+            <h3>¡Conoce nuestros <span class="metodosEarth">métodos de pago!</span></h3>
+            <p>En nuestra escuela pensamos en nuestros alumnos y queremos poder brindarles todas las oportunidades
+                posibles para poder acceder a nuestros cursos. Que nada frene tus ganas de seguir aprendiendo, <u class="metodosEarth">si necesitas mas ayuda contacta con nosotros.</u>
+            </p>
+            <div class="metodosPago__container__payMethodsIcons">
+                <svg height="90%" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#4DC3FF;" d="M461.913,439.652H50.087C22.468,439.652,0,417.184,0,389.565v-267.13 c0-27.619,22.468-50.087,50.087-50.087h411.826c27.619,0,50.087,22.468,50.087,50.087v267.13 C512,417.184,489.532,439.652,461.913,439.652z"></path> <g> <path style="fill:#3AACE6;" d="M461.913,72.348H256v367.304h205.913c27.619,0,50.087-22.468,50.087-50.087v-267.13 C512,94.816,489.532,72.348,461.913,72.348z"></path> <path style="fill:#3AACE6;" d="M50.087,406.261c-9.206,0-16.696-7.49-16.696-16.696v-267.13c0-9.206,7.49-16.696,16.696-16.696 h411.826c9.206,0,16.696,7.49,16.696,16.696v267.13c0,9.206-7.49,16.696-16.696,16.696H50.087z"></path> </g> <path style="fill:#2B9FD9;" d="M461.913,105.739H256v300.522h205.913c9.206,0,16.696-7.49,16.696-16.696v-267.13 C478.609,113.229,471.119,105.739,461.913,105.739z"></path> <g> <path style="fill:#D7EBFF;" d="M122.435,372.87H89.043c-9.223,0-16.696-7.473-16.696-16.696s7.473-16.696,16.696-16.696h33.391 c9.223,0,16.696,7.473,16.696,16.696S131.657,372.87,122.435,372.87z"></path> <path style="fill:#D7EBFF;" d="M222.609,372.87h-33.391c-9.223,0-16.696-7.473-16.696-16.696s7.473-16.696,16.696-16.696h33.391 c9.223,0,16.696,7.473,16.696,16.696S231.831,372.87,222.609,372.87z"></path> </g> <g> <path style="fill:#BDDEFF;" d="M322.783,372.87h-33.391c-9.223,0-16.696-7.473-16.696-16.696s7.473-16.696,16.696-16.696h33.391 c9.223,0,16.696,7.473,16.696,16.696S332.005,372.87,322.783,372.87z"></path> <path style="fill:#BDDEFF;" d="M422.957,372.87h-33.391c-9.223,0-16.696-7.473-16.696-16.696s7.473-16.696,16.696-16.696h33.391 c9.223,0,16.696,7.473,16.696,16.696S432.179,372.87,422.957,372.87z"></path> </g> <path style="fill:#FFCC99;" d="M422.957,239.304H322.783c-9.223,0-16.696-7.473-16.696-16.696v-66.783 c0-9.223,7.473-16.696,16.696-16.696h100.174c9.223,0,16.696,7.473,16.696,16.696v66.783 C439.652,231.831,432.179,239.304,422.957,239.304z"></path> <path style="fill:#D7EBFF;" d="M256,306.087H89.043c-9.223,0-16.696-7.473-16.696-16.696s7.473-16.696,16.696-16.696H256 c9.223,0,16.696,7.473,16.696,16.696S265.223,306.087,256,306.087z"></path> <g> <path style="fill:#BDDEFF;" d="M272.696,289.391c0-9.223-7.473-16.696-16.696-16.696v33.391 C265.223,306.087,272.696,298.614,272.696,289.391z"></path> <path style="fill:#BDDEFF;" d="M422.957,306.087H322.783c-9.223,0-16.696-7.473-16.696-16.696s7.473-16.696,16.696-16.696h100.174 c9.223,0,16.696,7.473,16.696,16.696S432.179,306.087,422.957,306.087z"></path> </g> <path style="fill:#E6563A;" d="M122.435,239.304c-27.619,0-50.087-22.468-50.087-50.087s22.468-50.087,50.087-50.087 s50.087,22.468,50.087,50.087S150.054,239.304,122.435,239.304z"></path> <path style="fill:#FFE14D;" d="M172.522,239.304c-27.619,0-50.087-22.468-50.087-50.087s22.468-50.087,50.087-50.087 s50.087,22.468,50.087,50.087S200.141,239.304,172.522,239.304z"></path> </g></svg>
+                <svg version="1.1" height="100%" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 780 501" enable-background="new 0 0 780 501" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>amex-outline</title> <desc>Created with Sketch.</desc> <g> <path fill="#003087" d="M168.379,169.853c-8.399-5.774-19.359-8.668-32.88-8.668H83.153c-4.145,0-6.435,2.073-6.87,6.215 L55.018,300.883c-0.221,1.311,0.107,2.51,0.981,3.6c0.869,1.092,1.962,1.635,3.271,1.635h24.864c4.361,0,6.758-2.068,7.198-6.215 l5.888-35.986c0.215-1.744,0.982-3.162,2.291-4.254c1.308-1.09,2.944-1.803,4.907-2.13c1.963-0.324,3.814-0.487,5.562-0.487 c1.743,0,3.814,0.11,6.217,0.327c2.397,0.218,3.925,0.324,4.58,0.324c18.756,0,33.478-5.285,44.167-15.866 c10.684-10.577,16.032-25.243,16.032-44.004C180.976,184.96,176.774,175.636,168.379,169.853z M141.389,209.933 c-1.094,7.635-3.926,12.649-8.506,15.049c-4.581,2.403-11.124,3.598-19.629,3.598l-10.797,0.327l5.563-35.007 c0.434-2.397,1.851-3.597,4.252-3.597h6.218c8.72,0,15.049,1.257,18.975,3.761C141.389,196.574,142.698,201.865,141.389,209.933z"></path> <path fill="#009CDE" d="M720.794,161.185h-24.208c-2.405,0-3.821,1.2-4.253,3.6l-21.267,136.099l-0.328,0.654 c0,1.096,0.437,2.127,1.311,3.109c0.868,0.98,1.963,1.471,3.27,1.471h21.595c4.138,0,6.429-2.068,6.871-6.215l21.265-133.813 v-0.325C725.049,162.712,723.627,161.185,720.794,161.185z"></path> <path fill="#003087" d="M428.31,213.856c0-1.088-0.439-2.126-1.306-3.106c-0.875-0.981-1.858-1.474-2.945-1.474h-25.192 c-2.404,0-4.366,1.096-5.889,3.271l-34.679,51.04l-14.395-49.075c-1.095-3.487-3.492-5.236-7.197-5.236h-24.541 c-1.093,0-2.074,0.492-2.941,1.474c-0.875,0.98-1.309,2.019-1.309,3.106c0,0.44,2.127,6.871,6.379,19.303 c4.252,12.435,8.832,25.849,13.74,40.245c4.908,14.393,7.469,22.031,7.688,22.898c-17.886,24.43-26.826,37.517-26.826,39.259 c0,2.838,1.416,4.254,4.253,4.254h25.192c2.398,0,4.36-1.088,5.889-3.27l83.427-120.399 C428.092,215.713,428.31,214.953,428.31,213.856z"></path> <path fill="#009CDE" d="M662.887,209.276h-24.866c-3.055,0-4.904,3.6-5.558,10.798c-5.677-8.721-16.031-13.088-31.083-13.088 c-15.704,0-29.066,5.89-40.077,17.668c-11.016,11.778-16.521,25.631-16.521,41.551c0,12.871,3.761,23.121,11.285,30.752 c7.525,7.639,17.612,11.451,30.266,11.451c6.323,0,12.757-1.311,19.3-3.926c6.544-2.617,11.665-6.105,15.379-10.469 c0,0.219-0.222,1.199-0.655,2.943c-0.44,1.748-0.655,3.059-0.655,3.926c0,3.494,1.414,5.234,4.254,5.234h22.576 c4.138,0,6.541-2.068,7.194-6.215l13.415-85.39c0.215-1.309-0.112-2.507-0.982-3.599 C665.284,209.823,664.196,209.276,662.887,209.276z M620.193,273.729c-5.562,5.453-12.268,8.178-20.12,8.178 c-6.328,0-11.449-1.742-15.377-5.234c-3.927-3.484-5.89-8.283-5.89-14.395c0-8.065,2.726-14.886,8.18-20.447 c5.447-5.562,12.214-8.343,20.285-8.343c6.101,0,11.173,1.8,15.212,5.397c4.032,3.6,6.054,8.563,6.054,14.889 C628.536,261.625,625.754,268.279,620.193,273.729z"></path> <path fill="#003087" d="M291.231,209.276h-24.865c-3.058,0-4.908,3.6-5.563,10.798c-5.889-8.721-16.25-13.088-31.081-13.088 c-15.704,0-29.065,5.89-40.078,17.668c-11.016,11.778-16.521,25.631-16.521,41.551c0,12.871,3.763,23.121,11.288,30.752 c7.525,7.639,17.61,11.451,30.262,11.451c6.104,0,12.433-1.311,18.975-3.926c6.543-2.617,11.778-6.105,15.704-10.469 c-0.875,2.617-1.309,4.908-1.309,6.869c0,3.494,1.417,5.234,4.253,5.234h22.574c4.141,0,6.543-2.068,7.198-6.215l13.413-85.39 c0.215-1.309-0.111-2.507-0.981-3.599C293.627,209.823,292.537,209.276,291.231,209.276z M248.535,273.891 c-5.563,5.35-12.382,8.016-20.447,8.016c-6.329,0-11.4-1.742-15.214-5.234c-3.819-3.484-5.726-8.283-5.726-14.395 c0-8.065,2.725-14.886,8.18-20.447c5.449-5.562,12.211-8.343,20.284-8.343c6.104,0,11.175,1.8,15.214,5.397 c4.032,3.6,6.052,8.563,6.052,14.889C256.878,261.844,254.097,268.553,248.535,273.891z"></path> <path fill="#009CDE" d="M540.036,169.853c-8.398-5.774-19.356-8.668-32.879-8.668h-52.019c-4.365,0-6.765,2.073-7.198,6.215 l-21.265,133.483c-0.221,1.311,0.106,2.51,0.981,3.6c0.866,1.092,1.962,1.635,3.271,1.635h26.826c2.617,0,4.361-1.416,5.235-4.252 l5.89-37.949c0.216-1.744,0.98-3.162,2.29-4.254c1.309-1.09,2.943-1.803,4.908-2.13c1.962-0.324,3.813-0.487,5.562-0.487 c1.743,0,3.814,0.11,6.214,0.327c2.399,0.218,3.93,0.324,4.58,0.324c18.759,0,33.479-5.285,44.168-15.866 c10.687-10.577,16.031-25.243,16.031-44.004C552.632,184.96,548.431,175.636,540.036,169.853z M506.502,223.673 c-4.799,3.271-11.997,4.906-21.592,4.906l-10.47,0.327l5.563-35.007c0.432-2.397,1.849-3.597,4.252-3.597h5.887 c4.797,0,8.614,0.218,11.454,0.653c2.831,0.439,5.561,1.799,8.178,4.089c2.619,2.29,3.926,5.618,3.926,9.979 C513.7,214.185,511.298,220.399,506.502,223.673z"></path> </g> </g></svg>
+                <svg viewBox="0 -149 512 512" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M35.9822222,83.4844444 C35.9822222,77.9377778 40.5333333,75.8044444 48.0711111,75.8044444 C58.88,75.8044444 72.5333333,79.0755556 83.3422222,84.9066667 L83.3422222,51.4844444 C71.5377778,46.7911111 59.8755556,44.9422222 48.0711111,44.9422222 C19.2,44.9422222 0,60.0177778 0,85.1911111 C0,124.444444 54.0444444,118.186667 54.0444444,135.111111 C54.0444444,141.653333 48.3555556,143.786667 40.3911111,143.786667 C28.5866667,143.786667 13.5111111,138.951111 1.56444444,132.408889 L1.56444444,166.257778 C14.7911111,171.946667 28.16,174.364444 40.3911111,174.364444 C69.9733333,174.364444 90.3111111,159.715556 90.3111111,134.257778 C90.1688889,91.8755556 35.9822222,99.4133333 35.9822222,83.4844444 Z M132.124444,16.4977778 L97.4222222,23.8933333 L97.28,137.813333 C97.28,158.862222 113.066667,174.364444 134.115556,174.364444 C145.777778,174.364444 154.311111,172.231111 159.004444,169.671111 L159.004444,140.8 C154.453333,142.648889 131.982222,149.191111 131.982222,128.142222 L131.982222,77.6533333 L159.004444,77.6533333 L159.004444,47.36 L131.982222,47.36 L132.124444,16.4977778 Z M203.235556,57.8844444 L200.96,47.36 L170.24,47.36 L170.24,171.804444 L205.795556,171.804444 L205.795556,87.4666667 C214.186667,76.5155556 228.408889,78.5066667 232.817778,80.0711111 L232.817778,47.36 C228.266667,45.6533333 211.626667,42.5244444 203.235556,57.8844444 Z M241.493333,47.36 L277.191111,47.36 L277.191111,171.804444 L241.493333,171.804444 L241.493333,47.36 Z M241.493333,36.5511111 L277.191111,28.8711111 L277.191111,0 L241.493333,7.53777778 L241.493333,36.5511111 Z M351.431111,44.9422222 C337.493333,44.9422222 328.533333,51.4844444 323.555556,56.0355556 L321.706667,47.2177778 L290.417778,47.2177778 L290.417778,213.048889 L325.973333,205.511111 L326.115556,165.262222 C331.235556,168.96 338.773333,174.222222 351.288889,174.222222 C376.746667,174.222222 399.928889,153.742222 399.928889,108.657778 C399.786667,67.4133333 376.32,44.9422222 351.431111,44.9422222 Z M342.897778,142.933333 C334.506667,142.933333 329.528889,139.946667 326.115556,136.248889 L325.973333,83.4844444 C329.671111,79.36 334.791111,76.5155556 342.897778,76.5155556 C355.84,76.5155556 364.8,91.0222222 364.8,109.653333 C364.8,128.711111 355.982222,142.933333 342.897778,142.933333 Z M512,110.08 C512,73.6711111 494.364444,44.9422222 460.657778,44.9422222 C426.808889,44.9422222 406.328889,73.6711111 406.328889,109.795556 C406.328889,152.604444 430.506667,174.222222 465.208889,174.222222 C482.133333,174.222222 494.933333,170.382222 504.604444,164.977778 L504.604444,136.533333 C494.933333,141.368889 483.84,144.355556 469.76,144.355556 C455.964444,144.355556 443.733333,139.52 442.168889,122.737778 L511.715556,122.737778 C511.715556,120.888889 512,113.493333 512,110.08 Z M441.742222,96.5688889 C441.742222,80.4977778 451.555556,73.8133333 460.515556,73.8133333 C469.191111,73.8133333 478.435556,80.4977778 478.435556,96.5688889 L441.742222,96.5688889 L441.742222,96.5688889 Z" fill="#6772E5"> </path> </g> </g></svg>
+            </div>
+        </div>
+    </section>
+    <!-- FIN MÉTODOS DE PAGO SECTION -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="footer__container">
+            <section class="footer__container__bigInfo">
+                <div class="footer__container__bigInfo__leftInfo">
+                    <img src="./media/icons/rteaLogo.png" alt="RTEA School logo footer">
+                    <p>Europa <b>·</b> Latinoamérica</p>
+                </div>
+                <div class="footer__container__bigInfo__rightInfo">
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Acerca de la empresa</p>
+                        <ul>
+                            <li><a href="quienesSomos.html">¿Qué es RTEA?</a></li>
+                            <li><a href="nuestroEquipo.html">Nuestro equipo</a></li>
+                            <li><a href="nuestroEquipo.html">Nuestros profesores</a></li>
+                            <li><a href="quienesSomos.html">Nuestros proyectos RTEA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Nuestros productos</p>
+                        <ul>
+                            <li><a href="cursos.html">Nuestros cursos</a></li>
+                            <li><a href="cursos.html">Nuestros masters</a></li>
+                            <li><a href="afiliados.html">Servicio de afiliados</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Conecta con RTEA</p>
+                        <ul>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Acceso a las clases</a></li>
+                            <li><a href="login.html">Portal del estudiante</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Áreas de estudio</p>
+                        <ul>
+                            <li><a href="cursos.html">Unreal</a></li>
+                            <li><a href="cursos.html">3D Generalist</a></li>
+                            <li><a href="cursos.html">Modelado y texturizado</a></li>
+                            <li><a href="cursos.html">VFX Animation</a></li>
+                            <li><a href="cursos.html">Infoarquitectura</a></li>
+                            <li><a href="cursos.html">Animación</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <aside class="footer__container__smallTermsAndMedia">
+                <div class="footer__container__smallTermsAndMedia--copy">
+                    <p>&copy; VertexBrothers, 2017 - 2024</p>
+                </div>
+                <div class="footer__container__smallTermsAndMedia__socialLinks">
+                    <a href="https://www.instagram.com/vertexbrothers/">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/instagram_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alberto-garcia-gonzalez-498a46201/">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/linkedin_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/vertexbrothers">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/twitter_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.twitch.tv/roadtoenviromentartist">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/twitch_w.PNG" class="twitchIcon" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/@roadtoenviromentartist">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/youtube_w.PNG" class="youtubeIcon" alt="">
+                        </div>
+                    </a>
+                </div>
+            </aside>
+        </section>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="./script.js"></script>
+    <script src="./scriptIndex.js"></script>
+</body>

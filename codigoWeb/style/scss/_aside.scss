@@ -1,0 +1,366 @@
+@import 'variables';
+@import 'animations';
+
+/* --- SOCIAL MEDIA ASIDE (RIGHT SIDE) --- */
+
+.right__socialMedia {
+    position: fixed;
+    right: 0.3px;
+    margin-top: -54vh;
+    z-index: 500;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    &.aparecer {
+        animation: aparecerSocialMedia 2s;
+        animation-fill-mode: forwards;
+    }
+
+    &.oculto {
+        animation: desaparecerSocialMedia 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+.rectangle__socialMedia {
+    height: 376px;
+    width: 53px;
+    background-color: $color-blanco;
+    z-index: 101;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 53px;
+        height: 30px;
+        opacity: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &::before {
+        background-image: url(../../media/vectors/vector_3.PNG);
+        margin-top: -29.4px;
+    }
+
+    &::after {
+        background-image: url(../../media/vectors/vector_4.PNG);
+        margin-top: -1px;
+    }
+}
+
+.iconsMedia {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.socialMedia_img {
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.socialTwitter {
+    width: 23px;
+    height: 23px;
+    background-image: url(../../media/icons/twitter.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+
+    &:hover {
+        width: 23px;
+        height: 23px;
+        background-image: url(../../media/icons/twitter_b.PNG);
+        background-repeat: no-repeat;
+        object-fit: contain;
+        transition: 0.3s;
+    }
+}
+
+.socialTwitch {
+    width: 23px;
+    height: 23px;
+    background-image: url(../../media/icons/twitch.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+
+    &:hover {
+        width: 23px;
+        height: 23px;
+        background-image: url(../../media/icons/twitch_b.PNG);
+        background-repeat: no-repeat;
+        object-fit: contain;
+        transition: 0.3s;
+    }
+
+}
+
+.socialYoutube {
+    width: 23px;
+    height: 23px;
+    background-image: url(../../media/icons/youtube.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+
+    &:hover {
+        width: 23px;
+        height: 23px;
+        background-image: url(../../media/icons/youtube_b.PNG);
+        background-repeat: no-repeat;
+        object-fit: contain;
+        transition: 0.3s;
+    }
+
+}
+
+.socialInstagram {
+    width: 23px;
+    height: 23px;
+    background-image: url(../../media/icons/instagram.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+
+    &:hover {
+        width: 23px;
+        height: 23px;
+        background-image: url(../../media/icons/instagram_b.PNG);
+        background-repeat: no-repeat;
+        object-fit: contain;
+        transition: 0.3s;
+    }
+
+}
+
+.socialLinkedin {
+    width: 23px;
+    height: 23px;
+    background-image: url(../../media/icons/likedin.PNG);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    transition: 0.3s;
+
+    &:hover {
+        width: 23px;
+        height: 23px;
+        background-image: url(../../media/icons/linkedin_b.PNG);
+        background-repeat: no-repeat;
+        object-fit: contain;
+        transition: 0.3s;
+    }
+}
+
+/* --- SOCIAL MEDIA ASIDE (RIGHT SIDE) END --- */
+
+/* --- CONTENEDOR SOCIAL MEDIA FOOTER --- */
+
+.socialMedia {
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        height: 6rem;
+        padding: 0 2rem;
+        background-color: $color-azul-electrico;
+
+        &-countries, &-copy {
+            display: flex;
+            align-items: center;
+            width: 20rem;
+            height: 100%;
+
+            p {
+                font-size: 1.4rem;
+                font-family: Poppins-Light;
+                color: $color-gris-mas-claro;
+            }
+
+        }
+
+        &-media {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            width: 60rem;
+            height: 100%;
+            z-index: 10;
+        }
+
+        &_water,
+        &_fire,
+        &_air,
+        &_earth,
+        &_magic {
+            position: relative;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 0 2rem;
+            z-index: 10;
+            width: 100%;
+            height: 6rem;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        /* WATER */
+
+        &_water {
+            background-color: $color-frozen2;
+        }
+
+        /* FIRE */
+
+        &_fire {
+            background-color: $color-rojo;
+        }
+
+        /* AIR */
+
+        &_air {
+            background-color: $color-air1;
+        }
+
+        /* EARTH */
+
+        &_earth {
+            background-color: $color-earth1;
+        }
+
+        /* MAGIC */
+
+        &_magic {
+            background-color: $color-magic1;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50rem;
+        height: 6rem;
+
+        &_water,
+        &_fire,
+        &_air,
+        &_earth,
+        &_magic {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50rem;
+            height: 6rem;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 5rem;
+        background-color: $color-negro;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: $color-azul-electrico;
+            transition: 0.5s;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+        }
+
+        &_water,
+        &_fire,
+        &_air,
+        &_earth,
+        &_magic {
+            display: flex;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 5rem;
+            background-color: $color-negro;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+
+            &:hover {
+                transition: .5s;
+            }
+
+            img {
+                width: 50%;
+                height: 50%;
+                object-fit: contain;
+            }
+        }
+
+        /* WATER */
+
+        &_water {
+
+            &:hover {
+                background-color: $color-frozen2;
+            }
+        }
+
+        /* FIRE */
+
+        &_fire {
+
+            &:hover {
+                background-color: $color-rojo;
+            }
+        }
+
+        /* AIR */
+
+        &_air {
+
+            &:hover {
+                background-color: $color-air1;
+            }
+        }
+
+        /* EARTH */
+
+        &_earth {
+
+            &:hover {
+                background-color: $color-earth1;
+            }
+        }
+
+        /* MAGIC */
+
+        &_magic {
+
+            &:hover {
+                background-color: $color-magic1;
+            }
+        }
+
+    }
+}
+
+/* --- CONTENEDOR SOCIAL MEDIA FOOTER END --- */

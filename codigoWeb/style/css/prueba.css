@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.container-slider {
+    position: relative;
+    width: 100%;
+    min-height: 1330px;   
+    /* overflow: hidden; */
+}
+
+.slider {
+    display: flex;
+    width: 200%; /*COMO TENEMOS 4 IMÁGENES, PONEMOS UN 100% PARA CADA UNA DE ELLAS, ES DECIR, UN TOTAL DEL 400% */
+    height: 1330px;
+    margin-left: -100%;
+    background-color: black;
+}
+
+.slider__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.slider__section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.slider__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.slider__btn:hover {
+    cursor: pointer;
+}
+
+.slider__btn--left {
+    left: 150px;
+}
+
+.slider__btn--right {
+    right: 150px;
+}
+
+.trailerProyectDiv {
+    margin-top: 110px;
+    width: 73vw;
+    height: 80vh;
+    background-color: aquamarine;
+    z-index: 101;
+}
+
+.trailerProyectDiv iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenesProyectoContenedor {
+    position: relative;
+    margin-top: 15px;
+    width: 73vw;
+    padding: 0;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palegoldenrod;
+}
+
+
+/* SLIDER AUTOMÁTICO */
+
+.sliderAutomatico {
+    margin: 0;
+    padding: 0;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: powderblue;
+}
+
+.sliderImg {
+    width: 73vw;
+    height: 30vh;
+    background-color: blue;
+
+}
+
+/* .slider {
+    width: 500%;
+    height: 400px;
+    display: flex;
+} */
+
+/* .slide input {
+    display: none;
+}  */
+
+.st {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    width: 1380px;
+    height: 38vh;
+    transition: 2s;
+}
+
+.st2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    width: 1380px;
+    height: 38vh;
+    transition: 2s;
+}
+
+.stImg1 {
+    width: 23.9vw;
+    height: 80%;
+    background-color: red;
+}
+
+.stImg2 {
+    width: 23.9vw;
+    height: 80%;
+    background-color: palegreen;
+}
+
+.stImg3 {
+    width: 23.9vw;
+    height: 80%;
+    background-color: palevioletred;
+}
+
+.stImg4 {
+    width: 23.9vw;
+    height: 80%;
+    background-color: peachpuff;
+}
+
+.stImg5 {
+    width: 23.9vw;
+    height: 80%;
+    background-color: violet;
+}
+
+.nav-m {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.m-btn {
+    border: 2px solid pink;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.m-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.m-btn:hover {
+    background-color: pink;
+}
+
+#radio1:checked ~.first  {
+    margin-left: 0;
+}
+
+#radio2:checked ~.first  {
+    margin-left: -25vw;
+}
+
+#radio3:checked ~.first  {
+    margin-left: -49.8vw;
+}
+
+
+
+#rad1:checked ~.sec  {
+    margin-left: 0;
+}
+
+#rad2:checked ~.sec  {
+    margin-left: -25vw;
+}
+
+#rad3:checked ~.sec  {
+    margin-left: -49.8vw;
+}
+
+.nav-auto {
+    position: absolute;
+    width: 73vw;
+    margin-top: -49px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div {
+    border-radius: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    transition: 1s;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1 {
+    background-color: white;
+}
+
+#radio2:checked ~ .nav-auto .a-b2 {
+    background-color: white;
+}
+
+#radio3:checked ~ .nav-auto .a-b3 {
+    background-color: white;
+}
+
+
+
+#rad1:checked ~ .nav-auto .a-b4 {
+    background-color: white;
+}
+
+#rad2:checked ~ .nav-auto .a-b5 {
+    background-color: white;
+}
+
+#rad3:checked ~ .nav-auto .a-b6 {
+    background-color: white;
+}
+
+

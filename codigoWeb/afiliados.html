@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="stylesheet" href="./style/css/mainIndex.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+     <!-- FAVICON -->
+     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+     <link rel="manifest" href="/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">
+     <!-- FAVICON END -->
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
+    <title>RTEA</title>
+
+    <style>
+        body::-webkit-scrollbar-thumb {
+            background-color: #2A43C1;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MAIN BANNER SECTION -->
+    <header class="mainBanner--small mainBannerWithBackgroundImage">
+
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="./media/icons/rteaLogo.png" alt="principal logo RTEA at header" />
+                </a>
+            </div>
+
+            <div class="nav__lists">
+                <ul class="nav__lists--list1">
+                    <a href="cursos.html">
+                        <li class="nav__lists--list1--item navigationText" id="cursosLink"><a
+                                href="cursos.html">Cursos</a> <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed1__list1">
+                                <li class="nav__closed1__list1--item"><a href="cursos.html">Todos nuestros cursos</a>
+                                </li>
+                                <li class="nav__closed1__list1--item"><a href="cursos.html">Masters</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="nuestroEquipo.html">
+                        <li class="nav__lists--list1--item navigationText" id="profesoresLink"><a
+                                href="nuestroEquipo.html">Profesores</a> <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed2__list1">
+                                <li class="nav__closed2__list1--item"><a href="nuestroEquipo.html">Nuestros
+                                        profesores</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="quienesSomos.html">
+                        <li class="nav__lists--list1--item navigationText" id="quienSomosLink"><a
+                                href="quienesSomos.html">Quienes
+                                Somos</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor" class="mega-menu_icon__PyM0y h-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <ul class="nav__closed3__list1">
+                                <li class="nav__closed3__list1--item"><a href="quienesSomos.html">Conocenos</a></li>
+                            </ul>
+                        </li>
+                    </a>
+                    <a href="afiliados.html">
+                        <li class="nav__lists--list1--item afiliadosGlow"><b>¡Programa de Afiliados!</b> <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4">
+                                <path fill-rule="evenodd"
+                                    d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM21.5 12C21.5 17.2467 17.2467 21.5 12 21.5C6.75329 21.5 2.5 17.2467 2.5 12C2.5 6.75329 6.75329 2.5 12 2.5C17.2467 2.5 21.5 6.75329 21.5 12ZM14.24 9.40745L16.918 9.40755C18.3564 9.4076 18.9545 11.2483 17.7908 12.0939L15.6244 13.668L16.4518 16.2149C16.8963 17.583 15.3305 18.7206 14.1667 17.8752L12.0001 16.3012L9.83355 17.8752C8.66976 18.7206 7.10396 17.583 7.54842 16.2149L8.37585 13.668L6.20942 12.0939C5.04569 11.2483 5.64378 9.4076 7.08226 9.40755L9.76019 9.40745L10.5878 6.86061C11.0324 5.49255 12.9678 5.49255 13.4124 6.86061L14.24 9.40745Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></li>
+                    </a>
+                </ul>
+
+                <ul class="nav__lists--list2">
+                    <li class="nav__lists--list2--item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="currentColor" height="20" width="20" aria-hidden="true"
+                                class="l-1">
+                                <path fill-rule="evenodd"
+                                    d="M9.35292 2.9388C9.6362 3.22207 9.72307 3.64707 9.57369 4.01879C9.20396 4.93882 9 5.94441 9 7.00009C9 11.4184 12.5817 15.0001 17 15.0001C18.0557 15.0001 19.0613 14.7961 19.9813 14.4264C20.353 14.277 20.778 14.3639 21.0613 14.6472C21.3446 14.9304 21.4314 15.3554 21.2821 15.7272C19.8051 19.4024 16.2071 22.0001 12 22.0001C6.47715 22.0001 2 17.5229 2 12.0001C2 7.79297 4.59771 4.19499 8.27293 2.71803C8.64465 2.56864 9.06964 2.65552 9.35292 2.9388ZM7.08558 5.68681C5.20699 7.15133 4 9.43546 4 12.0001C4 16.4184 7.58172 20.0001 12 20.0001C14.5646 20.0001 16.8488 18.7931 18.3133 16.9145C17.8833 16.971 17.4449 17.0001 17 17.0001C11.4772 17.0001 7 12.5229 7 7.00009C7 6.55519 7.02911 6.1168 7.08558 5.68681Z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a></li>
+                    <li class="nav__lists--list2--item">|</li>
+                    <a href="backend/login.php" target="_blank">
+                        <li class="nav__lists--list2--item logIn"><b>Iniciar sesión</b></li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="mainBanner--small__content">
+            <section class="mainBanner--small__content--smallContainer">
+                <div class="mainBanner--small__content--smallContainer--textContainer">
+                    <div class="mainBanner--small__content--smallContainer--textContainer-title">
+                        <h3 class="letterHeaderShadow">Conoce nuestro <span> programa de afiliados</span></h3>
+                    </div>
+                    <div class="mainBanner--small__content--smallContainer--textContainer-description">
+                        <p> Conoce a todos los integrantes que forman parte de nuestra academia RTEA. Desde los <span
+                                class="relative inline-block">profesionales de la industria <svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147 9"
+                                    class="banner-description_underline__myjqH absolute w-full bottom-0"
+                                    fill="currentColor">
+                                    <path d="M2.10098 7.25434C41.5587 2.01526 97.2492 1.54224 145.007 3.36912"
+                                        stroke-width="3" stroke-linecap="round" fill="none"></path>
+                                </svg></span> que forman parte de nuestro equipo del profesorado, hasta nuestro equipo
+                            técnico.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <img src="./media/banners/afiliados_banner.jpg" alt="afiliados page main banner"
+            class="mainBannerWithBackgroundImage--image">
+    </header>
+    <!-- FIN MAIN BANNER SECTION -->
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- NUESTROS PROFESORES SECTION -->
+        <section class="afiliados">
+            <section class="afiliados__container">
+                <h3>Cómo funciona nuestro <span>programa de afiliados</span></h3>
+                <p>Sigue estos sencillos pasos para convertirte en afiliado de RTEA School:</p>
+                <section class="afiliados__container__info">
+                    <div class="afiliados__container__info--line"></div>
+                    <div class="afiliados__container__info__step">
+                        <div class="afiliados__container__info__step--number step1">
+                            <h5>1</h5>
+                        </div>
+                        <h4>Conviértete en Afiliado</h4>
+                        <p>Comenzar es <span>gratis,</span> solo debes completar el <a href="#">formulario de
+                                registro</a></p>
+                    </div>
+                    <div class="afiliados__container__info__step">
+                        <div class="afiliados__container__info__step--number step2">
+                            <h5>2</h5>
+                        </div>
+                        <h4>Promocionanos</h4>
+                        <p><span>Comparte RTEA</span> con tu público objetivo en YouTube, Redes Sociales, Blogs, Sitios
+                            Web o en el lugar de quieras!</p>
+                    </div>
+                    <div class="afiliados__container__info__step">
+                        <div class="afiliados__container__info__step--number step3">
+                            <h5>3</h5>
+                        </div>
+                        <h4>Consigue descuentos</h4>
+                        <p>Al traernos a más alumnos a nuestra plataforma, conseguirás <span>descuentos
+                                exclusivos</span> en algunos cursos</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- FIN NUESTROS PROFESORES SECTION -->
+
+        <!-- BENEFICIOS PARA AFILIADOS SECTION -->
+        <section class="beneficiosParaAfiliados">
+            <section class="beneficiosParaAfiliados__container">
+                <h3>Beneficios para <span>#AfiliadosRTEA</span></h3>
+                <section class="beneficiosParaAfiliados__container__contents">
+                    <div class="beneficiosParaAfiliados__container__contents__info">
+                        <div class="beneficiosParaAfiliados__container__contents__info--img">
+                            <img src="./media/icons/rteaAfiliados-comisiones.webp" alt="">
+                        </div>
+                        <h4>Comisiones</h4>
+                        <p>Recibe el 10% de cada compra. Si eres una institución tienes la posibilidad de homologar
+                            nuestros cursos.</p>
+                    </div>
+                    <div class="beneficiosParaAfiliados__container__contents__info">
+                        <div class="beneficiosParaAfiliados__container__contents__info--img">
+                            <img src="./media/icons/rteaOfrece-afiliados.webp" alt="">
+                        </div>
+                        <h4>Afiliación</h4>
+                        <p>Trae a un amigo para disfrutar de nuestros cursos junto contigo y obtén un descuento en tus
+                            próximas compras.</p>
+                    </div>
+                    <div class="beneficiosParaAfiliados__container__contents__info">
+                        <div class="beneficiosParaAfiliados__container__contents__info--img">
+                            <img src="./media/icons/rteaOfrece-profes.webp" alt="">
+                        </div>
+                        <h4>Nuestros profesores</h4>
+                        <p>Disfruta de profesores de calidad especializados en el sector que cuentan con grandes cursos.
+                        </p>
+                    </div>
+                    <div class="beneficiosParaAfiliados__container__contents__info">
+                        <div class="beneficiosParaAfiliados__container__contents__info--img">
+                            <img src="./media/icons/rteaOfrece-experiencia.webp" alt="">
+                        </div>
+                        <h4>Obten experiencia</h4>
+                        <p>Te garantizamos que saldrás habiendo obtenido mucha experiencia con cada uno de nuestros
+                            cursos.</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- BENEFICIOS PARA AFILIADOS SECTION END -->
+
+        <!-- QUIEN PUEDE SER AFILIADO SECTION -->
+        <section class="quienPuedeSerAfiliado">
+            <section class="quienPuedeSerAfiliado__container">
+                <section class="quienPuedeSerAfiliado__container__messages">
+                    <h3>¿Quién puede ser <span>afiliado</span> de RTEA?</span></h3>
+                    <div class="quienPuedeSerAfiliado__container__messages--containers">
+                        <div class="quienPuedeSerAfiliado__container__messages--containers--container">
+                            <div class="quienPuedeSerAfiliado__container__messages--containers--container--img">
+                                <img src="./media/icons/rteaOfrece-cursos.webp" alt="">
+                            </div>
+                            <h4>Estudiantes</h4>
+                            <p>¿Eres estudiante y implemente quieres unirte como afiliado? Puedes hacerlo!</p>
+                        </div>
+                        <div class="quienPuedeSerAfiliado__container__messages--containers--container">
+                            <div class="quienPuedeSerAfiliado__container__messages--containers--container--img">
+                                <img src="./media/icons/rteaAfiliados-empleados.webp" alt="">
+                            </div>
+                            <h4>Trabajador ajeno</h4>
+                            <p>Si estas trabajando por cuenta ajena. ¡Únete como afiliado!</p>
+                        </div>
+                        <div class="quienPuedeSerAfiliado__container__messages--containers--container">
+                            <div class="quienPuedeSerAfiliado__container__messages--containers--container--img">
+                                <img src="./media/icons/rteaMetodologia-dinamico.webp" alt="">
+                            </div>
+                            <h4>Trabajador propio</h4>
+                            <p>Si estas trabajando por cuenta propia. ¡Únete como afiliado!</p>
+                        </div>
+                        <div class="quienPuedeSerAfiliado__container__messages--containers--container">
+                            <div class="quienPuedeSerAfiliado__container__messages--containers--container--img">
+                                <img src="./media/icons/rteaAfiliados-desempleados.webp" alt="">
+                            </div>
+                            <h4>Desempleados</h4>
+                            <p>¿Estás desempleado y simplemente quieres unirte como afiliado? Puedes hacerlo!</p>
+                        </div>
+                        <div class="quienPuedeSerAfiliado__container__messages--containers--container">
+                            <div class="quienPuedeSerAfiliado__container__messages--containers--container--img">
+                                <img src="./media/icons/rteaMetodologia-experiencia.webp" alt="">
+                            </div>
+                            <h4>Empresas</h4>
+                            <p>¿Eres empresa y quieres unirte como afiliado? Puedes hacerlo ahora mismo!</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- QUIEN PUEDE SER AFILIADO SECTION END -->
+
+        <!-- POR QUÉ ELIGIRNOS SECTION -->
+        <section class="porqueElegirnos">
+            <section class="porqueElegirnos__container">
+                <h3>¿Por qué elegir <span>RTEA?</span></h3>
+                <p>Conoce los muchos de beneficios y cualidades que ofrece RTEA como academia online:</p>
+                <section class="porqueElegirnos__container__bigContainer">
+                    <div class="porqueElegirnos__container__bigContainer--smallContainer">
+                        <img src="./media/icons/afiliados-cursos.svg" alt="">
+                        <h3>Cursos de calidad</h3>
+                        <p>Podrás aprender con nuestros cursos, los cuales ofrecen una gran variedad de contenidos.</p>
+                    </div>
+                    <div class="porqueElegirnos__container__bigContainer--smallContainer">
+                        <img src="./media/icons/afiliados-estudiantes.svg" alt="">
+                        <h3>Nuestro gran profesorado</h3>
+                        <p>Disfruta de profesores de calidad, especializados en el sector y los cuales cuentan con
+                            grandes cursos.</p>
+                    </div>
+                    <div class="porqueElegirnos__container__bigContainer--smallContainer">
+                        <img src="./media/icons/afiliados-paises.svg" alt="">
+                        <h3>Multitud de países</h3>
+                        <p>Aunque nuestros cursos sean orientados a habla hispana, puedes disponer de ellos en cualquier
+                            parte del mundo.</p>
+                    </div>
+                    <div class="porqueElegirnos__container__bigContainer--smallContainer">
+                        <img src="./media/icons/afiliados-precios.svg" alt="">
+                        <h3>Precios asequibles</h3>
+                        <p>El precio de nuestros cursos y masters varía, pero nos aseguramos que sea asequible para
+                            todos los interesados.</p>
+                    </div>
+                    <div class="porqueElegirnos__container__bigContainer--smallContainer">
+                        <img src="./media/icons/afiliados-acceptance.svg" alt="">
+                        <h3>Aceptación internacional</h3>
+                        <p>Una gran cantidad de alumnos nos aceptan y valoran positivamente nuestra metodología y
+                            nuestros cursos.</p>
+                    </div>
+                    <div class="porqueElegirnos__container__bigContainer--smallContainer">
+                        <img src="./media/icons/afiliados-dispositivos.svg" alt="">
+                        <h3>Adaptados a cualquier dispositivo</h3>
+                        <p>Nuestra página está adaptada a web, portátil, táblet y móvil.</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- POR QUÉ ELIGIRNOS SECTION END -->
+
+        <!-- FORMULARIO DE REGISTRO DE AFILIADOS SECTION -->
+        <section class="formularioRegistroAfiliados">
+            <section class="formularioRegistroAfiliados__container">
+                <section class="formularioRegistroAfiliados__container__form">
+                    <form action="#" method="POST">
+                        <h3>Hazte afiliado</h3>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <input type="text" name="name-afiliado" id="name-afiliado" class="personalizedInputs"
+                            placeholder="Nombre" required>
+                        <br>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <input type="text" name="surname-afiliado" id="surname-afiliado" class="personalizedInputs"
+                            placeholder="Apellidos" required>
+                        <br>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <input type="email" name="email-afiliado" id="email-afiliado" class="personalizedInputs"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Correo electrónico"
+                            required>
+                        <br>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <div class="inputTelefonoAfiliado">
+                            <select id="country-code" name="country-code" required>
+                                <!-- Los prefijos se cargarán aquí dinámicamente -->
+                            </select>
+                            <input type="number" name="phone-afiliado" id="phone-afiliado" class="personalizedInputs"
+                                pattern="^\+?[1-9]\d{1,14}$" required placeholder="Nº teléfono">
+                        </div>
+                        <br>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <div class="inputNacionalidadAfiliado">
+                            <label for="country-afiliado" class="bigLabels">Nacionalidad:</label>
+                            <select id="country-afiliado" name="country-afiliado" required>
+                                <!-- Los nombres de los países se cargarán aquí dinámicamente -->
+                            </select>
+                        </div>
+                        <br>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <input type="number" name="age-afiliado" id="age-afiliado" class="personalizedInputs"
+                            placeholder="Edad" minlength="1" maxlength="2" size="2" required>
+                        <br>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <label class="bigLabels">Tus redes sociales activas:</label>
+                        <div class="inputsCheckerSocialMedia">
+                            <br>
+                            <div class="socialAfiliados">
+                                <div class="socialMediaAfiliado">
+                                    <input type="checkbox" name="instagram" id="instagram" value="instagram">
+                                    <label for="instagram">Instagram</label>
+                                </div>
+                                <div class="numFollowersSocialMediaAfiliado">
+                                    <input type="number" name="instagram-followers" id="instagram-followers"
+                                        class="personalizedInputs" placeholder="Nº seguidores">
+                                </div>
+                            </div>
+                            <div class="socialAfiliados">
+                                <div class="socialMediaAfiliado">
+                                    <input type="checkbox" name="twitter" id="twitter" value="twitter">
+                                    <label for="twitter">Twitter</label>
+                                </div>
+                                <div class="numFollowersSocialMediaAfiliado">
+                                    <input type="number" name="twitter-followers" id="twitter-followers"
+                                        class="personalizedInputs" placeholder="Nº seguidores">
+                                </div>
+                            </div>
+                            <div class="socialAfiliados">
+                                <div class="socialMediaAfiliado">
+                                    <input type="checkbox" name="tiktok" id="tiktok" value="tiktok">
+                                    <label for="tiktok">Tiktok</label>
+                                </div>
+                                <div class="numFollowersSocialMediaAfiliado">
+                                    <input type="number" name="tiktok-followers" id="tiktok-followers"
+                                        class="personalizedInputs" placeholder="Nº seguidores">
+                                </div>
+                            </div>
+                            <div class="socialAfiliados">
+                                <div class="socialMediaAfiliado">
+                                    <input type="checkbox" name="facebook" id="facebook" value="facebook">
+                                    <label for="facebook">Facebook</label>
+                                </div>
+                                <div class="numFollowersSocialMediaAfiliado">
+                                    <input type="number" name="facebook-followers" id="facebook-followers"
+                                        class="personalizedInputs" placeholder="Nº seguidores">
+                                </div>
+                            </div>
+                            <div class="socialAfiliados">
+                                <div class="socialMediaAfiliado">
+                                    <input type="checkbox" name="youtube" id="youtube" value="youtube">
+                                    <label for="youtube">Youtube</label>
+                                </div>
+                                <div class="numFollowersSocialMediaAfiliado">
+                                    <input type="number" name="youtube-followers" id="youtube-followers"
+                                        class="personalizedInputs" placeholder="Nº seguidores">
+                                </div>
+                            </div>
+                            <div class="socialAfiliados">
+                                <div class="socialMediaAfiliado">
+                                    <input type="checkbox" name="linkedin" id="linkedin" value="linkedin">
+                                    <label for="linkedin">Linkedin</label>
+                                </div>
+                                <div class="numFollowersSocialMediaAfiliado">
+                                    <input type="number" name="linkedin-followers" id="linkedin-followers"
+                                        class="personalizedInputs" placeholder="Nº seguidores">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="compulsoryData">* (Obligatorio)</p>
+                        <label class="bigLabels">Situación laboral actual:</label>
+                        <div class="inputsCheckerWorks">
+                            <br>
+                            <div>
+                                <input type="checkbox" name="estudiante" id="estudiante" value="estudiante">
+                                <label for="estudiante">Estudiante</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="desempleado" id="desempleado" value="desempleado">
+                                <label for="desempleado">Desempleado</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="trabajadorAjena" id="trabajadorAjena"
+                                    value="trabajadorAjena">
+                                <label for="trabajadorAjena">Trabajador por cuenta ajena</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="trabajadorPropia" id="trabajadorPropia"
+                                    value="trabajadorPropia">
+                                <label for="trabajadorPropia">Trabajador por cuenta propia</label>
+                            </div>
+                        </div>
+
+                        <br>
+                        <input type="submit" value="Enviar">
+
+                        <p class="compulsoryData">* Estos campos son obligatorios</p>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <!-- FORMULARIO DE REGISTRO DE AFILIADOS SECTION END -->
+
+        <!-- PREGUNTAS FRECUENTES SECTION -->
+        <section class="preguntasFrecuentesAfiliados">
+            <section class="preguntasFrecuentesAfiliados__container">
+                <h3>Preguntas frecuentes</h3>
+                <section class="accordionPreguntasFrecuentes">
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb1" checked>
+                        <label for="cb1" class="tab__label">¿Cómo funciona el programa de afiliados?</label>
+                        <div class="tab__content">
+                            <p>Solo debes registrarte y te proporcionaremos acceso a tu tablero de afiliados, donde
+                                obtendrás tus enlaces para compartir.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb2">
+                        <label for="cb2" class="tab__label">¿Cuáles son los requisitos para unirse al programa de
+                            afiliados?</label>
+                        <div class="tab__content">
+                            <p>Información personal como: nombre y apellidos, nacionalidad, edad, email, teléfono de
+                                contacto y verificar en que redes sociales nos vas a dar a conocer.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb3">
+                        <label for="cb3" class="tab__label">¿Cómo recibo los descuentos?</label>
+                        <div class="tab__content">
+                            <p>Los descuentos a los cursos por ser afiliado te aparecerán una vez una persona que hayas
+                                traido a la plataforma haya comprado uno de nuestros cursos.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb5">
+                        <label for="cb5" class="tab__label">¿Cómo puedo aplicar los descuentos a los cursos una vez
+                            obtenidos?</label>
+                        <div class="tab__content">
+                            <p>Los descuentos a los cursos por ser afiliado te aparecerán una vez una persona que hayas
+                                traido a la plataforma haya comprado uno de nuestros cursos.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb4">
+                        <label for="cb4" class="tab__label">¿En qué países puedo promocionar?</label>
+                        <div class="tab__content">
+                            <p>En cualquier lugar del mundo.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- PREGUNTAS FRECUENTES SECTION END -->
+
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <section class="footer__container">
+            <section class="footer__container__bigInfo">
+                <div class="footer__container__bigInfo__leftInfo">
+                    <img src="./media/icons/rteaLogo.png" alt="RTEA School logo footer">
+                    <p>Europa <b>·</b> Latinoamérica</p>
+                </div>
+                <div class="footer__container__bigInfo__rightInfo">
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Acerca de la empresa</p>
+                        <ul>
+                            <li><a href="quienesSomos.html">¿Qué es RTEA?</a></li>
+                            <li><a href="nuestroEquipo.html">Nuestro equipo</a></li>
+                            <li><a href="nuestroEquipo.html">Nuestros profesores</a></li>
+                            <li><a href="quienesSomos.html">Nuestros proyectos RTEA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Nuestros productos</p>
+                        <ul>
+                            <li><a href="cursos.html">Nuestros cursos</a></li>
+                            <li><a href="cursos.html">Nuestros masters</a></li>
+                            <li><a href="afiliados.html">Servicio de afiliados</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Conecta con RTEA</p>
+                        <ul>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Acceso a las clases</a></li>
+                            <li><a href="login.html">Portal del estudiante</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__container__bigInfo__rightInfo--list">
+                        <p>Áreas de estudio</p>
+                        <ul>
+                            <li><a href="cursos.html">Unreal</a></li>
+                            <li><a href="cursos.html">3D Generalist</a></li>
+                            <li><a href="cursos.html">Modelado y texturizado</a></li>
+                            <li><a href="cursos.html">VFX Animation</a></li>
+                            <li><a href="cursos.html">Infoarquitectura</a></li>
+                            <li><a href="cursos.html">Animación</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <aside class="footer__container__smallTermsAndMedia">
+                <div class="footer__container__smallTermsAndMedia--copy">
+                    <p>&copy; VertexBrothers, 2017 - 2024</p>
+                </div>
+                <div class="footer__container__smallTermsAndMedia__socialLinks">
+                    <a href="https://www.instagram.com/vertexbrothers/">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/instagram_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alberto-garcia-gonzalez-498a46201/">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/linkedin_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/vertexbrothers">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/twitter_w.PNG" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.twitch.tv/roadtoenviromentartist">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/twitch_w.PNG" class="twitchIcon" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/@roadtoenviromentartist">
+                        <div class="footer__container__smallTermsAndMedia__socialLinks__icon">
+                            <img src="./media/icons/youtube_w.PNG" class="youtubeIcon" alt="">
+                        </div>
+                    </a>
+                </div>
+            </aside>
+        </section>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script src="./scriptAfiliados.js"></script>
+    <script src="./script.js"></script>
+    <script src="./scriptIndex.js"></script>
+</body>
+
+
+
+</html>
